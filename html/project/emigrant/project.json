@@ -1,0 +1,102 @@
+{
+  "title": "Emigrant City",
+  "short_title": "Emigrant",
+  "summary": "Join us in transcribing 19th century real estate records from the Emigrant Savings Bank.",
+  "background": "/images/background.jpg",
+  "admin_email": "paulbeaudoin@nypl.org",
+  "logo": "/images/logo.png",
+  "favicon": "/images/favicon.ico",
+  "privacy_policy": "http://www.nypl.org/help/about-nypl/legal-notices/privacy-policy",
+  "terms_map": {
+    "group": "collection",
+    "subject set": "page",
+    "subject": "page",
+    "mark": "region"
+  },
+  "team_emails": [
+    "brianfoo@nypl.org",
+    "willaarmstrong@nypl.org",
+    "mattknutzen@nypl.org",
+    "shanakimball@nypl.org",
+    "benjaminvershbow@nypl.org"
+  ],
+  "team": [
+    {
+      "name": "Brian Foo",
+      "role": "Code DJ",
+      "organization": "NYPL"
+    },
+
+    {
+      "name": "Paul Beaudoin",
+      "role": "shoehorn",
+      "organization": "NYPL"
+    }
+  ],
+  "organizations": [
+    {
+      "title": "NYPL",
+      "description": "Books, mostly.",
+      "url":"http://nypl.org",
+      "logo": "http://cdn-prod.www.aws.nypl.org/sites/all/themes/nypl_new/images/main-logo.png"
+    }
+  ],
+
+  "analytics": {
+    "google_analytics_client_id": "UA-69673163-1"
+  },
+
+  "discuss_url": "http://forum.emigrantcity.nypl.org",
+
+  "forum": {
+    "type": "discourse",
+    "base_url": "http://forum.emigrantcity.nypl.org"
+  },
+
+  "menus": {
+    "main": [
+      {"label": "Intro", "page": "intro"},
+      {"label": "Data", "page": "data"},
+      {"label": "About", "page": "about"}
+    ],
+    "footer": []
+  },
+
+  "export_specs": [
+    {
+      "name": "Record",
+      "spec_fields": [
+        {"name": "Mortgager", "repeats": false},
+        {"name": "Street Address", "format": "address", "repeats": false},
+        {"name": "Record Date", "format": "date", "format_options": {"range": [1850,1950]}, "repeats": false},
+        {
+          "name": "Land & Building Dimensions", 
+          "format": {
+            "em_survey_land_dimensions": "dimensions", 
+            "em_survey_building_dimensions": "dimensions"
+          },
+          "repeats": false
+        },
+        {"name": "Amount Loaned", "format": "monetary", "repeats": false},
+        {"name": "Stories & Materials", "format": {"em_record_stories": "numeric"}, "repeats": false},
+        {
+          "name": "Valuation", 
+          "select": "Total Value", 
+          "repeats": true,
+          "sub_fields": [
+            {"name": "Total Value", "format": "monetary", "repeats": false},
+            {"name": "Date", "select": "Valuation Date", "format": "date", "repeats": false},
+            {
+              "name": "Land & Building Value", 
+              "select": "Land & Building Value", 
+              "format": {"em_valuation_ground": "monetary", "em_valuation_building": "monetary"},
+              "repeats": false
+            }
+          ]
+        },
+        {"name": "Record Number", "format": "numeric", "repeats": false},
+        {"name": "Additional Info", "repeats": true}
+      ]
+    }
+  ]
+}

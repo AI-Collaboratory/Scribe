@@ -1,0 +1,122 @@
+---
+ - hosts: all
+
+   #become_user: vagrant
+   #become: yes
+
+   vars:
+     useComposer: true
+
+   handlers:
+
+   - name: restart iptables
+     service: name=iptables state=restarted
+
+   tasks: 
+
+   - debug: msg="start"
+
+   - name: updating apt-get packages
+     apt: 
+      update_cache: yes
+
+   - name: be sure libselinux-python and selinux policy utils are installed
+     apt: pkg={{ item }} state=installed
+     with_items:
+        - libselinux1
+        - policykit-1
+        - policycoreutils
+
+   - name: copy custom selinux policy httpvboxpolicy to allow apache to access synched virtualbox/vagrant folder
+     copy: src=templates/selinux/httpvboxpolicy.pp dest=/tmp/httpvboxpolicy.pp 
+
+   - name: install custom selinux policy httpvboxpolicy to allow apache to access synched virtualbox/vagrant folder
+     command: sudo /usr/sbin/semodule -i /tmp/httpvboxpolicy.pp
+     become: yes
+     become_user: vagrant
+
+   - name: copy firewall template
+     copy: src=templates/etc/sysconfig/iptables dest=/sbin/iptables owner=root group=root mode=0600
+     notify: restart iptables
+
+   - name: gettext
+     apt: pkg={{ item }} state=installed
+     with_items:
+        - gettext
+
+   - name: Create application log directory
+     file: path=/var/log/Scribe state=directory owner=www-data group=www-data
+
+   - name: Set application log file permissions
+     file: path=/var/log/Scribe/scribe.log state=touch owner=www-data group=www-data
+
+   - name: Install git
+     apt: pkg=git state=installed
+
+   - name: Setting apt-key
+     command: sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+     become: yes
+     become_user: vagrant
+
+   - name: Add source list
+     command: echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+     become: yes
+     become_user: vagrant
+
+   - name: updating apt-get packages
+     apt: 
+      update_cache: yes
+
+   - name: Install ruby mongoDB etc
+     apt: pkg={{ item }} state=installed
+     with_items:
+        - ruby
+        - mongodb
+        - mongodb-server
+        - mongodb-dev
+
+   - name: Start mongodb
+     command: sudo service mongodb restart
+     become: yes
+     become_user: vagrant
+
+   - name: Install RVM curl etc
+     apt: pkg={{ item }} state=installed
+     with_items:
+        - curl
+
+   - name: run RVM
+     command: bash -c "\curl -sSL https://get.rvm.io | bash"
+     become: yes
+     become_user: vagrant
+
+   - name: source RVM 
+     command: bash -c "source /home/vagrant/.rvm/scripts/rvm"
+     become: yes
+     become_user: vagrant
+
+   - name: RVM requirements
+     command: /home/vagrant/.rvm/scripts/rvm requirements
+     become: yes
+     become_user: vagrant
+
+   - name: RVM install 2.1.5
+     command: /home/vagrant/.rvm/scripts/rvm install 2.1.5
+     become: yes
+     become_user: vagrant
+
+   - name: RVM default
+     command: /home/vagrant/.rvm/scripts/rvm use 2.1.5 --default
+     become: yes
+     become_user: vagrant
+
+   - name: Install NodeJS
+     apt: pkg={{ item }} state=installed
+     with_items:
+        - nodejs
+        - npm
+
+   - name: NPM Config
+     command: bash -c "npm config set registry http://registry.npmjs.org/"
+     become: yes
+     become_user: vagrant
