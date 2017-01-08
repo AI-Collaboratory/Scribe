@@ -1,6 +1,5 @@
 ---
  - hosts: all
-   strategy: debug
 
    #become_user: vagrant
    #become: yes
@@ -79,7 +78,7 @@
         - mongodb-dev
 
    - name: Start mongodb
-     command: sudo service mongod restart
+     command: sudo service mongodb restart
      become: yes
      become_user: vagrant
 
