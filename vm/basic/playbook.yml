@@ -1,5 +1,6 @@
 ---
  - hosts: all
+   strategy: debug
 
    #become_user: vagrant
    #become: yes
@@ -10,7 +11,9 @@
    handlers:
 
    - name: restart iptables
-     service: name=iptables state=restarted
+     service: name=ufw state=restarted
+     become: yes
+     become_user: vagrant
 
    tasks: 
 
@@ -76,7 +79,7 @@
         - mongodb-dev
 
    - name: Start mongodb
-     command: sudo service mongodb restart
+     command: sudo service mongod restart
      become: yes
      become_user: vagrant
 

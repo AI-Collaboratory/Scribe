@@ -1,4 +1,4 @@
-g#----------------------------------------------------------------------------
+#----------------------------------------------------------------------------
 # Ignore these files when commiting to a git repository.
 #
 # See http://help.github.com/ignore-files/ for more about ignoring files.
@@ -17,15 +17,15 @@ public/background.jpg
 ._.DS_Store
 
 # bundler state
-scribeAPI/.bundle
-scribeAPI/vendor/bundle/
-scribeAPI/vendor/ruby/
+html/.bundle
+html/vendor/bundle/
+html/vendor/ruby/
 
 # minimal Rails specific artifacts
-scribeAPI/db/*.sqlite3
-scribeAPI/db/*.sqlite3-journal
-scribeAPI/log/*
-scribeAPI/tmp/*
+html/db/*.sqlite3
+html/db/*.sqlite3-journal
+html/log/*
+html/tmp/*
 
 # various artifacts
 **.war
@@ -34,25 +34,26 @@ scribeAPI/tmp/*
 .rspec
 .redcar/
 .sass-cache
-scribeAPI/config/config.yml
-scribeAPI/config/database.yml
-scribeAPI/coverage.data
-scribeAPI/coverage/
-scribeAPI/db/*.javadb/
-scribeAPI/db/*.sqlite3
-scribeAPI/doc/api/
-scribeAPI/doc/app/
-scribeAPI/doc/features.html
-scribeAPI/doc/specs.html
-scribeAPI/public/cache
-scribeAPI/public/stylesheets/compiled
-scribeAPI/public/system/*
-scribeAPI/spec/tmp/*
-scribeAPI/cache
-scribeAPI/capybara*
-scribeAPI/capybara-*.html
-scribeAPI/gems
-scribeAPI/specifications
+html/config/config.yml
+html/config/database.yml
+html/coverage.data
+html/coverage/
+html/db/*.javadb/
+html/db/*.sqlite3
+html/doc/api/
+html/doc/app/
+html/doc/features.html
+html/doc/specs.html
+html/public/cache
+html/public/stylesheets/compiled
+html/public/system/*
+html/spec/tmp/*
+html/cache
+html/capybara*
+html/capybara-*.html
+html/gems
+html/specifications
+html/build
 rerun.txt
 pickle-email-*.html
 .zeus.sock
@@ -68,7 +69,7 @@ pickle-email-*.html
 
 
 # Netbeans project directory
-scribeAPI/nbproject/
+html/nbproject/
 
 # RubyMine project files
 .idea

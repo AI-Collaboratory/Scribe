@@ -32,9 +32,9 @@ Vagrant.configure("2") do |config|
   end
 
   # Run our ansible modules
-  config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "playbook.yml"
-    ansible.sudo = true
-  end
+#  config.vm.provision "ansible" do |ansible|
+#    ansible.playbook = "playbook.yml"
+#    ansible.sudo = true
+#  end
 
 end
