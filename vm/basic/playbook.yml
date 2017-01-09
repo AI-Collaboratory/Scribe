@@ -10,7 +10,7 @@
    handlers:
 
    - name: restart iptables
-     service: name=ufw state=restarted
+     service: name=iptables state=restarted
      become: yes
      become_user: vagrant
 

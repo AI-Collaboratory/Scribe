@@ -12,3 +12,8 @@ gem install bundle # if you don't already have it
 bundle
 sudo npm install
 ```
+
+Inside the VM, it is possible that Nodejs' symbolic link is not correctly generated. In you have an error about Nodejs, make a symbolic link:
+```
+ln -s /usr/bin/nodejs /usr/bin/node
+```
