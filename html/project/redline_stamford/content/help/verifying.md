@@ -1,0 +1,1 @@
+**Verify** is to select the most appropriate option out of transcribed answers*. 
