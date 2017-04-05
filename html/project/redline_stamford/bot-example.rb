@@ -115,7 +115,7 @@ end
 #
 
 options = Hash[ ARGV.join(' ').scan(/--?([^=\s]+)(?:=(\S+))?/) ]
-options["scribe-endpoint"] = "http://192.168.33.10:3000/classifications" if ! options["scribe-endpoint"]
+options["scribe-endpoint"] = "http://ec2-52-70-66-131.compute-1.amazonaws.com:3000/classifications" if ! options["scribe-endpoint"]
 
 args = ARGV.select { |a| ! a.match /^-/ }
 
@@ -130,7 +130,7 @@ bot = ScribeBot.new options["scribe-endpoint"]
 
 require 'csv'
 
-paths = ['subjects/group_Bridgeport.csv']
+paths = ['subjects/group_Stamford.csv']
 
 paths.each do |path|
   CSV.foreach(path) do |row|
