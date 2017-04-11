@@ -1,0 +1,92 @@
+{
+  "name":"mark",
+  "label":"Mark Workflow",
+  "retire_limit": 2,
+  "generates_subjects": true,
+  "generates_subjects_for": "transcribe",
+  "subject_fetch_limit": "1200",
+  "first_task":"mark_primary",
+
+  "tasks": {
+    "mark_primary": {
+      "tool": "pickOneMarkOne",
+      "instruction": "",
+      "generates_subjects": true,
+      "help": {
+        "file": "mark_primary"
+      },
+      "tool_config" : {
+        "displays_transcribe_button": false,
+        "options": [
+          {"type": "rectangleTool", "label": "1. Name of City", "color": "red", "generates_subject_type": "rd_name_of_city"},
+          {"type": "rectangleTool", "label": "1. Security Grade", "color": "blue", "generates_subject_type": "rd_security_grade"},
+          {"type": "rectangleTool", "label": "1. Area No.", "color": "darkorange", "generates_subject_type": "rd_area_number"},
+          {"type": "rectangleTool", "label": "2. Description of Terrain", "color": "magenta", "generates_subject_type": "rd_desc_terrain"},
+          {"type": "rectangleTool", "label": "3. Favorable Influences", "color": "teal", "generates_subject_type": "rd_favor_influences"},
+          {"type": "rectangleTool", "label": "4. Detrimental Influences", "color": "sienna", "generates_subject_type": "rd_det_influences"},
+          {"type": "rectangleTool", "label": "5-a. Inhabitant Type", "color": "purple", "generates_subject_type": "rd_inhabit_type"},
+          {"type": "rectangleTool", "label": "5-b. Estimated Annual Family Income", "color": "Cornsilk", "generates_subject_type": "rd_inhabit_income"},
+          {"type": "rectangleTool", "label": "5-c. Foreign-born Nationality", "color": "DarkSalmon", "generates_subject_type": "rd_foreign_born"},
+          {"type": "rectangleTool", "label": "5-c. Foreign-born (%)", "color": "LightBlue", "generates_subject_type": "rd_foreign_born_percent"},
+          {"type": "rectangleTool", "label": "5-d. Negro Yes or No", "color": "Cyan", "generates_subject_type": "rd_negro_yes_no"},
+          {"type": "rectangleTool", "label": "5-d. Negro (%)", "color": "LightBlue", "generates_subject_type": "rd_negro"},
+          {"type": "rectangleTool", "label": "5-e. Infiltration of", "color": "MediumOrchid", "generates_subject_type": "rd_infiltration"},
+          {"type": "rectangleTool", "label": "5-f. Relief Families", "color": "MediumSeaGreen", "generates_subject_type": "rd_relief_families"},
+          {"type": "rectangleTool", "label": "5-g. Population is increasing", "color": "LightPink", "generates_subject_type": "rd_population_increase"},
+          {"type": "rectangleTool", "label": "5-g. decreasing", "color": "LightGrey", "generates_subject_type": "rd_decreasing"},
+          {"type": "rectangleTool", "label": "5-g. Static", "color": "darkorange", "generates_subject_type": "rd_population_static"},
+          {"type": "rectangleTool", "label": "6-a. Building Type", "color": "LightBlue", "generates_subject_type": "rd_bldg_type"},
+          {"type": "rectangleTool", "label": "6-b. Type of Construction", "color": "Tomato", "generates_subject_type": "rd_bldg_type_construction"},
+          {"type": "rectangleTool", "label": "6-c. Average Age", "color": "red", "generates_subject_type": "rd_bldg_avg_age"},
+          {"type": "rectangleTool", "label": "6-d. Repair", "color": "Violet", "generates_subject_type": "rd_bldg_repair"},
+          {"type": "rectangleTool", "label": "7. 1929 Level Sale Range", "color": "Wheat", "generates_subject_type": "rd_1929_sale_range"},
+          {"type": "rectangleTool", "label": "7. 1929 Level Sale Predominating", "color": "Yellow", "generates_subject_type": "rd_1929_sale_predom"},
+          {"type": "rectangleTool", "label": "7. 1929 Level Rental Range", "color": "Azure", "generates_subject_type": "rd_1929_rent_range"},
+          {"type": "rectangleTool", "label": "7. 1929 Level Rental Predominating", "color": "teal", "generates_subject_type": "rd_1929_rent_predom"},
+          {"type": "rectangleTool", "label": "7. Low Year", "color": "CadetBlue", "generates_subject_type": "rd_low_year"},
+          {"type": "rectangleTool", "label": "7. Low Sale Range", "color": "magenta", "generates_subject_type": "rd_low_sale_range"},
+          {"type": "rectangleTool", "label": "7. Low Sale Predominating", "color": "ChartReuse", "generates_subject_type": "rd_low_sale_predom"},
+          {"type": "rectangleTool", "label": "7. Low Sale Percent (%)", "color": "Chocolate", "generates_subject_type": "rd_low_sale_percent"},
+          {"type": "rectangleTool", "label": "7. Low Rental Range", "color": "Cornsilk", "generates_subject_type": "rd_low_rent_range"},
+          {"type": "rectangleTool", "label": "7. Low Rental Predominating", "color": "Coral", "generates_subject_type": "rd_low_rent_predom"},
+          {"type": "rectangleTool", "label": "7. Low Rental Percent (%)", "color": "Cyan", "generates_subject_type": "rd_low_rent_percent"},
+          {"type": "rectangleTool", "label": "7. Current Year", "color": "CadetBlue", "generates_subject_type": "rd_current_year"},
+          {"type": "rectangleTool", "label": "7. Current Sale Range", "color": "magenta", "generates_subject_type": "rd_current_sale_range"},
+          {"type": "rectangleTool", "label": "7. Current Sale Predominating", "color": "ChartReuse", "generates_subject_type": "rd_current_sale_predom"},
+          {"type": "rectangleTool", "label": "7. Current Sale Percent (%)", "color": "Chocolate", "generates_subject_type": "rd_current_sale_percent"},
+          {"type": "rectangleTool", "label": "7. Current Rental Range", "color": "Cornsilk", "generates_subject_type": "rd_current_rent_range"},
+          {"type": "rectangleTool", "label": "7. Current Rental Predominating", "color": "Coral", "generates_subject_type": "rd_current_rent_predom"},
+          {"type": "rectangleTool", "label": "7. Current Rental Percent (%)", "color": "Cyan", "generates_subject_type": "rd_current_rent_percent"},
+          {"type": "rectangleTool", "label": "7. Peak Sale Value Occured In", "color": "darkblue", "generates_subject_type": "rd_peak_sale_occured"},
+          {"type": "rectangleTool", "label": "7. Peak Sale Value Percent (%)", "color": "brown", "generates_subject_type": "rd_peak_sale_percent"},
+          {"type": "rectangleTool", "label": "7. Peak Rental Value Occured In", "color": "sienna", "generates_subject_type": "rd_peak_rent_occured"},
+          {"type": "rectangleTool", "label": "7. Peak Rental Value Percent (%)", "color": "LightGrey", "generates_subject_type": "rd_peak_rent_percent"},
+          {"type": "rectangleTool", "label": "8-a. Land Occupancy (%)", "color": "green", "generates_subject_type": "rd_land_occupancy"},
+          {"type": "rectangleTool", "label": "8-b. Dwelling Unit Occupancy (%)", "color": "blue", "generates_subject_type": "rd_dwell_occupancy"},
+          {"type": "rectangleTool", "label": "8-c. Home Owner Occupancy (%)", "color": "MediumOrchid", "generates_subject_type": "rd_owner_occupancy"},
+          {"type": "rectangleTool", "label": "9-a. Sales Demand", "color": "Violet", "generates_subject_type": "rd_sales_demand"},
+          {"type": "rectangleTool", "label": "9-b.", "color": "Cyan", "generates_subject_type": "rd_sales_demand_b"},
+          {"type": "rectangleTool", "label": "9-c. Activity is", "color": "Cornsilk", "generates_subject_type": "rd_sales_demand_activity"},
+          {"type": "rectangleTool", "label": "10-a. Rental Demand", "color": "MediumSeaGreen", "generates_subject_type": "rd_rental_demand"},
+          {"type": "rectangleTool", "label": "10-b.", "color": "Wheat", "generates_subject_type": "rd_rental_demand_b"},
+          {"type": "rectangleTool", "label": "10-c. Activity is", "color": "orange", "generates_subject_type": "rd_rental_demand_activity"},
+          {"type": "rectangleTool", "label": "11-a. New Construction Type", "color": "CadetBlue", "generates_subject_type": "rd_new_const_type"},
+          {"type": "rectangleTool", "label": "11-b. New Construction Amount Last Year", "color": "sienna", "generates_subject_type": "rd_new_const_amount"},
+          {"type": "rectangleTool", "label": "12-a. Mortgage Availability in Home Purchase", "color": "Yellow", "generates_subject_type": "rd_mort_avail_purchase"},
+          {"type": "rectangleTool", "label": "12-b. Mortgage Availability in Home Building", "color": "LightPink", "generates_subject_type": "rd_mort_avail_build"},
+          {"type": "rectangleTool", "label": "13. Trend of Desirability Next 10-15 Years", "color": "teal", "generates_subject_type": "rd_trend_of_desire"},
+          {"type": "rectangleTool", "label": "14. Clarifying Remarks", "color": "red", "generates_subject_type": "rd_remarks"},
+          {"type": "rectangleTool", "label": "15. Information for This Form was Obtained from", "color": "Azure", "generates_subject_type": "rd_obtained_from"},
+          {"type": "rectangleTool", "label": "Date", "color": "black", "generates_subject_type": "rd_date"}          
+        ]
+      },
+      "next_task": null
+    },
+
+    "completion_assessment_task": {
+      "tool_config": {
+        "displays_transcribe_button": false
+      }
+    }
+  }
+}
