@@ -3,6 +3,9 @@ require 'open-uri'
 require 'json'
 require 'cgi'
 
+base_url = "http://ec2-54-162-126-13.compute-1.amazonaws.com"
+city_name = "Decatur"
+
 # Useful extension to Hash to create query strings:
 class Hash
   def to_params
@@ -115,7 +118,7 @@ end
 #
 
 options = Hash[ ARGV.join(' ').scan(/--?([^=\s]+)(?:=(\S+))?/) ]
-options["scribe-endpoint"] = "http://ec2-54-162-126-13.compute-1.amazonaws.com:3000/classifications" if ! options["scribe-endpoint"]
+options["scribe-endpoint"] = base_url + ":3000/classifications" if ! options["scribe-endpoint"]
 
 args = ARGV.select { |a| ! a.match /^-/ }
 
@@ -130,7 +133,7 @@ bot = ScribeBot.new options["scribe-endpoint"]
 
 require 'csv'
 
-paths = ['subjects/group_Decatur.csv']
+paths = ['subjects/group_' + city_name + '.csv']
 
 paths.each do |path|
   CSV.foreach(path) do |row|

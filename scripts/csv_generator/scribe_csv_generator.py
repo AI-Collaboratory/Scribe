@@ -7,6 +7,7 @@ import collections
 
 rootdir = '/Users/myeong/git/DCIC_text/BlueText'
 out_csv = r"/Users/myeong/git/DCIC_text/csv/"
+path = "http://ec2-54-162-126-13.compute-1.amazonaws.com"
 
 def get_image_size(fname):
     '''Determine the image type of fhandle and return its size.
@@ -71,10 +72,10 @@ for subdir, dirs, files in os.walk(rootdir):
             current_dir = directory
             i=1
             city = current_dir.split(sep='_')[0]
-            group_lines.append([city, city + " Redlining Documents", city + " Redlining Documents from " + current_dir, "http://128.8.164.178:3000/dcic_docs/" + os.path.join(directory, file), "http://128.8.164.178:3000", 2])            
+            group_lines.append([city, city + " Redlining Documents", city + " Redlining Documents from " + current_dir, path + ":3000/dcic_docs/" + os.path.join(directory, file), path + ":3000", 2])            
 
         width, height = get_image_size(os.path.join(subdir, file))
-        lines.append([i, city, "http://128.8.164.178:3000/dcic_docs/" + os.path.join(directory, file), "http://128.8.164.178:3000/dcic_docs/" + directory + "/thumb/" + file, str(width), str(height)])            
+        lines.append([i-1, city, path + ":3000/dcic_docs/" + os.path.join(directory, file), path + ":3000/dcic_docs/" + directory + "/thumb/" + file, str(width), str(height)])            
         i += 1
 
         if city == 'Warren':
