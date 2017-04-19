@@ -1,0 +1,41 @@
+{
+    "name": "Tutorial",
+    "first_task": "welcome",
+    "tasks": {
+        "welcome": {
+            "next_task": "marking",
+            "help": {
+                "title": "Welcome to Mapping Inequality!",
+                "file": "welcome"
+            }
+        },
+        "marking": {
+            "next_task": "transcribing",
+            "help": {
+                "title": "How to mark pages",
+                "file": "marking"
+            }
+        },
+        "transcribing": {
+            "next_task": "verifying",
+            "help": {
+                "title": "How to just transcribe",
+                "file": "transcribing"
+            }
+        },
+        "verifying": {
+            "next_task": "start_exploring",
+            "help": {
+                "title": "How to just verifying",
+                "file": "verifying"
+            }
+        },
+        "start_exploring": {
+            "next_task": null,
+            "help": {
+                "title": "You're ready to start exploring!",
+                "file": "start_exploring"
+            }
+        }
+    }
+}

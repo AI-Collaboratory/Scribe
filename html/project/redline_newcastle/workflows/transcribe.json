@@ -1,0 +1,505 @@
+{
+  "name": "transcribe",
+  "label": "Transcribe Workflow",  
+  "generates_subjects": true,
+  "generates_subjects_for": "verify",
+  "generates_subjects_after": 2,
+  "subject_fetch_limit": "1200",
+  "generates_subjects_max": 10,
+  "generates_subjects_method": "collect-unique",
+
+  "tasks": {
+
+    "rd_name_of_city": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the name of the city",
+      "examples": ["Altoona, Pa."],      
+      "generates_subject_type": "rd_trans_city_name",
+      "next_task": null,
+      "export_name": "City Name"
+    },
+
+    "rd_security_grade": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the Security Grade",
+      "examples": ["A"],
+      "generates_subject_type": "rd_trans_security_grade",
+      "next_task": null,
+      "export_name": "Security Grade"
+    },
+
+    "rd_area_number": {
+      "tool": "numberTool",
+      "instruction": "Enter the area number",
+      "examples": ["1"],
+      "generates_subject_type": "rd_trans_area_number",
+      "next_task": null,
+      "export_name": "Area Number"
+    },
+
+    "rd_desc_terrain": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the Description of Terrain",
+      "examples": ["Level"],
+      "generates_subject_type": "rd_trans_desc_terrain",
+      "next_task": null,
+      "export_name": "Description Terrain"
+    },
+
+    "rd_favor_influences": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the Favorable Influences",
+      "examples": ["The most desirable section of Altoona in point of location, class of people,..."],
+      "generates_subject_type": "rd_trans_favor_influences",
+      "next_task": null,
+      "export_name": "Favor of Influences"
+    },
+
+    "rd_det_influences": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the Detremental Influences",
+      "examples": ["None except heavy traffic on Union Ave."],
+      "generates_subject_type": "rd_trans_det_influences",
+      "next_task": null
+    },
+
+    "rd_inhabit_type": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the type of inhabitants",
+      "examples": ["Executive & Professional Men"],
+      "generates_subject_type": "rd_trans_inhabit_type",
+      "next_task": null
+    },
+
+    "rd_inhabit_income": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the Estimated Annual Family Income.",
+      "examples": ["$4500 & up"],
+      "generates_subject_type": "rd_trans_inhabit_income",
+      "next_task": null
+    },
+
+    "rd_foreign_born": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the Nationality.",
+      "examples": ["Citizen", "Alien", "None"],
+      "generates_subject_type": "rd_trans_foreign_born",
+      "next_task": null
+    },
+
+    "rd_foreign_born_percent": {
+      "tool": "numberTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage of the foreign borns (%).",
+      "examples": ["10"],
+      "generates_subject_type": "rd_trans_foreign_born_percent",
+      "next_task": null
+    },
+
+    "rd_negro_yes_no": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter if the family is Negro",
+      "examples": ["Yes", "No"],
+      "generates_subject_type": "rd_trans_negro_yes_no",
+      "next_task": null
+    },
+
+    "rd_negro": {
+      "tool": "numberTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage of negro",
+      "examples": ["Yes", "No"],
+      "generates_subject_type": "rd_trans_negro",
+      "next_task": null
+    },
+
+    "rd_infiltration": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the Infiltration if any",
+      "examples": ["Desirables"],
+      "generates_subject_type": "rd_trans_infiltration",
+      "next_task": null
+    },
+    "rd_relief_families": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter if there were any relief families",
+      "examples": ["Yes", "None"],
+      "generates_subject_type": "rd_trans_relief_families",
+      "next_task": null
+    },
+    "rd_population_increase": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter how the population is increasing",
+      "examples": ["slowly", "gradually", "fast"],
+      "generates_subject_type": "rd_trans_population_increase",
+      "next_task": null
+    },    
+    "rd_decreasing": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter if its decreasing",
+      "examples": ["slowly"],
+      "generates_subject_type": "rd_trans_decreasing",
+      "next_task": null
+    },
+    "rd_population_static": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter if it is static.",
+      "examples": ["yes","no"],
+      "generates_subject_type": "rd_trans_population_static",
+      "next_task": null
+    },
+
+    "rd_bldg_type": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the type of building.",
+      "examples": ["singles", "doubles"],
+      "generates_subject_type": "rd_trans_bldg_type",
+      "next_task": null
+    },
+    "rd_bldg_avg_age": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the age of building.",
+      "examples": ["1-11 yrs"],
+      "generates_subject_type": "rd_bldg_avg_age",
+      "next_task": null
+    },
+    "rd_bldg_repair": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter if the building needs repair or is in excellent condition.",
+      "examples": ["Excellent", "good", "fair"],
+      "generates_subject_type": "rd_trans_bldg_repair",
+      "next_task": null
+    },
+    "rd_1929_sale_range": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the sale range for 1929.",
+      "examples": ["$12,500-22,000"],
+      "generates_subject_type": "rd_trans_1929_sale_range",
+      "next_task": null
+    },
+    "rd_1929_sale_predom": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the predominating value for 1929.",
+      "examples": ["$19000"],
+      "generates_subject_type": "rd_trans_1929_sale_predom",
+      "next_task": null
+    },
+    "rd_1929_rent_range": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the rent range for 1929.",
+      "examples": ["$5-100", "none"],
+      "generates_subject_type": "rd_trans_1929_rent_range",
+      "next_task": null
+    },
+    "rd_1929_rent_predom": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the rent prelim value for 1929.",
+      "examples": ["$80"],
+      "generates_subject_type": "rd_trans_1929_rent_predom",
+      "next_task": null
+    },
+    "rd_low_year": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the year when the sale and rental values were low",
+      "examples": ["1923-34"],
+      "generates_subject_type": "rd_trans_low_year",
+      "next_task": null
+    },
+    "rd_low_sale_range": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the lowest sale range.",
+      "examples": ["$8000-15000"],
+      "generates_subject_type": "rd_trans_low_sale_range",
+      "next_task": null
+    },
+    "rd_low_sale_predom": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the predom value for low sale values.",
+      "examples": ["$14000"],
+      "generates_subject_type": "rd_trans_low_sale_predom",
+      "next_task": null
+    },
+    "rd_low_sale_percent": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage.",
+      "examples": ["20%"],
+      "generates_subject_type": "rd_trans_low_sale_percent",
+      "next_task": null
+    },
+    "rd_low_rent_range": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the range for lowest rent values.",
+      "examples": ["$65-100"],
+      "generates_subject_type": "rd_trans_low_rent_range",
+      "next_task": null
+    },
+    "rd_low_rent_percent": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage.",
+      "examples": ["60%"],
+      "generates_subject_type": "rd_trans_low_rent_percent",
+      "next_task": null
+    },
+    
+    "rd_low_rent_predom": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the prelim value for the lowest rent values.",
+      "examples": ["20-100"],
+      "generates_subject_type": "rd_trans_low_rent_predom",
+      "next_task": null
+    },
+    "rd_current_year": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the year when the sale and rental values for current year",
+      "examples": ["sept,1937"],
+      "generates_subject_type": "rd_current_year",
+      "next_task": null
+    },
+    "rd_current_sale_range": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the current sale range.",
+      "examples": ["$8000-15000"],
+      "generates_subject_type": "rd_trans_current_sale_range",
+      "next_task": null
+    },
+    "rd_current_sale_predom": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the predom value for current sale values.",
+      "examples": ["$14000"],
+      "generates_subject_type": "rd_trans_current_sale_predom",
+      "next_task": null
+    },
+    "rd_current_sale_percent": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage.",
+      "examples": ["20%"],
+      "generates_subject_type": "rd_trans_current_sale_percent",
+      "next_task": null
+    },
+    "rd_current_rent_range": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the range for current rent values.",
+      "examples": ["$65-100"],
+      "generates_subject_type": "rd_trans_current_rent_range",
+      "next_task": null
+    },
+    "rd_current_rent_percent": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage.",
+      "examples": ["65%"],
+      "generates_subject_type": "rd_trans_current_rent_percent",
+      "next_task": null
+    },
+    "rd_current_rent_predom": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the predom value for the current rent values.",
+      "examples": ["$1100"],
+      "generates_subject_type": "rd_trans_current_rent_predom",
+      "next_task": null
+    },
+    "rd_peak_sale_occured": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the year when the peak sale occurred.",
+      "examples": ["1930"],
+      "generates_subject_type": "rd_trans_peak_sale_occured",
+      "next_task": null
+    },
+    "rd_peak_sale_percent": {
+      "tool": "numberTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage when the peak sale occurred.",
+      "examples": ["100"],
+      "generates_subject_type": "rd_trans_peak_sale_percent",
+      "next_task": null
+    },
+    "rd_peak_rent_occured": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the year when the peak rent occurred.",
+      "examples": ["1930"],
+      "generates_subject_type": "rd_trans_peak_rent_occured",
+      "next_task": null
+    },
+    "rd_peak_rent_percent": {
+      "tool": "numberTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage when the peak rent occurred.",
+      "examples": ["100"],
+      "generates_subject_type": "rd_trans_peak_rent_percent",
+      "next_task": null
+    },
+    "rd_land_occupancy": {
+      "tool": "numberTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage of land occupancy.",
+      "examples": ["90"],
+      "generates_subject_type": "rd_trans_land_occupancy",
+      "next_task": null
+    },
+    "rd_dwell_occupancy": {
+      "tool": "numberTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage of dwell occupancy.",
+      "examples": ["100"],
+      "generates_subject_type": "rd_trans_dwell_occupancy",
+      "next_task": null
+    },
+    "rd_owner_occupancy": {
+      "tool": "numberTool",
+      "tool_config": {},
+      "instruction": "Enter the percentage of owner occupancy.",
+      "examples": ["90"],
+      "generates_subject_type": "rd_trans_owner_occupancy",
+      "next_task": null
+    },
+    "rd_sales_demand": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter how the sales demand is.",
+      "examples": ["poor", "good"],
+      "generates_subject_type": "rd_trans_sales_demand",
+      "next_task": null
+    },
+    "rd_sales_demand_b": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter how the sales demand is.",
+      "examples": ["1-sty $6000 singles"],
+      "generates_subject_type": "rd_trans_sales_demand_b",
+      "next_task": null
+    },
+    "rd_sales_demand_activity": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter how the sales demand activity is.",
+      "examples": ["Fair"],
+      "generates_subject_type": "rd_trans_sales_demand_activity",
+      "next_task": null
+    },
+    "rd_rental_demand": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter how the rental demand is.",
+      "examples": ["poor", "good"],
+      "generates_subject_type": "rd_trans_rental_demand",
+      "next_task": null
+    },
+    "rd_rental_demand_b": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter how the rental demand is.",
+      "examples": ["1-sty $6000 singles"],
+      "generates_subject_type": "rd_trans_rental_demand_b",
+      "next_task": null
+    },
+    "rd_rental_demand_activity": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter how the rental demand activity is.",
+      "examples": ["poor, Good"],
+      "generates_subject_type": "rd_trans_rental_demand_activity",
+      "next_task": null
+    },
+    "rd_new_const_type": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the new construction type.",
+      "examples": ["singles", "doubles", "none"],
+      "generates_subject_type": "rd_trans_new_const_type",
+      "next_task": null
+    },
+    "rd_new_const_amount": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the amount for new construction.",
+      "examples": ["$1000"],
+      "generates_subject_type": "rd_trans_new_const_amount",
+      "next_task": null
+    },
+    "rd_mort_avail_purchase": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the availability of mortgage funds for home purchase.",
+      "examples": ["Ample"],
+      "generates_subject_type": "rd_trans_mort_avail_purchase",
+      "next_task": null
+    },
+    "rd_mort_avail_build": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the availability of mortgage funds for home building.",
+      "examples": ["Ample"],
+      "generates_subject_type": "rd_trans_mort_avail_build",
+      "next_task": null
+    },
+    "rd_trend_of_desire": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the trend of desirability in next 10-15 years.",
+      "examples": ["Stable"],
+      "generates_subject_type": "rd_trans_trend_of_desire",
+      "next_task": null
+    },
+    "rd_remarks": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the clarifying remarks.",
+      "examples": ["Only two sales in past five years have been made in this section."],
+      "generates_subject_type": "rd_trans_remarks",
+      "next_task": null
+    },
+    "rd_obtained_from": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the information for this form was obtained from.",
+      "examples": ["Chas, Movey-Property Management Broker NOLC, Paul H. Farls Local Realtor and Correspondent Prudential Inc. Go."],
+      "generates_subject_type": "rd_trans_obtained_from",
+      "next_task": null
+    },
+    "rd_date": {
+      "tool": "textTool",
+      "tool_config": {},
+      "instruction": "Enter the date.",
+      "examples": ["7-17-37"],
+      "generates_subject_type": "rd_trans_date",
+      "next_task": null
+    }
+    
+  }
+}

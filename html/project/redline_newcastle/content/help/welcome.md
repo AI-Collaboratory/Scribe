@@ -1,0 +1,1 @@
+In this project, you’ll be working together with other volunteers to extract HOLC survey data from 1930's redlining projects. You can choose to **Mark** and/or **Transcribe** key information that you find.
