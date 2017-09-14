@@ -3,7 +3,7 @@ require 'open-uri'
 require 'json'
 require 'cgi'
 
-base_url = "http://ec2-54-162-126-13.compute-1.amazonaws.com"
+base_url = "http://52.73.7.60"
 city_name = "Decatur"
 
 # Useful extension to Hash to create query strings:
