@@ -3,6 +3,17 @@ In order to start with Scribe...
 Myeong Lee (iSchool, UMD)
 -------
 
+## Tools/Technology that Are Needed to Work on this Platform.
+- Github
+- Ubuntu Trusty (14.04)
+- Vagrant (for local environment setup)
+- Ansible (for local environment setup)
+- Ruby on Rails
+- React.js (if you want to make changes in the interfaces)
+- MongoDB
+- AWS EC2 (for the real server)
+
+
 ## General Approach (Details for each step are in separate files)
 1. Create a project in your local PC (inside the Scribe's project folder)
 2. Create files that are requires for the target city.

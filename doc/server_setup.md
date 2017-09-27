@@ -11,4 +11,4 @@ Myeong Lee
 sudo cp -R [folder_name] /var/www/html/projects
 ```
 5. Go to the Scribe folder (/var/www/html/)
-6. Load the project
+6. Load the project by running the rake command.
