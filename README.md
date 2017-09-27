@@ -4,6 +4,8 @@
 
 This repository is for (1) a Scribe platform modified and adjusted for Redlining documents from 1920's and 30's; and (2) code snippets that support generating configuration files and installing the development environment.
 
-If you have any questions about the platform or repository, or the Redlining project, contact us at:
+If you have any questions on the Redlining project, contact us at:
 - email: dcic.ischool@umd.edu
 - website: http://dcic.umd.edu
+
+For the Scribe platform for the Mapping Inequality project in particular, contact Myeong Lee (UMD iSchool) at myeong@umd.edu.
