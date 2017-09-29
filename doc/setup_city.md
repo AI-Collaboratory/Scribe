@@ -41,7 +41,7 @@ python scribe_csv_generator.py
 This will generate CSV files after reading all the image files in the target folder. Particularly, the outcomes include `group_[city_name].csv` files and one `group.csv` file. 
 
 ## 6. Copy the CSV files to the Project Folder
-Since you're targetting only one city, copy `group_[city_name].csv` to the `subjects` folder inside the project folder. For example, if you're targetting Pittsburgh, you copy `group_Pittsburgh.csv` to `/html/project/pittsburgh/subjects/`. Of course, you need to delete other csv files, if any.
+Since you're targetting only one city, copy `group_[city_name].csv` to the `subjects` folder inside the project folder. For example, if you're targetting Pittsburgh, you copy `group_Pittsburgh.csv` to `/html/project/pittsburgh/subjects/`. Of course, you need to delete other csv files, if any. In the `group_[city_name].csv` file, delete the line with order 0, since it usually points to the cover page of documents (if not, don't delete it. You need to check it).
 
 `group.csv` file contains all the city data that were in the image folder. You need to delete all the cities other than the target city. In the Pittsburgh case, you just leave the following lines and delete all others.
 ```
@@ -51,3 +51,90 @@ Pittsburgh,Pittsburgh Redlining Documents,Pittsburgh Redlining Documents from Pi
 Then, copy this file to the same folder: `/html/project/pittsburgh/subjects/`
 
 ## 7. Copy Document Images to the Server
+Since there's no images on the server, you need to copy them over by typing the following commands:
+```
+scp -i [pem file path] -rp [document_folder_path] ubuntu@[EC2_URL]:/home/ubuntu/
+```
+
+For the Pittsburgh case, it looks like this:
+```
+scp -i [pem file path] -rp Pittsburgh_Box94 ubuntu@[EC2_URL]:/home/ubuntu/
+```
+
+Then, the entire folder that has all the images for the city is uploaded to the server.
+
+## 8. Copy the Document Folder to the Document Root's Folder
+You just copied the documents to your home directory. Actually, they need to be inside the 'html' folder for your production server. Copy them to `/var/www/html/public/dcic_docs/`. This 'public' folder is for creating static HTML pages. We're using this folder for storing images. 
+```
+sudo cp -R Pittsburgh_Box94 /var/www/html/public/dcic_docs/
+```
+
+## 9. Upload Project Files using Github
+You have project configuration files changed on your local repo. Push them to the Git repo, and pull them on the server in the home directory.
+
+## 10. Copy the New Project Folder to the Production Folder
+Since you downloaded new files in your home directory, copy the new project folder (e.g., pittsburgh) to the Document Root's folder. For example:
+
+```
+sudo cp -R html/project/pittsburgh/ /var/www/html/project/
+```
+
+## 11. Need to Restart MongoDB
+Since Scribe remembers a previous URL, you need to restart the MongoDB service.
+
+```
+sudo rm /var/lib/mongodb/mongod.lock
+sudo service mongodb restart
+```
+
+## 12. Let's Test Weather the Interface Works
+
+#### Go to the Document Root
+``` 
+cd /var/www/html/
+```
+
+#### Register environmental variables
+```
+source .env
+```
+
+#### Load the project
+```
+rake project:load[folder_name_of_the_project]
+```
+
+#### Run the Ruby on Rails server
+```
+rails s
+```
+
+#### Go to the website whether it works 
+```http://[EC2_URL]:3000```
+
+Remember -- it is running on port 3000.
+For now, "transcribe" and "verify" doesn't work since you don't have mark information. You need to check by going to 
+```http://[EC2_URL]:3000/#/mark```
+
+If a target city's document shows up, it is successful so far. If successful, come back to the command line, and turn off the server by hitting `ctrl + c`.
+
+
+## 13. Facebook Key Setup
+Since Scribe uses Facebook for authentication, you need to register your Facebook app's key for the admin interfaces. As of September 2017, Myeong's FB key is registered for admin. It is possible to change the user privilege later in the MongoDB's user table. 
+
+Go to your FB for Developers page, and go to your App page. In the "settings->basic" menu, you need to change the website that you're using for the app. Since you don't have a domain name for Scribe, you can type in the EC2 instance's IP address.
+
+Also, in the "settings->advanced" menu, you need to add the EC2 IP address to the "Server IP Whitelist" field, and save it.
+
+Lastly, go to "Facebook Login->Settings", and add OAuth redirect URLs by typing:
+```
+http://[EC2_IP]/users/auth/facebook/callback
+```
+And save it.
+
+## 14. Creating Marks
+We're automatically generating Masks so peopel don't have to mark every field for each document. In order to do this, you need two command line windows. Open another terminal and SSH to the server. 
+
+In one terminal, run the app by typing `rails s`. Then, open the browser and go to the Mark page: ```http://[EC2_URL]:3000/#/mark```
+
+In another terminal, 

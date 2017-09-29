@@ -1,5 +1,4 @@
 order,set_key,file_path,thumbnail,width,height
-0,Pittsburgh,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/Pittsburgh_AD_001.jpg,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/thumb/Pittsburgh_AD_001.jpg,900,1492
 1,Pittsburgh,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/Pittsburgh_AD_002.jpg,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/thumb/Pittsburgh_AD_002.jpg,900,1487
 2,Pittsburgh,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/Pittsburgh_AD_003.jpg,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/thumb/Pittsburgh_AD_003.jpg,900,1487
 3,Pittsburgh,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/Pittsburgh_AD_004.jpg,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000/dcic_docs/Pittsburgh_Box94/thumb/Pittsburgh_AD_004.jpg,900,1487
