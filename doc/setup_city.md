@@ -128,13 +128,127 @@ Also, in the "settings->advanced" menu, you need to add the EC2 IP address to th
 
 Lastly, go to "Facebook Login->Settings", and add OAuth redirect URLs by typing:
 ```
-http://[EC2_IP]/users/auth/facebook/callback
+http://[EC2_IP]:3000/users/auth/facebook/callback
 ```
 And save it.
 
-## 14. Creating Marks
+## 14. Create Marks
 We're automatically generating Masks so peopel don't have to mark every field for each document. In order to do this, you need two command line windows. Open another terminal and SSH to the server. 
 
-In one terminal, run the app by typing `rails s`. Then, open the browser and go to the Mark page: ```http://[EC2_URL]:3000/#/mark```
+In one terminal, run the app by typing `rails s`. Then, open the browser and go to the Mark page: ```http://[EC2_URL]:3000/#/mark```.
+In this page, mark each field carefully. Select a marking title from the right bar, and draw a square that covers the corresponding area as big as possible. If you make a mistake while drawing squares, you need to drop the project (so to delete the DB) and start over, because everything goes to the DB. 
 
-In another terminal, 
+After finishing the marking of one page, click "Done". Click "No" for "Is there anything left to mark?", then click "Next Page". In the next page, don't mark anything. Just close the browser. 
+
+In the other terminal (while the original terminal is running the server), go to the Document Root, `/var/www/html`, and enter to the Rails command line.
+```
+rails c
+```
+
+Check how many marks are there.
+```
+Project.current.workflows.find_by(name: 'mark').classifications.count
+```
+
+It should be same to the number of marking fields. If you made mistakes, there will be more than that. In that case, you need to drop the project and start over. If you need to drop the project, go back to the original terminal, stop the server (`ctrl + c`), and type:
+```
+rake project:drop[folder_name_of_the_project]
+```
+
+Then, load the project again by typing `rake project:load[folder_name_of_the_project]`, and start over the marking.
+
+## 15. Save the Marking Data
+If markings are all successful, in the Rails terminal, type the following in the correct order:
+```
+sudo touch project/[target_project_folder]/marks.csv
+
+sudo chmod 777 project/[target_project_folder]/marks.csv
+
+marks = Project.current.workflows.find_by(name: 'mark').classifications.select { |c| ! c.annotation['x'].nil? }
+
+marks = marks.map	 { |c| [c.annotation['x'], c.annotation['y'], c.annotation['width'], c.annotation['height'], c.annotation['subToolIndex'], c.annotation['_key'], c.task_key] }
+
+File.open('project/[target_project_folder]/marks.csv', 'w') { |file| file.write( marks.map { |c| c.join(',') }.join("\n") ) }
+```
+Then, exit from the Rails terminal by hitting `exit`.
+If you check the project folder, you can see `marks.csv` has all Marks data in there.
+
+## 16. Create a Bot
+There is a Bot user that can generate multiple marks. Create a bot user by typing:
+```
+rake bot:create[MarkBot]
+```
+
+Once you do that, it shows a "HTTP_BOT_AUTH" key. Copy it and update `SCRIBE_BOT_TOKEN` in the `.env` file. Then, apply it again by typing:
+```
+source .env
+```
+
+## 17. Drop the Project and Load it Again
+The first page shouldn't be marked twice by the bot (it was marked already once for generating the marks), so stop the server, drop the project, and load it again to clean up the DB. 
+Then, run the server.
+```
+rake project:drop[folder_name_of_the_project]
+
+rake project:load[folder_name_of_the_project]
+
+rails s
+```
+
+## 18. Modify the "bot-example.rb" file inside the Project folder, and Run It
+If you go to the project folder, there is `bot-example.rb`.
+Use an editor such as `vi` to edit the server URL and the CSV file name in the code. The server URL is on line 118, and the CSV file name is on line 133. Save it, and run it.
+```
+ruby bot-example.rb
+```
+
+Then, it will start creating marks for every document. It takes some time (depending on the number of documents), so grab some coffee.
+
+## 19. Test the Transcribe Interface
+Go to the Transcribe page on your browser: 
+- http://[EC2_URL]:3000/#/transcribe
+
+If it starts letting you transcribe, it is successful. 
+Turn off the server in the terminal.
+
+## 20. Run the Server Permenantly
+By using `screen` command, you can run it continuously after closing the terminal app. Also, you need to run the server in the production mode so to minimize the number of debugging outputs.
+```
+screen rails server -e production
+```
+Once it's running, close the terminal app. The website is still running. 
+
+## 21. Check the Admin Page
+You can check the status of the transcribing/verifying at:
+- http://[EC2_URL]:3000/admin
+
+Of course, your username need to be an admin account. Once you log into the admin page, you can see the progress, and users' contributions. 
+
+If you are not an admin, go to the terminal and get into the Rails terminal.
+```
+rails c
+
+# Once a user logged in, the name and email that were used on Facebook are available in the MongoDB.
+User.find_by(email: "[user_email_to_be_admin]")
+
+# If this user is available, change the role to "admin"
+User.find_by(email: "[user_email_to_be_admin]").update(role: "admin")
+```
+
+Then, the target user can see the admin page after logging into the website.
+
+## 22. Turning Off the Scribe Platform
+If something goes wrong or transcription/verification work is done, you need to turn it off after exporting the data. First, you need to find the PID for the Ruby on Rails instance. In the command line of the EC2 server,
+```
+lsof -wni tcp:3000
+```
+This shows PIDs that run on the port 3000. Kill the process.
+```
+kill -9 [PID]
+```
+
+
+
+
+
+
