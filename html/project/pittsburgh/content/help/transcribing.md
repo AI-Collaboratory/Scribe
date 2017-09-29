@@ -1,0 +1,1 @@
+**Transcribe** allows you to type in the information that you and your virtual colleagues have marked. You can do this after each mark (click the icon on the lower right corner of a box), or once the page is completely marked. 
