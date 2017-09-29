@@ -1,6 +1,6 @@
 Setting Up the Scribe Platform for a City's Documents
 =========
-Myeong
+Myeong Lee (iSchool, UMD)
 ------------
 
 The process to set up the Scribe platform for a city is not straightforward, and requires improvements in the pipeline. This document provides step-by-step process for setting up a city in the Mapping Inequality project. 
