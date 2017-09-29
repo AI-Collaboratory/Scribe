@@ -1,4 +1,4 @@
-Setting Up the Platform for a City's Documents
+Setting Up the Scribe Platform for a City's Documents
 =========
 Myeong
 ------------
