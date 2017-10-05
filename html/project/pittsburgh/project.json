@@ -1,0 +1,36 @@
+{
+  "title": "Mapping Inequality",
+  "short_title": "Redlining",
+  "summary": "Archiving The Inequalities of American Cities",
+  "logo": "images/logo.png",
+  "background": "images/background_cropped.jpg",
+  "admin_email": "deeper.myeong.lee@gmail.com",
+  "team_emails": [
+    "deeper.myeong.lee@gmail.com"
+  ],
+
+  "analytics": {
+    "google_tag_manager_client_id": "GTM-WDW6V4"
+  },
+  
+  "feedback_form_url": "https://docs.google.com/forms/d/12FTryz5oTuzJE-UtbuMYCH5M77lLo-H74wiN35ORc8U/viewform",
+  "terms_map": {
+    "group": "ship",
+    "subject set": "page",
+    "subject": "page"
+  },
+
+  "export_specs": [
+    {
+      "name": "Redlining",
+      "spec_fields": [
+        {"name": "City Name", "repeats": false},
+        {"name": "Security Grade", "repeats": false},
+        {"name": "Area Number", "format": "numeric", "repeats": false},
+        {"name": "Description Terrain", "repeats": false},
+        {"name": "Favor of Influences", "repeats": false}        
+      ]
+    }
+  ]
+
+}
