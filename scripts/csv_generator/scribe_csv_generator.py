@@ -6,8 +6,9 @@ import csv
 import collections
 
 rootdir = '/Users/myeong/git/DCIC_text/BlueText'
-out_csv = r"/Users/myeong/git/DCIC_text/csv/"
+out_csv = r"csv/"
 path = "http://ec2-54-162-126-13.compute-1.amazonaws.com"
+target_city = "Pittsburgh"
 
 def get_image_size(fname):
     '''Determine the image type of fhandle and return its size.
@@ -61,6 +62,7 @@ for subdir, dirs, files in os.walk(rootdir):
 
         if current_dir != directory:
             if current_dir != '':
+                print(out_csv + "group_" + current_dir.split(sep='_')[0] + ".csv")
                 with open(out_csv + "group_" + current_dir.split(sep='_')[0] + ".csv", 'w') as f:        
                     w = csv.writer(f)
                     w.writerow(["order","set_key","file_path","thumbnail","width","height"])
