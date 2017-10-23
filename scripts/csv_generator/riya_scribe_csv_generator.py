@@ -5,10 +5,10 @@ import string
 import csv
 import collections
 
-rootdir = '/Users/myeong/git/DCIC_text/BlueText'
-out_csv = r"/Users/myeong/git/DCIC_text/csv/"
+rootdir = 'C:/Users/riyac/Documents/BlueText_resized'
+out_csv = r"C:/Users/riyac/Documents/csv/"
 path = "http://ec2-54-162-126-13.compute-1.amazonaws.com"
-
+input_city="Pittsburgh"
 def get_image_size(fname):
     '''Determine the image type of fhandle and return its size.
     from draco'''
@@ -48,8 +48,21 @@ i = 1
 current_dir = ''
 lines = []
 group_lines = []
+check_city= []
 
 for subdir, dirs, files in os.walk(rootdir):
+ 
+    city_name=subdir.split(sep='/')[-1].split(sep='\\')
+    if(len(city_name)>1):
+        check_city=subdir.split(sep='/')[-1].split(sep='\\')[1].split(sep="_")[0]
+    #print(check_city)
+    if check_city != input_city:
+        continue
+    if input_city not in subdir:
+        continue
+    #print(subdir)
+    lines=[]
+    i=0
     for file in files:     
         if "jpg" not in file:
             continue
@@ -57,34 +70,38 @@ for subdir, dirs, files in os.walk(rootdir):
         if "thumb" in subdir: 
             continue
 
-        directory = subdir.split('/')[-1]
-
-        if current_dir != directory:
-            if current_dir != '':
-                with open(out_csv + "group_" + current_dir.split(sep='_')[0] + ".csv", 'w') as f:        
+        directory = subdir.split('\\')[-1]
+       
+        if "001" in file.split("AD_")[1]:
+            continue
+		
+        width, height = get_image_size(os.path.join(subdir, file))
+        lines.append([i+1, input_city, path + ":3000/dic_docs/" + os.path.join(directory, file), path + ":3000/dcic_docs/" + directory + "/thumb/" + file, str(width), str(height)])            
+        i += 1
+        #if current_dir != directory:
+            #if current_dir != '':
+        with open(out_csv + "group_" + input_city + ".csv", 'w') as f:  						
                     w = csv.writer(f)
                     w.writerow(["order","set_key","file_path","thumbnail","width","height"])
 
                     for line in lines:
                         w.writerow(line)
 
-            lines = []
-            current_dir = directory
-            i=1
-            city = current_dir.split(sep='_')[0]
-            group_lines.append([city, city + " Redlining Documents", city + " Redlining Documents from " + current_dir, path + ":3000/dcic_docs/" + os.path.join(directory, file), path + ":3000", 2])            
+    if 'thumb' in subdir:
+        continue
+    city = input_city
+            #print(city)
+    group_lines.append([city, city + " Redlining Documents", city + " Redlining Documents from " + current_dir, path + ":3000/dcic_docs/" + os.path.join(directory, file), path + ":3000", 2])            
+    #print(group_lines)
+        
 
-        width, height = get_image_size(os.path.join(subdir, file))
-        lines.append([i-1, city, path + ":3000/dcic_docs/" + os.path.join(directory, file), path + ":3000/dcic_docs/" + directory + "/thumb/" + file, str(width), str(height)])            
-        i += 1
+        #if city == 'Warren':
+            #with open(out_csv + "group_" + current_dir.split(sep='\\')[1].split(sep="_")[0] + ".csv", 'w') as f:        
+                #w = csv.writer(f)
+                #w.writerow(["order","set_key","file_path","thumbnail","width","height"])
 
-        if city == 'Warren':
-            with open(out_csv + "group_" + current_dir.split(sep='_')[0] + ".csv", 'w') as f:        
-                w = csv.writer(f)
-                w.writerow(["order","set_key","file_path","thumbnail","width","height"])
-
-                for line in lines:
-                    w.writerow(line)
+                #for line in lines:
+                    #w.writerow(line)
 
 
 with open(out_csv + "groups.csv", 'w') as f:        
