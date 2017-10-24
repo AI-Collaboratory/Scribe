@@ -7,8 +7,8 @@ import collections
 
 rootdir = '/Users/myeong/git/DCIC_text/BlueText'
 out_csv = r"csv/"
-path = "http://ec2-54-162-126-13.compute-1.amazonaws.com"
-target_city = "Pittsburgh"
+path = "http://ec2-52-90-171-43.compute-1.amazonaws.com"
+target_city = "St_Petersburg"
 
 def get_image_size(fname):
     '''Determine the image type of fhandle and return its size.
