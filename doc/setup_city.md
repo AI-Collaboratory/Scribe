@@ -174,9 +174,14 @@ Then, exit from the Rails terminal by hitting `exit`.
 If you check the project folder, you can see `marks.csv` has all Marks data in there.
 
 ## 16. Create a Bot
-There is a Bot user that can generate multiple marks. Create a bot user by typing:
+There is a Bot user that can generate multiple marks. Create or Reset a bot user by typing:
 ```
 rake bot:create[MarkBot]
+```
+
+If MarkBot already exists, reset the user by typing:
+```
+rake bot:reset[MarkBot]
 ```
 
 Once you do that, it shows a "HTTP_BOT_AUTH" key. Copy it and update `SCRIBE_BOT_TOKEN` in the `.env` file. Then, apply it again by typing:
