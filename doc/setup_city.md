@@ -158,12 +158,14 @@ rake project:drop[folder_name_of_the_project]
 Then, load the project again by typing `rake project:load[folder_name_of_the_project]`, and start over the marking.
 
 ## 15. Save the Marking Data
-If markings are all successful, in the Rails terminal, type the following in the correct order:
+Create the "marc.csv" file in the project folder, and change the permission of the file.
 ```
 sudo touch project/[target_project_folder]/marks.csv
-
 sudo chmod 777 project/[target_project_folder]/marks.csv
+```
 
+Then, in the Rails terminal (`rails c`), type the following in the correct order:
+```
 marks = Project.current.workflows.find_by(name: 'mark').classifications.select { |c| ! c.annotation['x'].nil? }
 
 marks = marks.map	 { |c| [c.annotation['x'], c.annotation['y'], c.annotation['width'], c.annotation['height'], c.annotation['subToolIndex'], c.annotation['_key'], c.task_key] }
