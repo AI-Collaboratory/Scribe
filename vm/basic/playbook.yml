@@ -37,10 +37,6 @@
      become: yes
      become_user: vagrant
 
-   - name: copy firewall template
-     copy: src=templates/etc/sysconfig/iptables dest=/sbin/iptables owner=root group=root mode=0600
-     notify: restart iptables
-
    - name: gettext
      apt: pkg={{ item }} state=installed
      with_items:
