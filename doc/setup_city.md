@@ -30,8 +30,10 @@ Inside the "project" folder, you need to create a project folder for the target 
 ## 3. Prepare Document Files and Thumbnail Images in the JPG format
 You need to download scanned documents from the UMD Box and convert them to JPG files (if needed). Also, you need to create another folder called "thumb" inside the folder, and copy the image files after resizing them to thumbnails.
 
-## 4. Turn On the EC2 Server
-Log in to the AWS console, and turn the EC2 machine on (I assume that there's already an instance that has everything set up). After using them, you need to turn it off to prevent unnecessary charges. Once it's up, copy the server URL (whenever you turn it on, the URL changes).
+## 4. Turn On the EC2 Server (or another server that you run the Scribe)
+
+- IF you're using AWS: Log in to the AWS console, and turn the EC2 machine on (I assume that there's already an instance that has everything set up). After using them, you need to turn it off to prevent unnecessary charges. Once it's up, copy the server URL (whenever you turn it on, the URL changes).
+- If you're using Vagrant: just `vagrant up` in the `vm/basic` folder in your command line.
 
 ## 5. Generate Group Configuration Files using "scripts/scribe_csv_generator.py"
 Before running the script, modify the "path" variable to the current EC2 URL. Also, if you have a specific folder that you have all the BlueText images, you need to change the paths. Then, run:
