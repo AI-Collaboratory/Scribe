@@ -90,3 +90,8 @@ node_modules
 
 #dump
 dump
+
+html/Gemfile.lock
+html/public/dcic_docs/*
+!html/public/dcic_docs/Mobile_AD
+

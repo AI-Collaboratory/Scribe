@@ -5,10 +5,10 @@ import string
 import csv
 import collections
 
-rootdir = '/Users/myeong/git/DCIC_text/BlueText'
+rootdir = '../../html/public/dcic_docs/'
 out_csv = r"csv/"
-path = "http://ec2-52-90-171-43.compute-1.amazonaws.com"
-target_city = "St_Petersburg"
+path = "http://192.168.33.40"
+target_city = "Augusta"
 
 def get_image_size(fname):
     '''Determine the image type of fhandle and return its size.

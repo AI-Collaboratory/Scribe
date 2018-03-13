@@ -26,9 +26,11 @@ For now, only one type of document formats is supported in the repository (as of
 
 ## 2. Create a Project Folder 
 Inside the "project" folder, you need to create a project folder for the target city. For example, if you are setting documents for Pittsburgh, you can make a folder named "pittsburgh". This folder name is important for loading the project in the last step. The easist way to do this is to copy another project's folder and rename it. 
+Note that this folder needs to contain configuration files, not the image files. 
 
 ## 3. Prepare Document Files and Thumbnail Images in the JPG format
 You need to download scanned documents from the UMD Box and convert them to JPG files (if needed). Also, you need to create another folder called "thumb" inside the folder, and copy the image files after resizing them to thumbnails.
+The location of the image folder needs to be in `public/dcic_docs`.
 
 ## 4. Turn On the EC2 Server (or another server that you run the Scribe)
 
@@ -38,7 +40,7 @@ You need to download scanned documents from the UMD Box and convert them to JPG 
 ## 5. Generate Group Configuration Files using "scripts/scribe_csv_generator.py"
 Before running the script, modify the "path" variable to the current EC2 URL. Also, if you have a specific folder that you have all the BlueText images, you need to change the paths. Then, run:
 ```
-python scribe_csv_generator.py
+python generate_city_csv.py
 ```
 This will generate CSV files after reading all the image files in the target folder. Particularly, the outcomes include `group_[city_name].csv` files and one `group.csv` file. 
 
@@ -104,6 +106,18 @@ source .env
 #### Load the project
 ```
 rake project:load[folder_name_of_the_project]
+```
+
+#### If you face an error in executing the rake command...
+There could be something wrong in NodeJS or other package installation.
+You need to re-install everything manually commands at [here](https://github.com/zooniverse/scribeAPI/wiki/Setup-Unix)
+
+Also, you can re-install NodeJS by running the following commands:
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n 4.4.5
+sudo npm install npm -g
 ```
 
 #### Run the Ruby on Rails server
