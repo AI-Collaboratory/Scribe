@@ -3,8 +3,8 @@ require 'open-uri'
 require 'json'
 require 'cgi'
 
-city = "St_Petersburg"
-url = "ec2-52-90-171-43.compute-1.amazonaws.com"
+city = "Augusta"
+url = "128.8.164.178"
 
 # Useful extension to Hash to create query strings:
 class Hash
