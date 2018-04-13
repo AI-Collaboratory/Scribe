@@ -160,6 +160,14 @@
       "generates_subject_type": "consensus_building_type"
       
     }, 
+    "rd_trans_construction_type": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_construction_type"
+    }, 
     "rd_trans_bldg_avg_age": {
       "instruction": "Choose the best transcription or enter your own!",
       "tool": "verifyTool",
