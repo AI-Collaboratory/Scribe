@@ -40,12 +40,17 @@ For example, if you have downloaded "Pittsburgh" image files, put the entire ima
 - IF you're using AWS: Log in to the AWS console, and turn the EC2 machine on (I assume that there's already an instance that has everything set up). After using them, you need to turn it off to prevent unnecessary charges. Once it's up, copy the server URL (whenever you turn it on, the URL changes).
 - If you're using Vagrant: just `vagrant up` in the `vm/basic` folder in your command line.
 
-## 6. Generate Group Configuration Files using "scripts/scribe_csv_generator.py"
-Before running the script, modify the "path" variable to the current EC2 URL. Also, if you have a specific folder that you have all the BlueText images, you need to change the paths. Then, run:
+## 6. Generate Group Configuration Files using `scripts/csv_generator/generate_city_csv.py`
+It doesn't matter which machine you run this, because this is just independet Python scripts. In other words, you can run this Python command inside the Linux machine or in your OS directly. But you need to make sure that you're in the `scripts/csv_generator/` folder on the command line.
+
+Before running the script, you first need to open the `scribe_csv_generator.py` file in an editor, and modify the "path" and "target_city" variables to the current EC2 URL or Vagrant URL. 
+* `path` is a base URL that the Scribe is running. Vagrant machine's URL/IP can be found at `vm/basic/Vagrantfile`. It is the IP address for the "private_networks" variable.
+* `target_city` is a plain city name such as "Pittsburgh".
+Also, if your image files are NOT in `html/public/dcic_docs/`, you need to change the path that has the target image files. Then, run:
 ```
 python generate_city_csv.py
 ```
-This will generate CSV files after reading all the image files in the target folder. Particularly, the outcomes include `group_[city_name].csv` files and one `group.csv` file. 
+This will generate CSV files after reading all the image files in the target folder. Particularly, the outcomes include `group_[city_name].csv` file(s) and one `group.csv` file. 
 
 ## 7. Copy the CSV files to the Project Folder
 Since you're targetting only one city, copy `group_[city_name].csv` to the `subjects` folder inside the project folder. For example, if you're targetting Pittsburgh, you copy `group_Pittsburgh.csv` to `/html/project/pittsburgh/subjects/`. Of course, you need to delete other csv files, if any. In the `group_[city_name].csv` file, delete the line with order 0, since it usually points to the cover page of documents (if not, don't delete it. You need to check it).
