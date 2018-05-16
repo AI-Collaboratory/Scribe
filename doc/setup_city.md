@@ -68,13 +68,23 @@ Then, copy this file to the same folder: `/html/project/pittsburgh/subjects/`
 
 Overall, you copy `group_[city_name].csv` and `groups.csv` to the `subjects` folder. 
 
-## 8. Copy Document Images to the Server
+## 8. Copy Document Images to the Server 
+
+#### IF you're configuring a Vagrant machine:
+You can skip this step and also step 9, 10, 11, and 12. Just jump to Step 13. 
+
+#### IF you're configuring an actual server such as EC2 or VirtualFarm, follow this:
 Since there's no images on the server, you need to copy them over by typing the following commands:
 ```
 scp -i [pem file path] -rp [document_folder_path] ubuntu@[EC2_URL]:/home/ubuntu/
 ```
+If you're uploading images to VirtualFarm (assuming you have the credentials), the command will look like this:
 
-For the Pittsburgh case, it looks like this:
+```
+scp -rp [document_folder_path] [your user_name]@[virtualFarm_IP_address]:[path_of_the_image_files]
+```
+
+For the Pittsburgh case, it looks like this (EC2 case):
 ```
 scp -i [pem file path] -rp Pittsburgh_Box94 ubuntu@[EC2_URL]:/home/ubuntu/
 ```
@@ -97,7 +107,7 @@ Since you downloaded new files in your home directory, copy the new project fold
 sudo cp -R html/project/pittsburgh/ /var/www/html/project/
 ```
 
-## 12. Need to Restart MongoDB
+## 12. Need to Restart MongoDB (Only for EC2)
 Since Scribe remembers a previous URL, you need to restart the MongoDB service.
 
 ```
