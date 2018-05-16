@@ -53,14 +53,20 @@ python generate_city_csv.py
 This will generate CSV files after reading all the image files in the target folder. Particularly, the outcomes include `group_[city_name].csv` file(s) and one `group.csv` file. 
 
 ## 7. Copy the CSV files to the Project Folder
-Since you're targetting only one city, copy `group_[city_name].csv` to the `subjects` folder inside the project folder. For example, if you're targetting Pittsburgh, you copy `group_Pittsburgh.csv` to `/html/project/pittsburgh/subjects/`. Of course, you need to delete other csv files, if any. In the `group_[city_name].csv` file, delete the line with order 0, since it usually points to the cover page of documents (if not, don't delete it. You need to check it).
+Since you're targetting only one city, copy `group_[city_name].csv` to the `subjects` folder inside the project folder. For example, if you're targetting Pittsburgh, you copy `group_Pittsburgh.csv` to `/html/project/pittsburgh/subjects/`. 
 
-`group.csv` file contains all the city data that were in the image folder. You need to delete all the cities other than the target city. In the Pittsburgh case, you just leave the following lines and delete all others.
+In the `group_[city_name].csv` file, delete the line with an image name with 001 such as '...AD_001.jpg', since it usually points to the cover page of documents (if not, don't delete it. You need to check it).
+
+`groups.csv` file contains all the city data that were in the image folder. 
+If you see more than one city in the file, you need to delete all the cities other than the target city. 
+In the Pittsburgh case, you just leave the following lines and delete all others.
 ```
 key,name,description,cover_image_url,external_url,retire_count
 Pittsburgh,Pittsburgh Redlining Documents,Pittsburgh Redlining Documents from Pittsburgh_Box94,http://[EC2_URL]:3000/dcic_docs/Pittsburgh_Box94/Pittsburgh_AD_001.jpg,http://ec2-52-90-254-241.compute-1.amazonaws.com:3000,2
 ```
 Then, copy this file to the same folder: `/html/project/pittsburgh/subjects/`
+
+Overall, you copy `group_[city_name].csv` and `groups.csv` to the `subjects` folder. 
 
 ## 8. Copy Document Images to the Server
 Since there's no images on the server, you need to copy them over by typing the following commands:
