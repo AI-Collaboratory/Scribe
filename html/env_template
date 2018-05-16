@@ -1,0 +1,7 @@
+export DEVISE_SECRET_TOKEN=xxx
+export SECRET_KEY_BASE_TOKEN=xxx
+
+export SCRIBE_BOT_TOKEN=xxx
+
+export FACEBOOK_ID=xxx
+export FACEBOOK_SECRET=xxx

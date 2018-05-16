@@ -127,9 +127,19 @@ cd /var/www/html/
 source .env
 ```
 
+If you don't have `.env`, you can copy `env_template` to `.env` and set the keys inside the file using a text editor. 
+
 #### Load the project
 ```
 rake project:load[folder_name_of_the_project]
+```
+
+If you're using in the Vagrnat machine, or you have re-booted the machine, it is possible that Ruby Gems are gone. 
+In that case, you need to re-install Gems using bundle by typing following commands (inside the `html` folder):
+```
+gem install bundle
+bundle
+npm install
 ```
 
 #### If you face an error in executing the rake command...
