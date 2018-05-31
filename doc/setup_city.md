@@ -43,7 +43,7 @@ For example, if you have downloaded "Pittsburgh" image files, put the entire ima
 ## 6. Generate Group Configuration Files using `scripts/csv_generator/generate_city_csv.py`
 It doesn't matter which machine you run this, because this is just independet Python scripts. In other words, you can run this Python command inside the Linux machine or in your OS directly. But you need to make sure that you're in the `scripts/csv_generator/` folder on the command line.
 
-Before running the script, you first need to open the `scribe_csv_generator.py` file in an editor, and modify the "path" and "target_city" variables to the current EC2 URL or Vagrant URL. 
+Before running the script, you first need to open the `generate_city_csv.py` file in an editor, and modify the "path" and "target_city" variables to the current EC2 URL or Vagrant URL. 
 * `path` is a base URL that the Scribe is running. Vagrant machine's URL/IP can be found at `vm/basic/Vagrantfile`. It is the IP address for the "private_networks" variable.
 * `target_city` is a plain city name such as "Pittsburgh".
 Also, if your image files are NOT in `html/public/dcic_docs/`, you need to change the path that has the target image files. Then, run:
@@ -254,7 +254,7 @@ rails s
 
 ## 19. Modify the "bot-example.rb" file inside the Project folder, and Run It
 If you go to the project folder, there is `bot-example.rb`.
-Use an editor such as `vi` to edit the server URL and the CSV file name in the code. The server URL is on line 118, and the CSV file name is on line 133. Save it, and run it.
+Use an editor such as `vi` to edit the server URL (IP address) and the city name in the code. These two parameters are at the top of the file. Save it, and run it.
 ```
 ruby bot-example.rb
 ```
@@ -268,7 +268,7 @@ Go to the Transcribe page on your browser:
 If it starts letting you transcribe, it is successful. 
 Turn off the server in the terminal.
 
-## 21. Run the Server Permenantly
+## 21. Run the Server Permenantly (Only for the real server)
 By using `screen` command, you can run it continuously after closing the terminal app. Also, you need to run the server in the production mode so to minimize the number of debugging outputs.
 ```
 screen rails server -e production
@@ -279,7 +279,7 @@ Once it's running, close the terminal app. The website is still running.
 You can check the status of the transcribing/verifying at:
 - http://[EC2_URL]:3000/admin
 
-Of course, your username need to be an admin account. Once you log into the admin page, you can see the progress, and users' contributions. 
+Of course, your username need to be an admin account. Once you log into the admin page, you can see the progress and users' contributions. 
 
 If you are not an admin, go to the terminal and get into the Rails terminal.
 ```
