@@ -115,7 +115,7 @@ sudo rm /var/lib/mongodb/mongod.lock
 sudo service mongodb restart
 ```
 
-## 13. Let's Test Weather the Interface Works
+## 13. Let's Test whether the Interface Works
 
 #### Go to the Document Root
 ``` 
