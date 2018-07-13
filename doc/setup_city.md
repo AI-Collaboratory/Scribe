@@ -152,7 +152,23 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n 4.4.5
 sudo npm install npm -g
+npm config set registry http://registry.npmjs.org/
 ```
+
+### After installing npm, if you see any errors such as 
+```
+...
+SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
+...
+```
+Then, try to remove the npm symbolic link and type
+```
+sudo rm /usr/local/bin/npm 
+npm config set registry http://registry.npmjs.org/
+```
+
+When you do `npm install` again, it shouldn't present errors. Then, all set.
+
 
 #### Run the Ruby on Rails server
 ```
