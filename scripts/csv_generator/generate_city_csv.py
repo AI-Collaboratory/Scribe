@@ -8,7 +8,7 @@ import collections
 rootdir = '../../html/public/dcic_docs/'
 out_csv = r"csv/"
 path = "http://128.8.164.178"
-target_city = "Augusta"
+target_city = "Trenton"
 
 def get_image_size(fname):
     '''Determine the image type of fhandle and return its size.

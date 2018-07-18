@@ -1,0 +1,548 @@
+{
+  "name": "verify",
+  "label": "Verify Workflow",
+  "generates_subjects": true,
+  "generates_subjects_method": "most-popular",
+  "generates_subjects_after": 2,
+  "generates_subjects_max": 10,
+  "generates_subjects_agreement": 0.5,
+  "subjects_classifiable_by_creator": true,
+
+  "tasks": {
+
+    "rd_trans_city_name": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },      
+      "generates_subject_type": "consensus_city_name"
+    },
+
+    "rd_trans_security_grade": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },      
+      "generates_subject_type": "consensus_security_grade"
+    },
+ 
+    "rd_trans_area_number": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },    
+      "generates_subject_type": "consensus_area_number"
+    },
+
+    "rd_trans_desc_terrain": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_desc_terrain"      
+    },
+    "rd_trans_favor_influences": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_favor_influences"      
+    },
+
+    "rd_trans_det_influences": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_det_influences"      
+    },
+
+    "rd_trans_inhabit_type": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_inhabit_type"      
+    },
+
+    "rd_trans_inhabit_income": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_inhabit_income"
+      
+    },
+
+    "rd_trans_foreign_born": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_foreign_born"
+      
+    },
+    "rd_trans_foreign_born_percent": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_foreign_born_percent"   
+    },
+
+    "rd_trans_negro_yes_no": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_negro_yes_no"
+    },
+
+    "rd_trans_negro": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_negro"
+      
+    },
+    "rd_trans_infiltration": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_infiltration"
+    },
+    "rd_trans_relief_families": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_relief_families"
+    },
+    "rd_trans_decreasing": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_decreasing"
+      
+    },
+    "rd_trans_population_static": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_population_static"
+    },
+    "rd_trans_bldg_type": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_building_type"
+      
+    }, 
+    "rd_trans_construction_type": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_construction_type"
+    }, 
+    "rd_trans_bldg_avg_age": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_bldg_avg_age"
+      
+    },
+        "rd_trans_population_increase": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_population_increase"
+      
+    },
+    "rd_trans_bldg_repair": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_bldg_repair"
+      
+    },
+    "rd_trans_1929_sale_range": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_1929_sale_range"
+      
+    },
+    "rd_trans_1929_sale_predom": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_1929_sale_predom"
+      
+    },
+    "rd_trans_1929_rent_range": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_1929_rent_range"
+      
+    },
+    "rd_trans_1929_rent_predom": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_1929_rent_predom"
+      
+    },
+    "rd_trans_low_year": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_low_year"
+      
+    },
+    "rd_trans_low_sale_range": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_low_sale_range"
+      
+    },
+    "rd_trans_low_sale_predom": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_low_sale_predom"
+    },
+    "rd_trans_low_sale_percent": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_low_sale_percent"
+      
+    },
+    "rd_trans_low_rent_range": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_low_rent_range"
+      
+    },
+    "rd_trans_low_rent_percent": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_low_rent_percent"
+      
+    },
+    
+    "rd_trans_low_rent_predom": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_low_rent_predom"
+      
+    },
+    "rd_trans_current_year": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_current_year"
+      
+    },
+    "rd_trans_current_sale_range": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_current_sale_range"
+      
+    },
+    "rd_trans_current_sale_predom": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_current_sale_predom"
+      
+    },
+    "rd_trans_current_sale_percent": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_current_sale_percent"
+      
+    },
+    "rd_trans_current_rent_range": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_current_rent_range"
+      
+    },
+    "rd_trans_current_rent_percent": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_current_rent_percent"
+      
+    },
+    "rd_trans_current_rent_predom": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_current_rent_predom"
+      
+    },
+    "rd_trans_peak_sale_occured": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_peak_sale_occured"
+      
+    },
+    "rd_trans_peak_sale_percent": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_peak_sale_percent"
+      
+    },
+    "rd_trans_peak_rent_occured": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_peak_rent_occured"
+      
+    },
+    "rd_trans_peak_rent_percent": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_peak_rent_percent"
+      
+    },
+    "rd_trans_land_occupancy": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_land_occupancy"
+      
+    },
+    "rd_trans_dwell_occupancy": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_dwell_occupancy"
+      
+    },
+    "rd_trans_owner_occupancy": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_owner_occupancy"
+      
+    },
+    "rd_trans_sales_demand": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_sales_demand"
+      
+    },
+    "rd_trans_sales_demand_b": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_sales_demand_b"
+      
+    },
+    "rd_trans_sales_demand_activity": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_sales_demand_activity"
+      
+    },
+    "rd_trans_rental_demand": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_rental_demand"
+      
+    },
+    "rd_trans_rental_demand_b": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_rental_demand_b"
+      
+    },
+    "rd_trans_rental_demand_activity": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_rental_demand_activity"
+      
+    },
+    "rd_trans_new_const_type": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_new_const_type"
+      
+    },
+    "rd_trans_new_const_amount": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_new_const_amount"
+      
+    },
+    "rd_trans_mort_avail_purchase": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_mort_avail_purchase"
+      
+    },
+    "rd_trans_mort_avail_build": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_mort_avail_build"
+      
+    },
+    "rd_trans_trend_of_desire": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_trend_of_desire"
+      
+    },
+    "rd_trans_remarks": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_remarks"
+      
+    },
+    "rd_trans_obtained_from": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_obtained_from"
+    },
+    "rd_trans_date": {
+      "instruction": "Choose the best transcription or enter your own!",
+      "tool": "verifyTool",
+      "tool_config": {
+        "displays_transcribe_button": false
+      },
+      "generates_subject_type": "consensus_date"
+    }
+  }
+}

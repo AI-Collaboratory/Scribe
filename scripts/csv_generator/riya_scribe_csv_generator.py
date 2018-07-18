@@ -8,7 +8,7 @@ import collections
 rootdir = 'C:/Users/riyac/Documents/BlueText_resized'
 out_csv = r"C:/Users/riyac/Documents/csv/"
 path = "http://ec2-54-162-126-13.compute-1.amazonaws.com"
-input_city="Pittsburgh"
+input_city="Trenton"
 def get_image_size(fname):
     '''Determine the image type of fhandle and return its size.
     from draco'''
