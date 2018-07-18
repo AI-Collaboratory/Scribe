@@ -7,7 +7,7 @@ import collections
 
 rootdir = '../../html/public/dcic_docs/'
 out_csv = r"csv/"
-path = "http://35.237.227.222"
+path = "http://128.8.164.178"
 target_city = "Trenton"
 
 def get_image_size(fname):
