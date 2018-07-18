@@ -4,7 +4,7 @@ require 'json'
 require 'cgi'
 
 city = "Trenton"
-url = "35.237.227.222"
+url = "128.8.164.178"
 
 # Useful extension to Hash to create query strings:
 class Hash
