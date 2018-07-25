@@ -31,7 +31,6 @@ mongo --shell
 ```
 show databases;
 ```
-
 This command shows all the database names in the system. Normally, the DB name for the Scribe is `scribe_api_development`.
 
 3. Select the DB that you want to export

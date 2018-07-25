@@ -29,6 +29,8 @@ rake project:build_and_export_final_data
 ```
 Once the JSON file is exported, download it to your local PC using the `scp` command. 
 
+If this `rake` command doesn't work or you face errors, see [this document](https://github.com/UMD-DCIC/Scribe/blob/master/doc/export_data.md).
+
 
 ## Original Scribe Manual (Developer's)
 [https://github.com/zooniverse/scribeAPI/wiki](https://github.com/zooniverse/scribeAPI/wiki)
