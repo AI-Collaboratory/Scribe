@@ -320,6 +320,9 @@ This shows PIDs that run on the port 3000. Kill the process.
 kill -9 [PID]
 ```
 
+## Post-Transcription Steps
+Once the transcriptions are done for a city, you need to dump and export the data and then tear down the city from the server. These steps will be documented in a separate document. 
+
 
 
 
