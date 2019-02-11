@@ -112,7 +112,7 @@ Since Scribe remembers a previous URL, you need to restart the MongoDB service.
 
 ```
 sudo rm /var/lib/mongodb/mongod.lock
-sudo service mongodb restart
+sudo service mongod restart
 ```
 
 ## 13. Let's Test whether the Interface Works
