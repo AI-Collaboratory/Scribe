@@ -1,0 +1,2425 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json scribe@ No description
+5 warn package.json scribe@ No repository field.
+6 warn package.json scribe@ No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/var/www/html',
+8 verbose install   [ 'browserify',
+8 verbose install     'browserify-incremental',
+8 verbose install     'coffee-reactify',
+8 verbose install     'coffee-script',
+8 verbose install     'json-api-client',
+8 verbose install     'marked',
+8 verbose install     'normalize-styl',
+8 verbose install     'normalize.css',
+8 verbose install     'react',
+8 verbose install     'react-router',
+8 verbose install     'coffee-react-transform',
+8 verbose install     'jest-cli' ] ]
+9 info preinstall scribe@
+10 warn package.json json-api-client@0.2.11 No repository field.
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping marked@^0.3.5 /var/www/html
+13 verbose already installed skipping normalize-styl@^3.0.3 /var/www/html
+14 verbose already installed skipping normalize.css@^3.0.3 /var/www/html
+15 verbose already installed skipping react@^0.13.3 /var/www/html
+16 verbose already installed skipping react-router@^0.13.3 /var/www/html
+17 verbose already installed skipping coffee-react-transform@^3.2.0 /var/www/html
+18 verbose cache add [ 'jest-cli@^0.4.0', null ]
+19 verbose cache add name=undefined spec="jest-cli@^0.4.0" args=["jest-cli@^0.4.0",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'jest-cli@^0.4.0',
+20 verbose parsed url   path: 'jest-cli@^0.4.0',
+20 verbose parsed url   href: 'jest-cli@^0.4.0' }
+21 verbose cache add name="jest-cli" spec="^0.4.0" args=["jest-cli","^0.4.0"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '^0.4.0',
+22 verbose parsed url   path: '^0.4.0',
+22 verbose parsed url   href: '^0.4.0' }
+23 verbose addNamed [ 'jest-cli', '^0.4.0' ]
+24 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+25 silly lockFile b79beb29-jest-cli-0-4-0 jest-cli@^0.4.0
+26 verbose lock jest-cli@^0.4.0 /home/vagrant/.npm/b79beb29-jest-cli-0-4-0.lock
+27 verbose already installed skipping browserify@^11.0.0 /var/www/html
+28 silly addNameRange { name: 'jest-cli', range: '>=0.4.0-0 <0.5.0-0', hasData: false }
+29 verbose already installed skipping browserify-incremental@^3.0.1 /var/www/html
+30 verbose already installed skipping coffee-reactify@^4.0.0 /var/www/html
+31 verbose already installed skipping coffee-script@^1.9.3 /var/www/html
+32 verbose already installed skipping json-api-client@^0.2.3 /var/www/html
+33 verbose url raw jest-cli
+34 verbose url resolving [ 'http://registry.npmjs.org/', './jest-cli' ]
+35 verbose url resolved http://registry.npmjs.org/jest-cli
+36 info trying registry request attempt 1 at 21:31:06
+37 verbose etag "5aa522f4-64784"
+38 http GET http://registry.npmjs.org/jest-cli
+39 http 200 http://registry.npmjs.org/jest-cli
+40 silly registry.get cb [ 200,
+40 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:06 GMT',
+40 silly registry.get     'content-type': 'application/json',
+40 silly registry.get     'content-length': '585696',
+40 silly registry.get     connection: 'keep-alive',
+40 silly registry.get     'set-cookie': [ '__cfduid=d23c47352374f53849475fa9addd50cf71550957466; expires=Sun, 23-Feb-20 21:31:06 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+40 silly registry.get     'cf-cache-status': 'HIT',
+40 silly registry.get     'cache-control': 'max-age=300',
+40 silly registry.get     'cf-ray': '4adccc237be599f8-EWR',
+40 silly registry.get     'accept-ranges': 'bytes',
+40 silly registry.get     etag: '"2b907d4674ff173812b4023273d2b92e"',
+40 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+40 silly registry.get     'last-modified': 'Tue, 05 Feb 2019 15:07:13 GMT',
+40 silly registry.get     vary: 'accept-encoding, accept',
+40 silly registry.get     'x-amz-meta-rev': '494-d43d19ca518c969d9adca1cea3f24bef',
+40 silly registry.get     server: 'cloudflare' } ]
+41 silly addNameRange number 2 { name: 'jest-cli', range: '>=0.4.0-0 <0.5.0-0', hasData: true }
+42 silly addNameRange versions [ 'jest-cli',
+42 silly addNameRange   [ '0.0.2-pre',
+42 silly addNameRange     '0.0.3-pre',
+42 silly addNameRange     '0.0.4-pre',
+42 silly addNameRange     '0.0.5-pre',
+42 silly addNameRange     '0.0.6-pre',
+42 silly addNameRange     '0.0.7-pre',
+42 silly addNameRange     '0.0.8-pre',
+42 silly addNameRange     '0.0.9-pre',
+42 silly addNameRange     '0.0.10-pre',
+42 silly addNameRange     '0.1.0',
+42 silly addNameRange     '0.1.1',
+42 silly addNameRange     '0.1.2',
+42 silly addNameRange     '0.1.3',
+42 silly addNameRange     '0.1.4',
+42 silly addNameRange     '0.1.5',
+42 silly addNameRange     '0.1.6',
+42 silly addNameRange     '0.1.7',
+42 silly addNameRange     '0.1.8',
+42 silly addNameRange     '0.1.9',
+42 silly addNameRange     '0.1.10',
+42 silly addNameRange     '0.1.11',
+42 silly addNameRange     '0.1.12',
+42 silly addNameRange     '0.1.13',
+42 silly addNameRange     '0.1.14',
+42 silly addNameRange     '0.1.15',
+42 silly addNameRange     '0.1.16',
+42 silly addNameRange     '0.1.17',
+42 silly addNameRange     '0.1.18',
+42 silly addNameRange     '0.2.0',
+42 silly addNameRange     '0.2.1',
+42 silly addNameRange     '0.2.2',
+42 silly addNameRange     '0.3.0',
+42 silly addNameRange     '0.4.0',
+42 silly addNameRange     '0.4.1',
+42 silly addNameRange     '0.4.2',
+42 silly addNameRange     '0.4.3',
+42 silly addNameRange     '0.4.4',
+42 silly addNameRange     '0.4.5',
+42 silly addNameRange     '0.4.7',
+42 silly addNameRange     '0.4.8',
+42 silly addNameRange     '0.4.9',
+42 silly addNameRange     '0.4.10',
+42 silly addNameRange     '0.4.11',
+42 silly addNameRange     '0.4.12',
+42 silly addNameRange     '0.4.13',
+42 silly addNameRange     '0.4.14',
+42 silly addNameRange     '0.4.15',
+42 silly addNameRange     '0.4.16',
+42 silly addNameRange     '0.4.17',
+42 silly addNameRange     '0.4.18',
+42 silly addNameRange     '0.5.0',
+42 silly addNameRange     '0.4.19',
+42 silly addNameRange     '0.5.1',
+42 silly addNameRange     '0.5.2',
+42 silly addNameRange     '0.5.3',
+42 silly addNameRange     '0.5.4',
+42 silly addNameRange     '0.5.5',
+42 silly addNameRange     '0.5.6',
+42 silly addNameRange     '0.5.7',
+42 silly addNameRange     '0.5.8',
+42 silly addNameRange     '0.5.10',
+42 silly addNameRange     '0.6.0',
+42 silly addNameRange     '0.6.1',
+42 silly addNameRange     '0.7.0',
+42 silly addNameRange     '0.7.1',
+42 silly addNameRange     '0.8.0',
+42 silly addNameRange     '0.8.1',
+42 silly addNameRange     '0.8.2',
+42 silly addNameRange     '0.9.0-fb1',
+42 silly addNameRange     '0.9.0-fb2',
+42 silly addNameRange     '0.9.0-fb3',
+42 silly addNameRange     '0.9.0',
+42 silly addNameRange     '0.9.1',
+42 silly addNameRange     '0.9.2',
+42 silly addNameRange     '0.10.0',
+42 silly addNameRange     '0.10.2',
+42 silly addNameRange     '11.0.0',
+42 silly addNameRange     '11.0.1',
+42 silly addNameRange     '11.0.2',
+42 silly addNameRange     '12.0.0',
+42 silly addNameRange     '12.0.1',
+42 silly addNameRange     '12.0.2',
+42 silly addNameRange     '12.1.0',
+42 silly addNameRange     '12.1.1',
+42 silly addNameRange     '12.1.1-alpha.2935e14d',
+42 silly addNameRange     '12.1.2-alpha.a482b15c',
+42 silly addNameRange     '12.1.2-alpha.6230044c',
+42 silly addNameRange     '12.1.3-alpha.6230044c',
+42 silly addNameRange     '12.1.4-alpha.a737c6e5',
+42 silly addNameRange     '12.1.5-alpha.b5322422',
+42 silly addNameRange     '13.0.0',
+42 silly addNameRange     '13.1.0',
+42 silly addNameRange     '13.1.1',
+42 silly addNameRange     '13.1.2',
+42 silly addNameRange     '13.1.3',
+42 silly addNameRange     '13.2.0',
+42 silly addNameRange     '13.2.1',
+42 silly addNameRange     '13.2.2',
+42 silly addNameRange     '13.2.3',
+42 silly addNameRange     '13.3.0-alpha.a44f195f',
+42 silly addNameRange     '13.3.0-alpha.4eb0c908',
+42 silly addNameRange     '13.3.0-alpha.ffc7404b',
+42 silly addNameRange     '13.3.0-alpha.8b48d59e',
+42 silly addNameRange     '13.3.0-alpha.g8b48d59',
+42 silly addNameRange     '13.4.0-alpha.d2632006',
+42 silly addNameRange     '14.0.0',
+42 silly addNameRange     '14.0.1',
+42 silly addNameRange     '14.1.0',
+42 silly addNameRange     '14.2.0-alpha.ca8bfb6e',
+42 silly addNameRange     '14.2.1-alpha.e21d71a4',
+42 silly addNameRange     '14.2.2-alpha.22bd3c33',
+42 silly addNameRange     '14.3.0-alpha.d13c163e',
+42 silly addNameRange     '14.3.1-alpha.410cb91a',
+42 silly addNameRange     '14.3.2-alpha.83c25417',
+42 silly addNameRange     '15.0.0',
+42 silly addNameRange     '15.0.1',
+42 silly addNameRange     '15.0.2',
+42 silly addNameRange     '15.1.0',
+42 silly addNameRange     '15.1.1',
+42 silly addNameRange     '15.2.0-alpha.c681f819',
+42 silly addNameRange     '16.0.0',
+42 silly addNameRange     '16.0.1',
+42 silly addNameRange     '16.0.2',
+42 silly addNameRange     '16.1.0-alpha.691b0e22',
+42 silly addNameRange     '17.0.0',
+42 silly addNameRange     '17.0.1',
+42 silly addNameRange     '17.0.2',
+42 silly addNameRange     '17.0.3',
+42 silly addNameRange     '18.0.0',
+42 silly addNameRange     '18.1.0',
+42 silly addNameRange     '18.5.0-alpha.7da3df39',
+42 silly addNameRange     '19.0.0',
+42 silly addNameRange     '19.0.1',
+42 silly addNameRange     '19.0.2',
+42 silly addNameRange     '19.1.0-alpha.eed82034',
+42 silly addNameRange     '19.2.0-alpha.993e64af',
+42 silly addNameRange     '19.3.0-alpha.85402254',
+42 silly addNameRange     '20.0.0',
+42 silly addNameRange     '20.0.1',
+42 silly addNameRange     '20.0.2',
+42 silly addNameRange     '20.0.3',
+42 silly addNameRange     '20.0.4',
+42 silly addNameRange     '20.1.0-alpha.1',
+42 silly addNameRange     '20.1.0-alpha.2',
+42 silly addNameRange     '20.1.0-alpha.3',
+42 silly addNameRange     '20.1.0-beta.1',
+42 silly addNameRange     '20.1.0-chi.1',
+42 silly addNameRange     '20.1.0-delta.1',
+42 silly addNameRange     '20.1.0-delta.2',
+42 silly addNameRange     '20.1.0-delta.3',
+42 silly addNameRange     '20.1.0-delta.4',
+42 silly addNameRange     '20.1.0-delta.5',
+42 silly addNameRange     '20.1.0-echo.1',
+42 silly addNameRange     '21.0.0-alpha.1',
+42 silly addNameRange     '21.0.0-alpha.2',
+42 silly addNameRange     '21.0.0-beta.1',
+42 silly addNameRange     '21.0.0',
+42 silly addNameRange     '21.0.1',
+42 silly addNameRange     '21.0.2',
+42 silly addNameRange     '21.1.0',
+42 silly addNameRange     '21.2.0',
+42 silly addNameRange     '21.2.1',
+42 silly addNameRange     '21.3.0-alpha.1e3ee68e',
+42 silly addNameRange     '21.3.0-alpha.eff7a1cf',
+42 silly addNameRange     '21.3.0-beta.1',
+42 silly addNameRange     '21.3.0-beta.2',
+42 silly addNameRange     '21.3.0-beta.3',
+42 silly addNameRange     '21.3.0-beta.4',
+42 silly addNameRange     '21.3.0-beta.5',
+42 silly addNameRange     '21.3.0-beta.6',
+42 silly addNameRange     '21.3.0-beta.7',
+42 silly addNameRange     '21.3.0-beta.8',
+42 silly addNameRange     '21.3.0-beta.9',
+42 silly addNameRange     '21.3.0-beta.10',
+42 silly addNameRange     '21.3.0-beta.11',
+42 silly addNameRange     '21.3.0-beta.12',
+42 silly addNameRange     '21.3.0-beta.13',
+42 silly addNameRange     '21.3.0-beta.14',
+42 silly addNameRange     '21.3.0-beta.15',
+42 silly addNameRange     '22.0.0',
+42 silly addNameRange     '22.0.1',
+42 silly addNameRange     '22.0.2',
+42 silly addNameRange     '22.0.3',
+42 silly addNameRange     '22.0.4',
+42 silly addNameRange     '22.0.5',
+42 silly addNameRange     '22.0.6',
+42 silly addNameRange     '22.1.0',
+42 silly addNameRange     '22.1.1',
+42 silly addNameRange     '22.1.2',
+42 silly addNameRange     '22.1.3',
+42 silly addNameRange     '22.1.4',
+42 silly addNameRange     '22.2.0',
+42 silly addNameRange     '22.2.1',
+42 silly addNameRange     '22.2.2',
+42 silly addNameRange     '22.3.0',
+42 silly addNameRange     '22.4.0',
+42 silly addNameRange     '22.4.1',
+42 silly addNameRange     '22.4.2',
+42 silly addNameRange     '23.0.0-alpha.0',
+42 silly addNameRange     '23.0.0-alpha.1',
+42 silly addNameRange     '22.4.3',
+42 silly addNameRange     '23.0.0-alpha.2',
+42 silly addNameRange     '23.0.0-alpha.4',
+42 silly addNameRange     '23.0.0-alpha.5',
+42 silly addNameRange     '23.0.0-alpha.5r',
+42 silly addNameRange     '23.0.0-alpha.6r',
+42 silly addNameRange     '23.0.0-alpha.7',
+42 silly addNameRange     '23.0.0-beta.0',
+42 silly addNameRange     '23.0.0-beta.1',
+42 silly addNameRange     '23.0.0-beta.2',
+42 silly addNameRange     '23.0.0-alpha.3r',
+42 silly addNameRange     '23.0.0-beta.3r',
+42 silly addNameRange     '23.0.0-charlie.0',
+42 silly addNameRange     '23.0.0-charlie.1',
+42 silly addNameRange     '23.0.0-charlie.2',
+42 silly addNameRange     '22.4.4',
+42 silly addNameRange     '23.0.0-charlie.3',
+42 silly addNameRange     '23.0.0-charlie.4',
+42 silly addNameRange     '23.0.0',
+42 silly addNameRange     '23.0.1',
+42 silly addNameRange     '23.1.0',
+42 silly addNameRange     '23.2.0',
+42 silly addNameRange     '23.3.0',
+42 silly addNameRange     '23.4.0',
+42 silly addNameRange     '23.4.1',
+42 silly addNameRange     '23.4.2',
+42 silly addNameRange     '23.5.0',
+42 silly addNameRange     '23.6.0',
+42 silly addNameRange     '24.0.0-alpha.0',
+42 silly addNameRange     '24.0.0-alpha.1',
+42 silly addNameRange     '24.0.0-alpha.2',
+42 silly addNameRange     '24.0.0-alpha.3',
+42 silly addNameRange     '24.0.0-alpha.4',
+42 silly addNameRange     '24.0.0-alpha.5',
+42 silly addNameRange     '24.0.0-alpha.6',
+42 silly addNameRange     '24.0.0-alpha.7',
+42 silly addNameRange     '24.0.0-alpha.8',
+42 silly addNameRange     '24.0.0-alpha.9',
+42 silly addNameRange     '24.0.0-alpha.10',
+42 silly addNameRange     '24.0.0-alpha.11',
+42 silly addNameRange     '24.0.0-alpha.12',
+42 silly addNameRange     '24.0.0-alpha.13',
+42 silly addNameRange     '24.0.0-alpha.14',
+42 silly addNameRange     '24.0.0-alpha.15',
+42 silly addNameRange     '24.0.0-alpha.16',
+42 silly addNameRange     '24.0.0',
+42 silly addNameRange     '24.1.0' ] ]
+43 verbose addNamed [ 'jest-cli', '0.4.19' ]
+44 verbose addNamed [ '0.4.19', '0.4.19' ]
+45 silly lockFile 4a47043c-jest-cli-0-4-19 jest-cli@0.4.19
+46 verbose lock jest-cli@0.4.19 /home/vagrant/.npm/4a47043c-jest-cli-0-4-19.lock
+47 silly lockFile 4a47043c-jest-cli-0-4-19 jest-cli@0.4.19
+48 silly lockFile 4a47043c-jest-cli-0-4-19 jest-cli@0.4.19
+49 silly lockFile b79beb29-jest-cli-0-4-0 jest-cli@^0.4.0
+50 silly lockFile b79beb29-jest-cli-0-4-0 jest-cli@^0.4.0
+51 silly resolved [ { name: 'jest-cli',
+51 silly resolved     description: 'Painless JavaScript Unit Testing.',
+51 silly resolved     version: '0.4.19',
+51 silly resolved     main: 'src/jest.js',
+51 silly resolved     dependencies:
+51 silly resolved      { 'coffee-script': '^1.8.0',
+51 silly resolved        cover: '~0.2.8',
+51 silly resolved        diff: '~1.0.4',
+51 silly resolved        'graceful-fs': '^2.0.3',
+51 silly resolved        harmonize: '1.4.2',
+51 silly resolved        istanbul: '^0.3.2',
+51 silly resolved        'jasmine-only': '0.1.0',
+51 silly resolved        'jasmine-pit': '~2.0.0',
+51 silly resolved        jsdom: '~0.10.3',
+51 silly resolved        'node-haste': '^1.2.8',
+51 silly resolved        'node-worker-pool': '~2.4.2',
+51 silly resolved        'object-assign': '^3.0.0',
+51 silly resolved        optimist: '~0.6.0',
+51 silly resolved        bluebird: '~2.9.30',
+51 silly resolved        resolve: '~0.6.1',
+51 silly resolved        through: '^2.3.4',
+51 silly resolved        'lodash.template': '^3.0.0' },
+51 silly resolved     devDependencies: { jshint: '~2.5.0', 'node-find-files': '0.0.2' },
+51 silly resolved     bin: { jest: './bin/jest.js' },
+51 silly resolved     engines: { node: '0.8.x || 0.10.x' },
+51 silly resolved     repository: { type: 'git', url: 'https://github.com/facebook/jest' },
+51 silly resolved     scripts:
+51 silly resolved      { prepublish: 'jshint --config=.jshintrc --exclude=src/coverageTemplate.js src && node bin/jest.js',
+51 silly resolved        test: 'jshint --config=.jshintrc --exclude=src/coverageTemplate.js src && node bin/jest.js' },
+51 silly resolved     jest: { rootDir: 'src', testPathIgnorePatterns: [Object] },
+51 silly resolved     bugs: { url: 'https://github.com/facebook/jest/issues' },
+51 silly resolved     homepage: 'http://facebook.github.io/jest/',
+51 silly resolved     keywords: [ 'facebook', 'jest', 'test', 'unit', 'jasmine', 'mock' ],
+51 silly resolved     license: 'BSD-3-Clause',
+51 silly resolved     readme: '# [Jest](http://facebook.github.io/jest/) [![Build Status](https://travis-ci.org/facebook/jest.svg?branch=master)](https://travis-ci.org/facebook/jest)\n\nPainless JavaScript Unit Testing\n\n- **Familiar Approach**: Built on top of the Jasmine test framework, using familiar expect(value).toBe(other) assertions\n\n- **Mock by Default**: Automatically mocks CommonJS modules returned by require(), making most existing code testable\n\n- **Short Feedback Loop**: DOM APIs are mocked and tests run in parallel via a small node.js command line utility\n\n## Getting Started\n\nCheck out the [Getting Started](http://facebook.github.io/jest/docs/getting-started.html) tutorial. It\'s pretty simple!\n\n## API\n\n<generated_api_start />\n#### The `jest` object\n\n  - [`jest.autoMockOff()`](http://facebook.github.io/jest/docs/api.html#jest-automockoff)\n  - [`jest.autoMockOn()`](http://facebook.github.io/jest/docs/api.html#jest-automockon)\n  - [`jest.clearAllTimers()`](http://facebook.github.io/jest/docs/api.html#jest-clearalltimers)\n  - [`jest.dontMock(moduleName)`](http://facebook.github.io/jest/docs/api.html#jest-dontmock-modulename)\n  - [`jest.genMockFromModule(moduleName)`](http://facebook.github.io/jest/docs/api.html#jest-genmockfrommodule-modulename)\n  - [`jest.genMockFunction()`](http://facebook.github.io/jest/docs/api.html#jest-genmockfunction)\n  - [`jest.genMockFn()`](http://facebook.github.io/jest/docs/api.html#jest-genmockfn)\n  - [`jest.mock(moduleName)`](http://facebook.github.io/jest/docs/api.html#jest-mock-modulename)\n  - [`jest.runAllTicks()`](http://facebook.github.io/jest/docs/api.html#jest-runallticks)\n  - [`jest.runAllTimers()`](http://facebook.github.io/jest/docs/api.html#jest-runalltimers)\n  - [`jest.runOnlyPendingTimers()`](http://facebook.github.io/jest/docs/api.html#jest-runonlypendingtimers)\n  - [`jest.setMock(moduleName, moduleExports)`](http://facebook.github.io/jest/docs/api.html#jest-setmock-modulename-moduleexports)\n\n#### Mock functions\n\n  - [`mockFn.mock.calls`](http://facebook.github.io/jest/docs/api.html#mockfn-mock-calls)\n  - [`mockFn.mock.instances`](http://facebook.github.io/jest/docs/api.html#mockfn-mock-instances)\n  - [`mockFn.mockClear()`](http://facebook.github.io/jest/docs/api.html#mockfn-mockclear)\n  - [`mockFn.mockImplementation(fn)`](http://facebook.github.io/jest/docs/api.html#mockfn-mockimplementation-fn)\n  - [`mockFn.mockImpl(fn)`](http://facebook.github.io/jest/docs/api.html#mockfn-mockimpl-fn)\n  - [`mockFn.mockReturnThis()`](http://facebook.github.io/jest/docs/api.html#mockfn-mockreturnthis)\n  - [`mockFn.mockReturnValue(value)`](http://facebook.github.io/jest/docs/api.html#mockfn-mockreturnvalue-value)\n  - [`mockFn.mockReturnValueOnce(value)`](http://facebook.github.io/jest/docs/api.html#mockfn-mockreturnvalueonce-value)\n\n#### Config options\n\n  - [`config.bail` [boolean]](http://facebook.github.io/jest/docs/api.html#config-bail-boolean)\n  - [`config.cacheDirectory` [string]](http://facebook.github.io/jest/docs/api.html#config-cachedirectory-string)\n  - [`config.collectCoverage` [boolean]](http://facebook.github.io/jest/docs/api.html#config-collectcoverage-boolean)\n  - [`config.collectCoverageOnlyFrom` [object]](http://facebook.github.io/jest/docs/api.html#config-collectcoverageonlyfrom-object)\n  - [`config.globals` [object]](http://facebook.github.io/jest/docs/api.html#config-globals-object)\n  - [`config.moduleFileExtensions` [array<string>]](http://facebook.github.io/jest/docs/api.html#config-modulefileextensions-array-string)\n  - [`config.modulePathIgnorePatterns` [array<string>]](http://facebook.github.io/jest/docs/api.html#config-modulepathignorepatterns-array-string)\n  - [`config.rootDir` [string]](http://facebook.github.io/jest/docs/api.html#config-rootdir-string)\n  - [`config.scriptPreprocessor` [string]](http://facebook.github.io/jest/docs/api.html#config-scriptpreprocessor-string)\n  - [`config.setupEnvScriptFile` [string]](http://facebook.github.io/jest/docs/api.html#config-setupenvscriptfile-string)\n  - [`config.setupTestFrameworkScriptFile` [string]](http://facebook.github.io/jest/docs/api.html#config-setuptestframeworkscriptfile-string)\n  - [`config.testDirectoryName` [string]](http://facebook.github.io/jest/docs/api.html#config-testdirectoryname-string)\n  - [`config.testFileExtensions` [array<string>]](http://facebook.github.io/jest/docs/api.html#config-testfileextensions-array-string)\n  - [`config.testPathDirs` [array<string>]](http://facebook.github.io/jest/docs/api.html#config-testpathdirs-array-string)\n  - [`config.testPathIgnorePatterns` [array<string>]](http://facebook.github.io/jest/docs/api.html#config-testpathignorepatterns-array-string)\n  - [`config.testPathPattern` [string]](http://facebook.github.io/jest/docs/api.html#config-testpathpattern-string)\n  - [`config.unmockedModulePathPatterns` [array<string>]](http://facebook.github.io/jest/docs/api.html#config-unmockedmodulepathpatterns-array-string)\n  - [`config.verbose` [boolean]](http://facebook.github.io/jest/docs/api.html#config-verbose-boolean)\n\n#### Globally injected variables\n\n  - `afterEach(fn)`\n  - `beforeEach(fn)`\n  - `describe(name, fn)`\n  - `it(name, fn)`\n  - `it.only(name, fn)` executes [only](https://github.com/davemo/jasmine-only) this test. Useful when investigating a failure\n  - [`jest`](http://facebook.github.io/jest/docs/api.html#the-jest-object)\n  - `pit(name, fn)` [helper](https://www.npmjs.org/package/jasmine-pit) for promises\n  - `require(module)`\n  - `require.requireActual(module)`\n  - `xdescribe(name, fn)`\n  - `xit(name, fn)`\n\n#### `expect(value)`\n\n  - `.not` inverse the next comparison\n  - `.toThrow(?message)`\n  - `.toBe(value)` comparison using `===`\n  - `.toEqual(value)` deep comparison. Use [`jasmine.any(type)`](http://jasmine.github.io/1.3/introduction.html#section-Matching_Anything_with_<code>jasmine.any</code>) to be softer\n  - `.toBeFalsy()`\n  - `.toBeTruthy()`\n  - `.toBeNull()`\n  - `.toBeUndefined()`\n  - `.toBeDefined()`\n  - `.toMatch(regexp)`\n  - `.toContain(string)`\n  - `.toBeCloseTo(number, delta)`\n  - `.toBeGreaterThan(number)`\n  - `.toBeLessThan(number)`\n  - `.toBeCalled()`\n  - `.toBeCalledWith(arg, um, ents)`\n  - `.lastCalledWith(arg, um, ents)`\n\n<generated_api_end />\n',
+51 silly resolved     readmeFilename: 'README.md',
+51 silly resolved     _id: 'jest-cli@0.4.19',
+51 silly resolved     _from: 'jest-cli@^0.4.0' } ]
+52 info install jest-cli@0.4.19 into /var/www/html
+53 info installOne jest-cli@0.4.19
+54 info /var/www/html/node_modules/jest-cli unbuild
+55 verbose tar unpack /home/vagrant/.npm/jest-cli/0.4.19/package.tgz
+56 silly lockFile 323bb580-r-www-html-node-modules-jest-cli tar:///var/www/html/node_modules/jest-cli
+57 verbose lock tar:///var/www/html/node_modules/jest-cli /home/vagrant/.npm/323bb580-r-www-html-node-modules-jest-cli.lock
+58 silly lockFile 51991f38--npm-jest-cli-0-4-19-package-tgz tar:///home/vagrant/.npm/jest-cli/0.4.19/package.tgz
+59 verbose lock tar:///home/vagrant/.npm/jest-cli/0.4.19/package.tgz /home/vagrant/.npm/51991f38--npm-jest-cli-0-4-19-package-tgz.lock
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm extractEntry PATENTS
+66 silly gunzTarPerm extractEntry CONTRIBUTING.md
+67 silly gunzTarPerm extractEntry .jshintrc
+68 silly gunzTarPerm extractEntry .haste_cache/cache-HasteModuleLoader-tests
+69 silly gunzTarPerm extractEntry .haste_cache/cache-jest-cli
+70 silly gunzTarPerm extractEntry .haste_cache/cache-nodeHasteModuleLoader-tests
+71 silly gunzTarPerm extractEntry .haste_cache/cache-undefined
+72 silly gunzTarPerm extractEntry .editorconfig
+73 silly gunzTarPerm extractEntry bin/jest.js
+74 silly gunzTarPerm extractEntry .travis.yml
+75 silly gunzTarPerm extractEntry src/Console.js
+76 silly gunzTarPerm extractEntry src/DefaultTestReporter.js
+77 silly gunzTarPerm extractEntry src/jest.js
+78 silly gunzTarPerm extractEntry src/IstanbulCollector.js
+79 silly gunzTarPerm extractEntry src/IstanbulTestReporter.js
+80 silly gunzTarPerm extractEntry src/JSDomEnvironment.js
+81 silly gunzTarPerm extractEntry src/CoverageCollector.js
+82 silly gunzTarPerm extractEntry src/TestWorker.js
+83 silly gunzTarPerm extractEntry src/coverageTemplate.js
+84 silly gunzTarPerm extractEntry src/TestRunner.js
+85 silly gunzTarPerm extractEntry src/__tests__/TestRunner-fs-test.js
+86 silly gunzTarPerm extractEntry src/__tests__/TestRunner-test.js
+87 silly gunzTarPerm extractEntry src/__tests__/test_root/__testtests__/test.js
+88 silly gunzTarPerm extractEntry src/__tests__/test_root/__testtests__/test.foobar
+89 silly gunzTarPerm extractEntry src/__tests__/test_root/__testtests__/test.jsx
+90 silly gunzTarPerm extractEntry src/__tests__/test_root/module.foobar
+91 silly gunzTarPerm extractEntry src/__tests__/test_root/module.jsx
+92 silly gunzTarPerm extractEntry src/jasmineTestRunner/JasmineReporter.js
+93 silly gunzTarPerm extractEntry src/jasmineTestRunner/jasmineTestRunner.js
+94 silly gunzTarPerm extractEntry src/jasmineTestRunner/__tests__/JasmineReporter-test.js
+95 silly gunzTarPerm extractEntry src/HasteModuleLoader/HasteModuleLoader.js
+96 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-NODE_PATH-test.js
+97 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-currentTestPath-test.js
+98 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-genMockFromModule-test.js
+99 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-getTestEnvData-test.js
+100 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-hasDependency-test.js
+101 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-requireMock-test.js
+102 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-requireModule-test.js
+103 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/HasteModuleLoader-requireModuleOrMock-test.js
+104 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/NODE_PATH_dir/RegularModuleInNodePath.js
+105 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/ManuallyMocked.js
+106 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/ModuleWithSideEffects.js
+107 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/RegularModule.js
+108 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/JSONFile.json
+109 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/NativeModule.node
+110 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/__mocks__/ExclusivelyManualMock.js
+111 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/__mocks__/ManuallyMocked.js
+112 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/subdir1/MyModule.js
+113 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/subdir1/__mocks__/MyModule.js
+114 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/subdir2/MyModule.js
+115 silly gunzTarPerm extractEntry src/HasteModuleLoader/__tests__/test_root/subdir2/__mocks__/MyModule.js
+116 silly gunzTarPerm extractEntry src/lib/FakeTimers.js
+117 silly gunzTarPerm extractEntry src/lib/colors.js
+118 silly gunzTarPerm extractEntry src/lib/jsdom-compat.js
+119 silly gunzTarPerm extractEntry src/lib/moduleMocker.js
+120 silly gunzTarPerm extractEntry src/lib/testLogger.js
+121 silly gunzTarPerm extractEntry src/lib/utils.js
+122 silly gunzTarPerm extractEntry src/lib/__tests__/FakeTimers-test.js
+123 silly gunzTarPerm extractEntry src/lib/__tests__/moduleMocker-test.js
+124 silly gunzTarPerm extractEntry src/lib/__tests__/utils-normalizeConfig-test.js
+125 silly gunzTarPerm extractEntry src/lib/__tests__/utils-pathNormalize-test.js
+126 silly gunzTarPerm extractEntry tools/licenseify_all_files.js
+127 silly gunzTarPerm extractEntry vendor/jasmine/jasmine-1.3.0.js
+128 silly lockFile 323bb580-r-www-html-node-modules-jest-cli tar:///var/www/html/node_modules/jest-cli
+129 silly lockFile 323bb580-r-www-html-node-modules-jest-cli tar:///var/www/html/node_modules/jest-cli
+130 silly lockFile 51991f38--npm-jest-cli-0-4-19-package-tgz tar:///home/vagrant/.npm/jest-cli/0.4.19/package.tgz
+131 silly lockFile 51991f38--npm-jest-cli-0-4-19-package-tgz tar:///home/vagrant/.npm/jest-cli/0.4.19/package.tgz
+132 info preinstall jest-cli@0.4.19
+133 verbose readDependencies using package.json deps
+134 verbose readDependencies using package.json deps
+135 verbose cache add [ 'cover@~0.2.8', null ]
+136 verbose cache add name=undefined spec="cover@~0.2.8" args=["cover@~0.2.8",null]
+137 verbose parsed url { protocol: null,
+137 verbose parsed url   slashes: null,
+137 verbose parsed url   auth: null,
+137 verbose parsed url   host: null,
+137 verbose parsed url   port: null,
+137 verbose parsed url   hostname: null,
+137 verbose parsed url   hash: null,
+137 verbose parsed url   search: null,
+137 verbose parsed url   query: null,
+137 verbose parsed url   pathname: 'cover@~0.2.8',
+137 verbose parsed url   path: 'cover@~0.2.8',
+137 verbose parsed url   href: 'cover@~0.2.8' }
+138 verbose cache add name="cover" spec="~0.2.8" args=["cover","~0.2.8"]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: '~0.2.8',
+139 verbose parsed url   path: '~0.2.8',
+139 verbose parsed url   href: '~0.2.8' }
+140 verbose addNamed [ 'cover', '~0.2.8' ]
+141 verbose addNamed [ null, '>=0.2.8-0 <0.3.0-0' ]
+142 silly lockFile 28ca10c0-cover-0-2-8 cover@~0.2.8
+143 verbose lock cover@~0.2.8 /home/vagrant/.npm/28ca10c0-cover-0-2-8.lock
+144 verbose cache add [ 'diff@~1.0.4', null ]
+145 verbose cache add name=undefined spec="diff@~1.0.4" args=["diff@~1.0.4",null]
+146 verbose parsed url { protocol: null,
+146 verbose parsed url   slashes: null,
+146 verbose parsed url   auth: null,
+146 verbose parsed url   host: null,
+146 verbose parsed url   port: null,
+146 verbose parsed url   hostname: null,
+146 verbose parsed url   hash: null,
+146 verbose parsed url   search: null,
+146 verbose parsed url   query: null,
+146 verbose parsed url   pathname: 'diff@~1.0.4',
+146 verbose parsed url   path: 'diff@~1.0.4',
+146 verbose parsed url   href: 'diff@~1.0.4' }
+147 verbose cache add name="diff" spec="~1.0.4" args=["diff","~1.0.4"]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: '~1.0.4',
+148 verbose parsed url   path: '~1.0.4',
+148 verbose parsed url   href: '~1.0.4' }
+149 verbose addNamed [ 'diff', '~1.0.4' ]
+150 verbose addNamed [ null, '>=1.0.4-0 <1.1.0-0' ]
+151 silly lockFile 14ca31f4-diff-1-0-4 diff@~1.0.4
+152 verbose lock diff@~1.0.4 /home/vagrant/.npm/14ca31f4-diff-1-0-4.lock
+153 verbose cache add [ 'graceful-fs@^2.0.3', null ]
+154 verbose cache add name=undefined spec="graceful-fs@^2.0.3" args=["graceful-fs@^2.0.3",null]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: 'graceful-fs@^2.0.3',
+155 verbose parsed url   path: 'graceful-fs@^2.0.3',
+155 verbose parsed url   href: 'graceful-fs@^2.0.3' }
+156 verbose cache add name="graceful-fs" spec="^2.0.3" args=["graceful-fs","^2.0.3"]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: null,
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: '^2.0.3',
+157 verbose parsed url   path: '^2.0.3',
+157 verbose parsed url   href: '^2.0.3' }
+158 verbose addNamed [ 'graceful-fs', '^2.0.3' ]
+159 verbose addNamed [ null, '>=2.0.3-0 <3.0.0-0' ]
+160 silly lockFile 8846c185-graceful-fs-2-0-3 graceful-fs@^2.0.3
+161 verbose lock graceful-fs@^2.0.3 /home/vagrant/.npm/8846c185-graceful-fs-2-0-3.lock
+162 verbose cache add [ 'harmonize@1.4.2', null ]
+163 verbose cache add name=undefined spec="harmonize@1.4.2" args=["harmonize@1.4.2",null]
+164 verbose parsed url { protocol: null,
+164 verbose parsed url   slashes: null,
+164 verbose parsed url   auth: null,
+164 verbose parsed url   host: null,
+164 verbose parsed url   port: null,
+164 verbose parsed url   hostname: null,
+164 verbose parsed url   hash: null,
+164 verbose parsed url   search: null,
+164 verbose parsed url   query: null,
+164 verbose parsed url   pathname: 'harmonize@1.4.2',
+164 verbose parsed url   path: 'harmonize@1.4.2',
+164 verbose parsed url   href: 'harmonize@1.4.2' }
+165 verbose cache add name="harmonize" spec="1.4.2" args=["harmonize","1.4.2"]
+166 verbose parsed url { protocol: null,
+166 verbose parsed url   slashes: null,
+166 verbose parsed url   auth: null,
+166 verbose parsed url   host: null,
+166 verbose parsed url   port: null,
+166 verbose parsed url   hostname: null,
+166 verbose parsed url   hash: null,
+166 verbose parsed url   search: null,
+166 verbose parsed url   query: null,
+166 verbose parsed url   pathname: '1.4.2',
+166 verbose parsed url   path: '1.4.2',
+166 verbose parsed url   href: '1.4.2' }
+167 verbose addNamed [ 'harmonize', '1.4.2' ]
+168 verbose addNamed [ '1.4.2', '1.4.2' ]
+169 silly lockFile f078ca0d-harmonize-1-4-2 harmonize@1.4.2
+170 verbose lock harmonize@1.4.2 /home/vagrant/.npm/f078ca0d-harmonize-1-4-2.lock
+171 silly addNameRange { name: 'cover', range: '>=0.2.8-0 <0.3.0-0', hasData: false }
+172 verbose cache add [ 'istanbul@^0.3.2', null ]
+173 verbose cache add name=undefined spec="istanbul@^0.3.2" args=["istanbul@^0.3.2",null]
+174 verbose parsed url { protocol: null,
+174 verbose parsed url   slashes: null,
+174 verbose parsed url   auth: null,
+174 verbose parsed url   host: null,
+174 verbose parsed url   port: null,
+174 verbose parsed url   hostname: null,
+174 verbose parsed url   hash: null,
+174 verbose parsed url   search: null,
+174 verbose parsed url   query: null,
+174 verbose parsed url   pathname: 'istanbul@^0.3.2',
+174 verbose parsed url   path: 'istanbul@^0.3.2',
+174 verbose parsed url   href: 'istanbul@^0.3.2' }
+175 verbose cache add name="istanbul" spec="^0.3.2" args=["istanbul","^0.3.2"]
+176 verbose parsed url { protocol: null,
+176 verbose parsed url   slashes: null,
+176 verbose parsed url   auth: null,
+176 verbose parsed url   host: null,
+176 verbose parsed url   port: null,
+176 verbose parsed url   hostname: null,
+176 verbose parsed url   hash: null,
+176 verbose parsed url   search: null,
+176 verbose parsed url   query: null,
+176 verbose parsed url   pathname: '^0.3.2',
+176 verbose parsed url   path: '^0.3.2',
+176 verbose parsed url   href: '^0.3.2' }
+177 verbose addNamed [ 'istanbul', '^0.3.2' ]
+178 verbose addNamed [ null, '>=0.3.2-0 <0.4.0-0' ]
+179 silly lockFile 4772a768-istanbul-0-3-2 istanbul@^0.3.2
+180 verbose lock istanbul@^0.3.2 /home/vagrant/.npm/4772a768-istanbul-0-3-2.lock
+181 verbose cache add [ 'jasmine-only@0.1.0', null ]
+182 verbose cache add name=undefined spec="jasmine-only@0.1.0" args=["jasmine-only@0.1.0",null]
+183 verbose parsed url { protocol: null,
+183 verbose parsed url   slashes: null,
+183 verbose parsed url   auth: null,
+183 verbose parsed url   host: null,
+183 verbose parsed url   port: null,
+183 verbose parsed url   hostname: null,
+183 verbose parsed url   hash: null,
+183 verbose parsed url   search: null,
+183 verbose parsed url   query: null,
+183 verbose parsed url   pathname: 'jasmine-only@0.1.0',
+183 verbose parsed url   path: 'jasmine-only@0.1.0',
+183 verbose parsed url   href: 'jasmine-only@0.1.0' }
+184 verbose cache add name="jasmine-only" spec="0.1.0" args=["jasmine-only","0.1.0"]
+185 verbose parsed url { protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: '0.1.0',
+185 verbose parsed url   path: '0.1.0',
+185 verbose parsed url   href: '0.1.0' }
+186 verbose addNamed [ 'jasmine-only', '0.1.0' ]
+187 verbose addNamed [ '0.1.0', '0.1.0' ]
+188 silly lockFile 29ed01d7-jasmine-only-0-1-0 jasmine-only@0.1.0
+189 verbose lock jasmine-only@0.1.0 /home/vagrant/.npm/29ed01d7-jasmine-only-0-1-0.lock
+190 silly addNameRange { name: 'diff', range: '>=1.0.4-0 <1.1.0-0', hasData: false }
+191 silly addNameRange { name: 'graceful-fs',
+191 silly addNameRange   range: '>=2.0.3-0 <3.0.0-0',
+191 silly addNameRange   hasData: false }
+192 verbose cache add [ 'jasmine-pit@~2.0.0', null ]
+193 verbose cache add name=undefined spec="jasmine-pit@~2.0.0" args=["jasmine-pit@~2.0.0",null]
+194 verbose parsed url { protocol: null,
+194 verbose parsed url   slashes: null,
+194 verbose parsed url   auth: null,
+194 verbose parsed url   host: null,
+194 verbose parsed url   port: null,
+194 verbose parsed url   hostname: null,
+194 verbose parsed url   hash: null,
+194 verbose parsed url   search: null,
+194 verbose parsed url   query: null,
+194 verbose parsed url   pathname: 'jasmine-pit@~2.0.0',
+194 verbose parsed url   path: 'jasmine-pit@~2.0.0',
+194 verbose parsed url   href: 'jasmine-pit@~2.0.0' }
+195 verbose cache add name="jasmine-pit" spec="~2.0.0" args=["jasmine-pit","~2.0.0"]
+196 verbose parsed url { protocol: null,
+196 verbose parsed url   slashes: null,
+196 verbose parsed url   auth: null,
+196 verbose parsed url   host: null,
+196 verbose parsed url   port: null,
+196 verbose parsed url   hostname: null,
+196 verbose parsed url   hash: null,
+196 verbose parsed url   search: null,
+196 verbose parsed url   query: null,
+196 verbose parsed url   pathname: '~2.0.0',
+196 verbose parsed url   path: '~2.0.0',
+196 verbose parsed url   href: '~2.0.0' }
+197 verbose addNamed [ 'jasmine-pit', '~2.0.0' ]
+198 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+199 silly lockFile 88b54c8d-jasmine-pit-2-0-0 jasmine-pit@~2.0.0
+200 verbose lock jasmine-pit@~2.0.0 /home/vagrant/.npm/88b54c8d-jasmine-pit-2-0-0.lock
+201 silly addNameRange { name: 'istanbul', range: '>=0.3.2-0 <0.4.0-0', hasData: false }
+202 verbose cache add [ 'node-haste@^1.2.8', null ]
+203 verbose cache add name=undefined spec="node-haste@^1.2.8" args=["node-haste@^1.2.8",null]
+204 verbose parsed url { protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: 'node-haste@^1.2.8',
+204 verbose parsed url   path: 'node-haste@^1.2.8',
+204 verbose parsed url   href: 'node-haste@^1.2.8' }
+205 verbose cache add name="node-haste" spec="^1.2.8" args=["node-haste","^1.2.8"]
+206 verbose parsed url { protocol: null,
+206 verbose parsed url   slashes: null,
+206 verbose parsed url   auth: null,
+206 verbose parsed url   host: null,
+206 verbose parsed url   port: null,
+206 verbose parsed url   hostname: null,
+206 verbose parsed url   hash: null,
+206 verbose parsed url   search: null,
+206 verbose parsed url   query: null,
+206 verbose parsed url   pathname: '^1.2.8',
+206 verbose parsed url   path: '^1.2.8',
+206 verbose parsed url   href: '^1.2.8' }
+207 verbose addNamed [ 'node-haste', '^1.2.8' ]
+208 verbose addNamed [ null, '>=1.2.8-0 <2.0.0-0' ]
+209 silly lockFile c26894bf-node-haste-1-2-8 node-haste@^1.2.8
+210 verbose lock node-haste@^1.2.8 /home/vagrant/.npm/c26894bf-node-haste-1-2-8.lock
+211 verbose cache add [ 'jsdom@~0.10.3', null ]
+212 verbose cache add name=undefined spec="jsdom@~0.10.3" args=["jsdom@~0.10.3",null]
+213 verbose parsed url { protocol: null,
+213 verbose parsed url   slashes: null,
+213 verbose parsed url   auth: null,
+213 verbose parsed url   host: null,
+213 verbose parsed url   port: null,
+213 verbose parsed url   hostname: null,
+213 verbose parsed url   hash: null,
+213 verbose parsed url   search: null,
+213 verbose parsed url   query: null,
+213 verbose parsed url   pathname: 'jsdom@~0.10.3',
+213 verbose parsed url   path: 'jsdom@~0.10.3',
+213 verbose parsed url   href: 'jsdom@~0.10.3' }
+214 verbose cache add name="jsdom" spec="~0.10.3" args=["jsdom","~0.10.3"]
+215 verbose parsed url { protocol: null,
+215 verbose parsed url   slashes: null,
+215 verbose parsed url   auth: null,
+215 verbose parsed url   host: null,
+215 verbose parsed url   port: null,
+215 verbose parsed url   hostname: null,
+215 verbose parsed url   hash: null,
+215 verbose parsed url   search: null,
+215 verbose parsed url   query: null,
+215 verbose parsed url   pathname: '~0.10.3',
+215 verbose parsed url   path: '~0.10.3',
+215 verbose parsed url   href: '~0.10.3' }
+216 verbose addNamed [ 'jsdom', '~0.10.3' ]
+217 verbose addNamed [ null, '>=0.10.3-0 <0.11.0-0' ]
+218 silly lockFile ea616439-jsdom-0-10-3 jsdom@~0.10.3
+219 verbose lock jsdom@~0.10.3 /home/vagrant/.npm/ea616439-jsdom-0-10-3.lock
+220 verbose cache add [ 'node-worker-pool@~2.4.2', null ]
+221 verbose cache add name=undefined spec="node-worker-pool@~2.4.2" args=["node-worker-pool@~2.4.2",null]
+222 verbose parsed url { protocol: null,
+222 verbose parsed url   slashes: null,
+222 verbose parsed url   auth: null,
+222 verbose parsed url   host: null,
+222 verbose parsed url   port: null,
+222 verbose parsed url   hostname: null,
+222 verbose parsed url   hash: null,
+222 verbose parsed url   search: null,
+222 verbose parsed url   query: null,
+222 verbose parsed url   pathname: 'node-worker-pool@~2.4.2',
+222 verbose parsed url   path: 'node-worker-pool@~2.4.2',
+222 verbose parsed url   href: 'node-worker-pool@~2.4.2' }
+223 verbose cache add name="node-worker-pool" spec="~2.4.2" args=["node-worker-pool","~2.4.2"]
+224 verbose parsed url { protocol: null,
+224 verbose parsed url   slashes: null,
+224 verbose parsed url   auth: null,
+224 verbose parsed url   host: null,
+224 verbose parsed url   port: null,
+224 verbose parsed url   hostname: null,
+224 verbose parsed url   hash: null,
+224 verbose parsed url   search: null,
+224 verbose parsed url   query: null,
+224 verbose parsed url   pathname: '~2.4.2',
+224 verbose parsed url   path: '~2.4.2',
+224 verbose parsed url   href: '~2.4.2' }
+225 verbose addNamed [ 'node-worker-pool', '~2.4.2' ]
+226 verbose addNamed [ null, '>=2.4.2-0 <2.5.0-0' ]
+227 silly lockFile ac526aad-node-worker-pool-2-4-2 node-worker-pool@~2.4.2
+228 verbose lock node-worker-pool@~2.4.2 /home/vagrant/.npm/ac526aad-node-worker-pool-2-4-2.lock
+229 verbose cache add [ 'object-assign@^3.0.0', null ]
+230 verbose cache add name=undefined spec="object-assign@^3.0.0" args=["object-assign@^3.0.0",null]
+231 verbose parsed url { protocol: null,
+231 verbose parsed url   slashes: null,
+231 verbose parsed url   auth: null,
+231 verbose parsed url   host: null,
+231 verbose parsed url   port: null,
+231 verbose parsed url   hostname: null,
+231 verbose parsed url   hash: null,
+231 verbose parsed url   search: null,
+231 verbose parsed url   query: null,
+231 verbose parsed url   pathname: 'object-assign@^3.0.0',
+231 verbose parsed url   path: 'object-assign@^3.0.0',
+231 verbose parsed url   href: 'object-assign@^3.0.0' }
+232 verbose cache add name="object-assign" spec="^3.0.0" args=["object-assign","^3.0.0"]
+233 verbose parsed url { protocol: null,
+233 verbose parsed url   slashes: null,
+233 verbose parsed url   auth: null,
+233 verbose parsed url   host: null,
+233 verbose parsed url   port: null,
+233 verbose parsed url   hostname: null,
+233 verbose parsed url   hash: null,
+233 verbose parsed url   search: null,
+233 verbose parsed url   query: null,
+233 verbose parsed url   pathname: '^3.0.0',
+233 verbose parsed url   path: '^3.0.0',
+233 verbose parsed url   href: '^3.0.0' }
+234 verbose addNamed [ 'object-assign', '^3.0.0' ]
+235 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+236 silly lockFile 2db6c36a-object-assign-3-0-0 object-assign@^3.0.0
+237 verbose lock object-assign@^3.0.0 /home/vagrant/.npm/2db6c36a-object-assign-3-0-0.lock
+238 verbose cache add [ 'optimist@~0.6.0', null ]
+239 verbose cache add name=undefined spec="optimist@~0.6.0" args=["optimist@~0.6.0",null]
+240 verbose parsed url { protocol: null,
+240 verbose parsed url   slashes: null,
+240 verbose parsed url   auth: null,
+240 verbose parsed url   host: null,
+240 verbose parsed url   port: null,
+240 verbose parsed url   hostname: null,
+240 verbose parsed url   hash: null,
+240 verbose parsed url   search: null,
+240 verbose parsed url   query: null,
+240 verbose parsed url   pathname: 'optimist@~0.6.0',
+240 verbose parsed url   path: 'optimist@~0.6.0',
+240 verbose parsed url   href: 'optimist@~0.6.0' }
+241 verbose cache add name="optimist" spec="~0.6.0" args=["optimist","~0.6.0"]
+242 verbose parsed url { protocol: null,
+242 verbose parsed url   slashes: null,
+242 verbose parsed url   auth: null,
+242 verbose parsed url   host: null,
+242 verbose parsed url   port: null,
+242 verbose parsed url   hostname: null,
+242 verbose parsed url   hash: null,
+242 verbose parsed url   search: null,
+242 verbose parsed url   query: null,
+242 verbose parsed url   pathname: '~0.6.0',
+242 verbose parsed url   path: '~0.6.0',
+242 verbose parsed url   href: '~0.6.0' }
+243 verbose addNamed [ 'optimist', '~0.6.0' ]
+244 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+245 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+246 verbose lock optimist@~0.6.0 /home/vagrant/.npm/07193858-optimist-0-6-0.lock
+247 silly addNameRange { name: 'jasmine-pit',
+247 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+247 silly addNameRange   hasData: false }
+248 verbose cache add [ 'bluebird@~2.9.30', null ]
+249 verbose cache add name=undefined spec="bluebird@~2.9.30" args=["bluebird@~2.9.30",null]
+250 verbose parsed url { protocol: null,
+250 verbose parsed url   slashes: null,
+250 verbose parsed url   auth: null,
+250 verbose parsed url   host: null,
+250 verbose parsed url   port: null,
+250 verbose parsed url   hostname: null,
+250 verbose parsed url   hash: null,
+250 verbose parsed url   search: null,
+250 verbose parsed url   query: null,
+250 verbose parsed url   pathname: 'bluebird@~2.9.30',
+250 verbose parsed url   path: 'bluebird@~2.9.30',
+250 verbose parsed url   href: 'bluebird@~2.9.30' }
+251 verbose cache add name="bluebird" spec="~2.9.30" args=["bluebird","~2.9.30"]
+252 verbose parsed url { protocol: null,
+252 verbose parsed url   slashes: null,
+252 verbose parsed url   auth: null,
+252 verbose parsed url   host: null,
+252 verbose parsed url   port: null,
+252 verbose parsed url   hostname: null,
+252 verbose parsed url   hash: null,
+252 verbose parsed url   search: null,
+252 verbose parsed url   query: null,
+252 verbose parsed url   pathname: '~2.9.30',
+252 verbose parsed url   path: '~2.9.30',
+252 verbose parsed url   href: '~2.9.30' }
+253 verbose addNamed [ 'bluebird', '~2.9.30' ]
+254 verbose addNamed [ null, '>=2.9.30-0 <2.10.0-0' ]
+255 silly lockFile 06c085d1-bluebird-2-9-30 bluebird@~2.9.30
+256 verbose lock bluebird@~2.9.30 /home/vagrant/.npm/06c085d1-bluebird-2-9-30.lock
+257 verbose cache add [ 'resolve@~0.6.1', null ]
+258 verbose cache add name=undefined spec="resolve@~0.6.1" args=["resolve@~0.6.1",null]
+259 verbose parsed url { protocol: null,
+259 verbose parsed url   slashes: null,
+259 verbose parsed url   auth: null,
+259 verbose parsed url   host: null,
+259 verbose parsed url   port: null,
+259 verbose parsed url   hostname: null,
+259 verbose parsed url   hash: null,
+259 verbose parsed url   search: null,
+259 verbose parsed url   query: null,
+259 verbose parsed url   pathname: 'resolve@~0.6.1',
+259 verbose parsed url   path: 'resolve@~0.6.1',
+259 verbose parsed url   href: 'resolve@~0.6.1' }
+260 verbose cache add name="resolve" spec="~0.6.1" args=["resolve","~0.6.1"]
+261 verbose parsed url { protocol: null,
+261 verbose parsed url   slashes: null,
+261 verbose parsed url   auth: null,
+261 verbose parsed url   host: null,
+261 verbose parsed url   port: null,
+261 verbose parsed url   hostname: null,
+261 verbose parsed url   hash: null,
+261 verbose parsed url   search: null,
+261 verbose parsed url   query: null,
+261 verbose parsed url   pathname: '~0.6.1',
+261 verbose parsed url   path: '~0.6.1',
+261 verbose parsed url   href: '~0.6.1' }
+262 verbose addNamed [ 'resolve', '~0.6.1' ]
+263 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+264 silly lockFile 35159d56-resolve-0-6-1 resolve@~0.6.1
+265 verbose lock resolve@~0.6.1 /home/vagrant/.npm/35159d56-resolve-0-6-1.lock
+266 verbose cache add [ 'through@^2.3.4', null ]
+267 verbose cache add name=undefined spec="through@^2.3.4" args=["through@^2.3.4",null]
+268 verbose parsed url { protocol: null,
+268 verbose parsed url   slashes: null,
+268 verbose parsed url   auth: null,
+268 verbose parsed url   host: null,
+268 verbose parsed url   port: null,
+268 verbose parsed url   hostname: null,
+268 verbose parsed url   hash: null,
+268 verbose parsed url   search: null,
+268 verbose parsed url   query: null,
+268 verbose parsed url   pathname: 'through@^2.3.4',
+268 verbose parsed url   path: 'through@^2.3.4',
+268 verbose parsed url   href: 'through@^2.3.4' }
+269 verbose cache add name="through" spec="^2.3.4" args=["through","^2.3.4"]
+270 verbose parsed url { protocol: null,
+270 verbose parsed url   slashes: null,
+270 verbose parsed url   auth: null,
+270 verbose parsed url   host: null,
+270 verbose parsed url   port: null,
+270 verbose parsed url   hostname: null,
+270 verbose parsed url   hash: null,
+270 verbose parsed url   search: null,
+270 verbose parsed url   query: null,
+270 verbose parsed url   pathname: '^2.3.4',
+270 verbose parsed url   path: '^2.3.4',
+270 verbose parsed url   href: '^2.3.4' }
+271 verbose addNamed [ 'through', '^2.3.4' ]
+272 verbose addNamed [ null, '>=2.3.4-0 <3.0.0-0' ]
+273 silly lockFile 4a17867e-through-2-3-4 through@^2.3.4
+274 verbose lock through@^2.3.4 /home/vagrant/.npm/4a17867e-through-2-3-4.lock
+275 verbose cache add [ 'lodash.template@^3.0.0', null ]
+276 verbose cache add name=undefined spec="lodash.template@^3.0.0" args=["lodash.template@^3.0.0",null]
+277 verbose parsed url { protocol: null,
+277 verbose parsed url   slashes: null,
+277 verbose parsed url   auth: null,
+277 verbose parsed url   host: null,
+277 verbose parsed url   port: null,
+277 verbose parsed url   hostname: null,
+277 verbose parsed url   hash: null,
+277 verbose parsed url   search: null,
+277 verbose parsed url   query: null,
+277 verbose parsed url   pathname: 'lodash.template@^3.0.0',
+277 verbose parsed url   path: 'lodash.template@^3.0.0',
+277 verbose parsed url   href: 'lodash.template@^3.0.0' }
+278 verbose cache add name="lodash.template" spec="^3.0.0" args=["lodash.template","^3.0.0"]
+279 verbose parsed url { protocol: null,
+279 verbose parsed url   slashes: null,
+279 verbose parsed url   auth: null,
+279 verbose parsed url   host: null,
+279 verbose parsed url   port: null,
+279 verbose parsed url   hostname: null,
+279 verbose parsed url   hash: null,
+279 verbose parsed url   search: null,
+279 verbose parsed url   query: null,
+279 verbose parsed url   pathname: '^3.0.0',
+279 verbose parsed url   path: '^3.0.0',
+279 verbose parsed url   href: '^3.0.0' }
+280 verbose addNamed [ 'lodash.template', '^3.0.0' ]
+281 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+282 silly lockFile b01467bd-lodash-template-3-0-0 lodash.template@^3.0.0
+283 verbose lock lodash.template@^3.0.0 /home/vagrant/.npm/b01467bd-lodash-template-3-0-0.lock
+284 silly addNameRange { name: 'node-haste',
+284 silly addNameRange   range: '>=1.2.8-0 <2.0.0-0',
+284 silly addNameRange   hasData: false }
+285 silly addNameRange { name: 'jsdom', range: '>=0.10.3-0 <0.11.0-0', hasData: false }
+286 silly addNameRange { name: 'node-worker-pool',
+286 silly addNameRange   range: '>=2.4.2-0 <2.5.0-0',
+286 silly addNameRange   hasData: false }
+287 silly addNameRange { name: 'object-assign',
+287 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+287 silly addNameRange   hasData: false }
+288 silly addNameRange { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+289 verbose url raw cover
+290 verbose url resolving [ 'http://registry.npmjs.org/', './cover' ]
+291 verbose url resolved http://registry.npmjs.org/cover
+292 info trying registry request attempt 1 at 21:31:07
+293 verbose etag "5216b447-450f"
+294 http GET http://registry.npmjs.org/cover
+295 silly addNameRange { name: 'bluebird',
+295 silly addNameRange   range: '>=2.9.30-0 <2.10.0-0',
+295 silly addNameRange   hasData: false }
+296 silly addNameRange { name: 'resolve', range: '>=0.6.1-0 <0.7.0-0', hasData: false }
+297 silly addNameRange { name: 'through', range: '>=2.3.4-0 <3.0.0-0', hasData: false }
+298 silly addNameRange { name: 'lodash.template',
+298 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+298 silly addNameRange   hasData: false }
+299 verbose url raw diff
+300 verbose url resolving [ 'http://registry.npmjs.org/', './diff' ]
+301 verbose url resolved http://registry.npmjs.org/diff
+302 info trying registry request attempt 1 at 21:31:07
+303 verbose etag "5a9cc61f-fce5"
+304 http GET http://registry.npmjs.org/diff
+305 verbose url raw graceful-fs
+306 verbose url resolving [ 'http://registry.npmjs.org/', './graceful-fs' ]
+307 verbose url resolved http://registry.npmjs.org/graceful-fs
+308 info trying registry request attempt 1 at 21:31:07
+309 verbose etag "5a97a9fc-f870"
+310 http GET http://registry.npmjs.org/graceful-fs
+311 verbose url raw harmonize/1.4.2
+312 verbose url resolving [ 'http://registry.npmjs.org/', './harmonize/1.4.2' ]
+313 verbose url resolved http://registry.npmjs.org/harmonize/1.4.2
+314 info trying registry request attempt 1 at 21:31:07
+315 verbose etag "6KHPIAW85ROYXX7KO4124D6V0"
+316 http GET http://registry.npmjs.org/harmonize/1.4.2
+317 verbose url raw jasmine-only/0.1.0
+318 verbose url resolving [ 'http://registry.npmjs.org/', './jasmine-only/0.1.0' ]
+319 verbose url resolved http://registry.npmjs.org/jasmine-only/0.1.0
+320 info trying registry request attempt 1 at 21:31:07
+321 verbose etag "8KV8ZDLCUCOBN6CVK2TGB3PKH"
+322 http GET http://registry.npmjs.org/jasmine-only/0.1.0
+323 verbose url raw istanbul
+324 verbose url resolving [ 'http://registry.npmjs.org/', './istanbul' ]
+325 verbose url resolved http://registry.npmjs.org/istanbul
+326 info trying registry request attempt 1 at 21:31:07
+327 verbose etag "5aa522f2-4dac5"
+328 http GET http://registry.npmjs.org/istanbul
+329 verbose url raw jasmine-pit
+330 verbose url resolving [ 'http://registry.npmjs.org/', './jasmine-pit' ]
+331 verbose url resolved http://registry.npmjs.org/jasmine-pit
+332 info trying registry request attempt 1 at 21:31:07
+333 verbose etag "5a572e9a-2646"
+334 http GET http://registry.npmjs.org/jasmine-pit
+335 verbose url raw node-haste
+336 verbose url resolving [ 'http://registry.npmjs.org/', './node-haste' ]
+337 verbose url resolved http://registry.npmjs.org/node-haste
+338 info trying registry request attempt 1 at 21:31:07
+339 verbose etag "599259b4-18acb"
+340 http GET http://registry.npmjs.org/node-haste
+341 verbose url raw jsdom
+342 verbose url resolving [ 'http://registry.npmjs.org/', './jsdom' ]
+343 verbose url resolved http://registry.npmjs.org/jsdom
+344 info trying registry request attempt 1 at 21:31:07
+345 verbose etag "5aa741f5-9ea66"
+346 http GET http://registry.npmjs.org/jsdom
+347 verbose url raw node-worker-pool
+348 verbose url resolving [ 'http://registry.npmjs.org/', './node-worker-pool' ]
+349 verbose url resolved http://registry.npmjs.org/node-worker-pool
+350 info trying registry request attempt 1 at 21:31:07
+351 verbose etag "55f1d88b-52be"
+352 http GET http://registry.npmjs.org/node-worker-pool
+353 verbose url raw object-assign
+354 verbose url resolving [ 'http://registry.npmjs.org/', './object-assign' ]
+355 verbose url resolved http://registry.npmjs.org/object-assign
+356 info trying registry request attempt 1 at 21:31:07
+357 verbose etag "5a9fb8a1-5db4"
+358 http GET http://registry.npmjs.org/object-assign
+359 verbose url raw optimist
+360 verbose url resolving [ 'http://registry.npmjs.org/', './optimist' ]
+361 verbose url resolved http://registry.npmjs.org/optimist
+362 info trying registry request attempt 1 at 21:31:07
+363 verbose etag "5aa3e8f3-b8aa"
+364 http GET http://registry.npmjs.org/optimist
+365 verbose url raw resolve
+366 verbose url resolving [ 'http://registry.npmjs.org/', './resolve' ]
+367 verbose url resolved http://registry.npmjs.org/resolve
+368 info trying registry request attempt 1 at 21:31:07
+369 verbose etag "5a6b8a25-efdc"
+370 http GET http://registry.npmjs.org/resolve
+371 verbose url raw bluebird
+372 verbose url resolving [ 'http://registry.npmjs.org/', './bluebird' ]
+373 verbose url resolved http://registry.npmjs.org/bluebird
+374 info trying registry request attempt 1 at 21:31:07
+375 verbose etag "5aa6ac4d-616cf"
+376 http GET http://registry.npmjs.org/bluebird
+377 verbose url raw through
+378 verbose url resolving [ 'http://registry.npmjs.org/', './through' ]
+379 verbose url resolved http://registry.npmjs.org/through
+380 info trying registry request attempt 1 at 21:31:07
+381 verbose etag "5a77ede2-7508"
+382 http GET http://registry.npmjs.org/through
+383 verbose url raw lodash.template
+384 verbose url resolving [ 'http://registry.npmjs.org/', './lodash.template' ]
+385 verbose url resolved http://registry.npmjs.org/lodash.template
+386 info trying registry request attempt 1 at 21:31:07
+387 verbose etag "5a906e70-f466"
+388 http GET http://registry.npmjs.org/lodash.template
+389 http 200 http://registry.npmjs.org/cover
+390 silly registry.get cb [ 200,
+390 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+390 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+390 silly registry.get     'content-length': '17679',
+390 silly registry.get     connection: 'keep-alive',
+390 silly registry.get     'set-cookie': [ '__cfduid=de64f28a1a4652eab53d0cdd3c0742df31550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+390 silly registry.get     'cf-cache-status': 'HIT',
+390 silly registry.get     'cache-control': 'max-age=300',
+390 silly registry.get     'cf-ray': '4adccc2cfcdf91a6-EWR',
+390 silly registry.get     'accept-ranges': 'bytes',
+390 silly registry.get     etag: '"c842cb5db0023c701e294207d797443b"',
+390 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+390 silly registry.get     'last-modified': 'Sat, 26 May 2018 21:13:32 GMT',
+390 silly registry.get     vary: 'accept-encoding, accept',
+390 silly registry.get     server: 'cloudflare' } ]
+391 http 200 http://registry.npmjs.org/diff
+392 silly registry.get cb [ 200,
+392 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+392 silly registry.get     'content-type': 'application/json',
+392 silly registry.get     'content-length': '71275',
+392 silly registry.get     connection: 'keep-alive',
+392 silly registry.get     'set-cookie': [ '__cfduid=db6f20d2d7579b084a6bd227fa2ae9f2c1550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+392 silly registry.get     'cf-cache-status': 'HIT',
+392 silly registry.get     'cache-control': 'max-age=300',
+392 silly registry.get     'cf-ray': '4adccc2cf9494704-EWR',
+392 silly registry.get     'accept-ranges': 'bytes',
+392 silly registry.get     etag: '"0a158cf16343e1494d529e268f1213fd"',
+392 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+392 silly registry.get     'last-modified': 'Mon, 07 Jan 2019 02:49:51 GMT',
+392 silly registry.get     vary: 'accept-encoding, accept',
+392 silly registry.get     'x-amz-meta-rev': '153-f2c46a10e1c25e7cf9d25ee86608dcbb',
+392 silly registry.get     server: 'cloudflare' } ]
+393 http 200 http://registry.npmjs.org/graceful-fs
+394 silly registry.get cb [ 200,
+394 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+394 silly registry.get     'content-type': 'application/json',
+394 silly registry.get     'content-length': '73297',
+394 silly registry.get     connection: 'keep-alive',
+394 silly registry.get     'set-cookie': [ '__cfduid=df23fad966c74191badfd806353c451731550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+394 silly registry.get     'cf-cache-status': 'HIT',
+394 silly registry.get     'cache-control': 'max-age=300',
+394 silly registry.get     'cf-ray': '4adccc2d0baac5e2-EWR',
+394 silly registry.get     'accept-ranges': 'bytes',
+394 silly registry.get     etag: '"a50909abd9180564cef73671fc6bd6de"',
+394 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+394 silly registry.get     'last-modified': 'Fri, 04 Jan 2019 00:30:41 GMT',
+394 silly registry.get     vary: 'accept-encoding, accept',
+394 silly registry.get     'x-amz-meta-rev': '205-3d32a6d158bd573a1b428659afcb33cd',
+394 silly registry.get     server: 'cloudflare' } ]
+395 silly addNameRange number 2 { name: 'cover', range: '>=0.2.8-0 <0.3.0-0', hasData: true }
+396 silly addNameRange versions [ 'cover',
+396 silly addNameRange   [ '0.0.1',
+396 silly addNameRange     '0.0.2',
+396 silly addNameRange     '0.1.0',
+396 silly addNameRange     '0.2.0',
+396 silly addNameRange     '0.2.1',
+396 silly addNameRange     '0.2.2',
+396 silly addNameRange     '0.2.3',
+396 silly addNameRange     '0.2.4',
+396 silly addNameRange     '0.2.5',
+396 silly addNameRange     '0.2.6',
+396 silly addNameRange     '0.2.7',
+396 silly addNameRange     '0.2.8',
+396 silly addNameRange     '0.2.9' ] ]
+397 verbose addNamed [ 'cover', '0.2.9' ]
+398 verbose addNamed [ '0.2.9', '0.2.9' ]
+399 silly lockFile 9e27a976-cover-0-2-9 cover@0.2.9
+400 verbose lock cover@0.2.9 /home/vagrant/.npm/9e27a976-cover-0-2-9.lock
+401 silly addNameRange number 2 { name: 'diff', range: '>=1.0.4-0 <1.1.0-0', hasData: true }
+402 silly addNameRange versions [ 'diff',
+402 silly addNameRange   [ '1.0.0',
+402 silly addNameRange     '1.0.1',
+402 silly addNameRange     '1.0.2',
+402 silly addNameRange     '1.0.3',
+402 silly addNameRange     '1.0.4',
+402 silly addNameRange     '1.0.5',
+402 silly addNameRange     '1.0.6',
+402 silly addNameRange     '1.0.7',
+402 silly addNameRange     '1.0.8',
+402 silly addNameRange     '1.1.0',
+402 silly addNameRange     '1.2.0',
+402 silly addNameRange     '1.2.1',
+402 silly addNameRange     '1.2.2',
+402 silly addNameRange     '1.3.0',
+402 silly addNameRange     '1.3.1',
+402 silly addNameRange     '1.3.2',
+402 silly addNameRange     '1.4.0',
+402 silly addNameRange     '2.0.1',
+402 silly addNameRange     '2.0.2',
+402 silly addNameRange     '2.1.0',
+402 silly addNameRange     '2.1.1',
+402 silly addNameRange     '2.1.2',
+402 silly addNameRange     '2.1.3',
+402 silly addNameRange     '2.2.0',
+402 silly addNameRange     '2.2.1',
+402 silly addNameRange     '2.2.2',
+402 silly addNameRange     '2.2.3',
+402 silly addNameRange     '3.0.0',
+402 silly addNameRange     '3.0.1',
+402 silly addNameRange     '3.1.0',
+402 silly addNameRange     '3.2.0',
+402 silly addNameRange     '3.3.0',
+402 silly addNameRange     '3.3.1',
+402 silly addNameRange     '3.4.0',
+402 silly addNameRange     '3.5.0',
+402 silly addNameRange     '4.0.0',
+402 silly addNameRange     '4.0.1' ] ]
+403 verbose addNamed [ 'diff', '1.0.8' ]
+404 verbose addNamed [ '1.0.8', '1.0.8' ]
+405 silly lockFile 2c973233-diff-1-0-8 diff@1.0.8
+406 verbose lock diff@1.0.8 /home/vagrant/.npm/2c973233-diff-1-0-8.lock
+407 silly addNameRange number 2 { name: 'graceful-fs',
+407 silly addNameRange   range: '>=2.0.3-0 <3.0.0-0',
+407 silly addNameRange   hasData: true }
+408 silly addNameRange versions [ 'graceful-fs',
+408 silly addNameRange   [ '1.0.0',
+408 silly addNameRange     '1.0.1',
+408 silly addNameRange     '1.0.2',
+408 silly addNameRange     '1.1.0',
+408 silly addNameRange     '1.1.1',
+408 silly addNameRange     '1.1.2',
+408 silly addNameRange     '1.1.3',
+408 silly addNameRange     '1.1.4',
+408 silly addNameRange     '1.1.5',
+408 silly addNameRange     '1.1.6',
+408 silly addNameRange     '1.1.7',
+408 silly addNameRange     '1.1.8',
+408 silly addNameRange     '1.1.9',
+408 silly addNameRange     '1.1.10',
+408 silly addNameRange     '1.1.11',
+408 silly addNameRange     '1.1.12',
+408 silly addNameRange     '1.1.13',
+408 silly addNameRange     '1.1.14',
+408 silly addNameRange     '1.2.0',
+408 silly addNameRange     '1.2.1',
+408 silly addNameRange     '1.2.2',
+408 silly addNameRange     '1.2.3',
+408 silly addNameRange     '2.0.0',
+408 silly addNameRange     '2.0.1',
+408 silly addNameRange     '2.0.2',
+408 silly addNameRange     '2.0.3',
+408 silly addNameRange     '3.0.0',
+408 silly addNameRange     '3.0.1',
+408 silly addNameRange     '3.0.2',
+408 silly addNameRange     '3.0.3',
+408 silly addNameRange     '3.0.4',
+408 silly addNameRange     '3.0.5',
+408 silly addNameRange     '3.0.6',
+408 silly addNameRange     '3.0.7',
+408 silly addNameRange     '3.0.8',
+408 silly addNameRange     '4.1.0',
+408 silly addNameRange     '4.1.1',
+408 silly addNameRange     '4.1.2',
+408 silly addNameRange     '4.1.3',
+408 silly addNameRange     '4.1.4',
+408 silly addNameRange     '4.1.5',
+408 silly addNameRange     '3.0.9',
+408 silly addNameRange     '4.1.6',
+408 silly addNameRange     '3.0.10',
+408 silly addNameRange     '3.0.11',
+408 silly addNameRange     '4.1.7',
+408 silly addNameRange     '4.1.8',
+408 silly addNameRange     '4.1.9',
+408 silly addNameRange     '4.1.10',
+408 silly addNameRange     '4.1.11',
+408 silly addNameRange     '4.1.12',
+408 silly addNameRange     '4.1.13',
+408 silly addNameRange     '4.1.14',
+408 silly addNameRange     '4.1.15' ] ]
+409 verbose addNamed [ 'graceful-fs', '2.0.3' ]
+410 verbose addNamed [ '2.0.3', '2.0.3' ]
+411 silly lockFile aa717173-graceful-fs-2-0-3 graceful-fs@2.0.3
+412 verbose lock graceful-fs@2.0.3 /home/vagrant/.npm/aa717173-graceful-fs-2-0-3.lock
+413 http 200 http://registry.npmjs.org/jasmine-pit
+414 silly registry.get cb [ 200,
+414 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+414 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+414 silly registry.get     'content-length': '9798',
+414 silly registry.get     connection: 'keep-alive',
+414 silly registry.get     'set-cookie': [ '__cfduid=db6f20d2d7579b084a6bd227fa2ae9f2c1550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+414 silly registry.get     'cf-cache-status': 'HIT',
+414 silly registry.get     'cache-control': 'max-age=300',
+414 silly registry.get     'cf-ray': '4adccc2de9ec4704-EWR',
+414 silly registry.get     'accept-ranges': 'bytes',
+414 silly registry.get     etag: '"5c3f957f78debb9991c2a30e0bc338c9"',
+414 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+414 silly registry.get     'last-modified': 'Sun, 27 May 2018 05:11:11 GMT',
+414 silly registry.get     vary: 'accept-encoding, accept',
+414 silly registry.get     server: 'cloudflare' } ]
+415 warn deprecated graceful-fs@2.0.3: please upgrade to graceful-fs 4 for compatibility with current and future versions of Node.js
+416 silly addNameRange number 2 { name: 'jasmine-pit',
+416 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+416 silly addNameRange   hasData: true }
+417 silly addNameRange versions [ 'jasmine-pit',
+417 silly addNameRange   [ '1.0.0',
+417 silly addNameRange     '1.0.1',
+417 silly addNameRange     '1.0.2',
+417 silly addNameRange     '1.0.3',
+417 silly addNameRange     '1.0.4',
+417 silly addNameRange     '2.0.0',
+417 silly addNameRange     '2.0.1',
+417 silly addNameRange     '2.0.2' ] ]
+418 verbose addNamed [ 'jasmine-pit', '2.0.2' ]
+419 verbose addNamed [ '2.0.2', '2.0.2' ]
+420 silly lockFile a1963b05-jasmine-pit-2-0-2 jasmine-pit@2.0.2
+421 verbose lock jasmine-pit@2.0.2 /home/vagrant/.npm/a1963b05-jasmine-pit-2-0-2.lock
+422 silly lockFile 9e27a976-cover-0-2-9 cover@0.2.9
+423 silly lockFile 9e27a976-cover-0-2-9 cover@0.2.9
+424 silly lockFile 2c973233-diff-1-0-8 diff@1.0.8
+425 silly lockFile 2c973233-diff-1-0-8 diff@1.0.8
+426 silly lockFile aa717173-graceful-fs-2-0-3 graceful-fs@2.0.3
+427 silly lockFile aa717173-graceful-fs-2-0-3 graceful-fs@2.0.3
+428 silly lockFile 28ca10c0-cover-0-2-8 cover@~0.2.8
+429 silly lockFile 28ca10c0-cover-0-2-8 cover@~0.2.8
+430 silly lockFile 14ca31f4-diff-1-0-4 diff@~1.0.4
+431 silly lockFile 14ca31f4-diff-1-0-4 diff@~1.0.4
+432 silly lockFile 8846c185-graceful-fs-2-0-3 graceful-fs@^2.0.3
+433 silly lockFile 8846c185-graceful-fs-2-0-3 graceful-fs@^2.0.3
+434 silly lockFile a1963b05-jasmine-pit-2-0-2 jasmine-pit@2.0.2
+435 silly lockFile a1963b05-jasmine-pit-2-0-2 jasmine-pit@2.0.2
+436 silly lockFile 88b54c8d-jasmine-pit-2-0-0 jasmine-pit@~2.0.0
+437 silly lockFile 88b54c8d-jasmine-pit-2-0-0 jasmine-pit@~2.0.0
+438 http 200 http://registry.npmjs.org/node-haste
+439 silly registry.get cb [ 200,
+439 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+439 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+439 silly registry.get     'content-length': '101067',
+439 silly registry.get     connection: 'keep-alive',
+439 silly registry.get     'set-cookie': [ '__cfduid=df23fad966c74191badfd806353c451731550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+439 silly registry.get     'cf-cache-status': 'HIT',
+439 silly registry.get     'cache-control': 'max-age=300',
+439 silly registry.get     'cf-ray': '4adccc2dfeb4c5e2-EWR',
+439 silly registry.get     'accept-ranges': 'bytes',
+439 silly registry.get     etag: '"02d2f37662730c4e62bb565be6595466"',
+439 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+439 silly registry.get     'last-modified': 'Sun, 27 May 2018 10:01:09 GMT',
+439 silly registry.get     vary: 'accept-encoding, accept',
+439 silly registry.get     server: 'cloudflare' } ]
+440 silly addNameRange number 2 { name: 'node-haste',
+440 silly addNameRange   range: '>=1.2.8-0 <2.0.0-0',
+440 silly addNameRange   hasData: true }
+441 silly addNameRange versions [ 'node-haste',
+441 silly addNameRange   [ '0.2.0',
+441 silly addNameRange     '0.2.1',
+441 silly addNameRange     '1.2.1',
+441 silly addNameRange     '1.2.2',
+441 silly addNameRange     '1.2.3',
+441 silly addNameRange     '1.2.4',
+441 silly addNameRange     '1.2.5',
+441 silly addNameRange     '1.2.6',
+441 silly addNameRange     '1.2.7',
+441 silly addNameRange     '1.2.8',
+441 silly addNameRange     '2.0.0-alpha1',
+441 silly addNameRange     '2.0.0-alpha2',
+441 silly addNameRange     '2.0.0-alpha3',
+441 silly addNameRange     '2.0.0-alpha4',
+441 silly addNameRange     '2.0.0-alpha5',
+441 silly addNameRange     '2.0.0-alpha6',
+441 silly addNameRange     '2.0.0-alpha7',
+441 silly addNameRange     '2.0.0-alpha8',
+441 silly addNameRange     '2.0.0-alpha9',
+441 silly addNameRange     '2.0.0-alpha11',
+441 silly addNameRange     '2.0.0-alpha12',
+441 silly addNameRange     '2.0.0-alpha13',
+441 silly addNameRange     '2.0.0-alpha14',
+441 silly addNameRange     '2.0.0-alpha15',
+441 silly addNameRange     '2.0.0-alpha16',
+441 silly addNameRange     '2.0.0-alpha17',
+441 silly addNameRange     '2.0.0-alpha18',
+441 silly addNameRange     '2.0.0-alpha19',
+441 silly addNameRange     '2.0.0',
+441 silly addNameRange     '2.1.0',
+441 silly addNameRange     '2.1.1',
+441 silly addNameRange     '2.1.2',
+441 silly addNameRange     '2.1.3',
+441 silly addNameRange     '2.2.0',
+441 silly addNameRange     '2.3.0',
+441 silly addNameRange     '2.4.0',
+441 silly addNameRange     '2.5.0',
+441 silly addNameRange     '2.6.0',
+441 silly addNameRange     '2.6.1',
+441 silly addNameRange     '2.7.0',
+441 silly addNameRange     '2.8.0',
+441 silly addNameRange     '2.9.0',
+441 silly addNameRange     '2.9.2',
+441 silly addNameRange     '2.9.3',
+441 silly addNameRange     '2.9.4',
+441 silly addNameRange     '2.9.5',
+441 silly addNameRange     '2.9.6',
+441 silly addNameRange     '2.10.0',
+441 silly addNameRange     '2.10.1',
+441 silly addNameRange     '2.11.0',
+441 silly addNameRange     '2.12.0-alpha.0',
+441 silly addNameRange     '2.12.0' ] ]
+442 verbose addNamed [ 'node-haste', '1.2.8' ]
+443 verbose addNamed [ '1.2.8', '1.2.8' ]
+444 silly lockFile bed7f443-node-haste-1-2-8 node-haste@1.2.8
+445 verbose lock node-haste@1.2.8 /home/vagrant/.npm/bed7f443-node-haste-1-2-8.lock
+446 silly lockFile bed7f443-node-haste-1-2-8 node-haste@1.2.8
+447 silly lockFile bed7f443-node-haste-1-2-8 node-haste@1.2.8
+448 silly lockFile c26894bf-node-haste-1-2-8 node-haste@^1.2.8
+449 silly lockFile c26894bf-node-haste-1-2-8 node-haste@^1.2.8
+450 http 200 http://registry.npmjs.org/jasmine-only/0.1.0
+451 silly registry.get cb [ 200,
+451 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+451 silly registry.get     'content-type': 'application/json',
+451 silly registry.get     'transfer-encoding': 'chunked',
+451 silly registry.get     connection: 'keep-alive',
+451 silly registry.get     'set-cookie': [ '__cfduid=dcb74a2d8b735a5ffbaa909867e6fe99b1550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+451 silly registry.get     'cf-ray': '4adccc2d58672192-EWR',
+451 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+451 silly registry.get     server: 'cloudflare' } ]
+452 http 200 http://registry.npmjs.org/node-worker-pool
+453 silly registry.get cb [ 200,
+453 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+453 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+453 silly registry.get     'content-length': '21182',
+453 silly registry.get     connection: 'keep-alive',
+453 silly registry.get     'set-cookie': [ '__cfduid=df23fad966c74191badfd806353c451731550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+453 silly registry.get     'cf-cache-status': 'HIT',
+453 silly registry.get     'cache-control': 'max-age=300',
+453 silly registry.get     'cf-ray': '4adccc2ec909c5e2-EWR',
+453 silly registry.get     'accept-ranges': 'bytes',
+453 silly registry.get     etag: '"c759b286021466a8e5d52c6dc46f9652"',
+453 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+453 silly registry.get     'last-modified': 'Sun, 27 May 2018 10:20:45 GMT',
+453 silly registry.get     vary: 'accept-encoding, accept',
+453 silly registry.get     server: 'cloudflare' } ]
+454 http 200 http://registry.npmjs.org/istanbul
+455 silly registry.get cb [ 200,
+455 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+455 silly registry.get     'content-type': 'application/json',
+455 silly registry.get     'content-length': '332079',
+455 silly registry.get     connection: 'keep-alive',
+455 silly registry.get     'set-cookie': [ '__cfduid=de64f28a1a4652eab53d0cdd3c0742df31550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+455 silly registry.get     'cf-cache-status': 'HIT',
+455 silly registry.get     'cache-control': 'max-age=300',
+455 silly registry.get     'cf-ray': '4adccc2dcde391a6-EWR',
+455 silly registry.get     'accept-ranges': 'bytes',
+455 silly registry.get     etag: '"ebc21bec19266e2b5fb7fb66e907f662"',
+455 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+455 silly registry.get     'last-modified': 'Thu, 31 Jan 2019 21:36:04 GMT',
+455 silly registry.get     vary: 'accept-encoding, accept',
+455 silly registry.get     'x-amz-meta-rev': '455-8a3a853552f4f4cee2422aebe792c271',
+455 silly registry.get     server: 'cloudflare' } ]
+456 http 200 http://registry.npmjs.org/object-assign
+457 silly registry.get cb [ 200,
+457 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:08 GMT',
+457 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+457 silly registry.get     'content-length': '24020',
+457 silly registry.get     connection: 'keep-alive',
+457 silly registry.get     'set-cookie': [ '__cfduid=d14dc60d0812bf45a39f52c2494d897301550957468; expires=Sun, 23-Feb-20 21:31:08 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+457 silly registry.get     'cf-cache-status': 'HIT',
+457 silly registry.get     'cache-control': 'max-age=300',
+457 silly registry.get     'cf-ray': '4adccc2f39942192-EWR',
+457 silly registry.get     'accept-ranges': 'bytes',
+457 silly registry.get     etag: '"d7609bf70dc4cde24cf456be05d80a7c"',
+457 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+457 silly registry.get     'last-modified': 'Sun, 27 May 2018 10:57:26 GMT',
+457 silly registry.get     vary: 'accept-encoding, accept',
+457 silly registry.get     server: 'cloudflare' } ]
+458 http 200 http://registry.npmjs.org/optimist
+459 silly registry.get cb [ 200,
+459 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:08 GMT',
+459 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+459 silly registry.get     'content-length': '47290',
+459 silly registry.get     connection: 'keep-alive',
+459 silly registry.get     'set-cookie': [ '__cfduid=d0365cd644d2370ba83c41fac9bd0348e1550957468; expires=Sun, 23-Feb-20 21:31:08 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+459 silly registry.get     'cf-cache-status': 'HIT',
+459 silly registry.get     'cache-control': 'max-age=300',
+459 silly registry.get     'cf-ray': '4adccc2f4a8fc5e2-EWR',
+459 silly registry.get     'accept-ranges': 'bytes',
+459 silly registry.get     etag: '"7f199122c7e79ed54ffcc0deb347222a"',
+459 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+459 silly registry.get     'last-modified': 'Sun, 27 May 2018 11:20:06 GMT',
+459 silly registry.get     vary: 'accept-encoding, accept',
+459 silly registry.get     server: 'cloudflare' } ]
+460 http 200 http://registry.npmjs.org/jsdom
+461 silly registry.get cb [ 200,
+461 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:07 GMT',
+461 silly registry.get     'content-type': 'application/json',
+461 silly registry.get     'content-length': '707647',
+461 silly registry.get     connection: 'keep-alive',
+461 silly registry.get     'set-cookie': [ '__cfduid=db6f20d2d7579b084a6bd227fa2ae9f2c1550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+461 silly registry.get     'cf-cache-status': 'HIT',
+461 silly registry.get     'cache-control': 'max-age=300',
+461 silly registry.get     'cf-ray': '4adccc2e3a124704-EWR',
+461 silly registry.get     'accept-ranges': 'bytes',
+461 silly registry.get     etag: '"300ccf46f636b1692a0efaf2c41248f0"',
+461 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+461 silly registry.get     'last-modified': 'Thu, 24 Jan 2019 03:57:41 GMT',
+461 silly registry.get     vary: 'accept-encoding, accept',
+461 silly registry.get     'x-amz-meta-rev': '617-dc987ba8c82866ec09ae387b0f68ef10',
+461 silly registry.get     server: 'cloudflare' } ]
+462 http 200 http://registry.npmjs.org/harmonize/1.4.2
+463 silly registry.get cb [ 200,
+463 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:08 GMT',
+463 silly registry.get     'content-type': 'application/json',
+463 silly registry.get     'transfer-encoding': 'chunked',
+463 silly registry.get     connection: 'keep-alive',
+463 silly registry.get     'set-cookie': [ '__cfduid=df7405adb2c5200c84a7a0fa6ce5276341550957467; expires=Sun, 23-Feb-20 21:31:07 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+463 silly registry.get     'cf-ray': '4adccc2d5f4bc5ce-EWR',
+463 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+463 silly registry.get     server: 'cloudflare' } ]
+464 http 200 http://registry.npmjs.org/resolve
+465 silly registry.get cb [ 200,
+465 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:08 GMT',
+465 silly registry.get     'content-type': 'application/json',
+465 silly registry.get     'content-length': '91237',
+465 silly registry.get     connection: 'keep-alive',
+465 silly registry.get     'set-cookie': [ '__cfduid=de10e452558e9179e448817c3e8d6c7971550957468; expires=Sun, 23-Feb-20 21:31:08 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+465 silly registry.get     'cf-cache-status': 'HIT',
+465 silly registry.get     'cache-control': 'max-age=300',
+465 silly registry.get     'cf-ray': '4adccc2fb87c91a6-EWR',
+465 silly registry.get     'accept-ranges': 'bytes',
+465 silly registry.get     etag: '"e923001d0af79c62f8035462eadb2e03"',
+465 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+465 silly registry.get     'last-modified': 'Sat, 02 Feb 2019 12:41:23 GMT',
+465 silly registry.get     vary: 'accept-encoding, accept',
+465 silly registry.get     'x-amz-meta-rev': '146-43d853d13756f0364311c13ecedc6652',
+465 silly registry.get     server: 'cloudflare' } ]
+466 http 200 http://registry.npmjs.org/through
+467 silly registry.get cb [ 200,
+467 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:08 GMT',
+467 silly registry.get     'content-type': 'application/json',
+467 silly registry.get     'content-length': '29951',
+467 silly registry.get     connection: 'keep-alive',
+467 silly registry.get     'set-cookie': [ '__cfduid=d0365cd644d2370ba83c41fac9bd0348e1550957468; expires=Sun, 23-Feb-20 21:31:08 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+467 silly registry.get     'cf-cache-status': 'HIT',
+467 silly registry.get     'cache-control': 'max-age=300',
+467 silly registry.get     'cf-ray': '4adccc301d33c5e2-EWR',
+467 silly registry.get     'accept-ranges': 'bytes',
+467 silly registry.get     etag: '"cc5958d20a8a4a9cca39fa503a6dda17"',
+467 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+467 silly registry.get     'last-modified': 'Sat, 05 Jan 2019 15:16:42 GMT',
+467 silly registry.get     vary: 'accept-encoding, accept',
+467 silly registry.get     'x-amz-meta-rev': '213-5d7340bbe4bbc51bb0e2a4a9044abca2',
+467 silly registry.get     server: 'cloudflare' } ]
+468 http 200 http://registry.npmjs.org/lodash.template
+469 silly registry.get cb [ 200,
+469 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:08 GMT',
+469 silly registry.get     'content-type': 'application/json; charset=UTF-8',
+469 silly registry.get     'content-length': '62566',
+469 silly registry.get     connection: 'keep-alive',
+469 silly registry.get     'set-cookie': [ '__cfduid=d965cc323e955c0085c0c26a7df0bee971550957468; expires=Sun, 23-Feb-20 21:31:08 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+469 silly registry.get     'cf-cache-status': 'HIT',
+469 silly registry.get     'cache-control': 'max-age=300',
+469 silly registry.get     'cf-ray': '4adccc303b4b4704-EWR',
+469 silly registry.get     'accept-ranges': 'bytes',
+469 silly registry.get     etag: '"84aa3aae0a500b1e26be82fa3fdbb322"',
+469 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+469 silly registry.get     'last-modified': 'Sun, 27 May 2018 06:59:05 GMT',
+469 silly registry.get     vary: 'accept-encoding, accept',
+469 silly registry.get     server: 'cloudflare' } ]
+470 silly lockFile e412cf76-mine-only-jasmine-only-0-1-0-tgz http://registry.npmjs.org/jasmine-only/-/jasmine-only-0.1.0.tgz
+471 verbose lock http://registry.npmjs.org/jasmine-only/-/jasmine-only-0.1.0.tgz /home/vagrant/.npm/e412cf76-mine-only-jasmine-only-0-1-0-tgz.lock
+472 silly addNameRange number 2 { name: 'node-worker-pool',
+472 silly addNameRange   range: '>=2.4.2-0 <2.5.0-0',
+472 silly addNameRange   hasData: true }
+473 silly addNameRange versions [ 'node-worker-pool',
+473 silly addNameRange   [ '0.1.0',
+473 silly addNameRange     '0.1.1',
+473 silly addNameRange     '0.1.2',
+473 silly addNameRange     '0.1.3',
+473 silly addNameRange     '1.0.1',
+473 silly addNameRange     '2.0.0',
+473 silly addNameRange     '2.1.0',
+473 silly addNameRange     '2.1.1',
+473 silly addNameRange     '2.1.2',
+473 silly addNameRange     '2.1.3',
+473 silly addNameRange     '2.1.4',
+473 silly addNameRange     '2.1.5',
+473 silly addNameRange     '2.2.0',
+473 silly addNameRange     '2.3.0',
+473 silly addNameRange     '2.4.0',
+473 silly addNameRange     '2.4.1',
+473 silly addNameRange     '2.4.2',
+473 silly addNameRange     '2.4.3',
+473 silly addNameRange     '2.4.4',
+473 silly addNameRange     '2.4.5',
+473 silly addNameRange     '3.0.0',
+473 silly addNameRange     '3.0.2' ] ]
+474 verbose addNamed [ 'node-worker-pool', '2.4.5' ]
+475 verbose addNamed [ '2.4.5', '2.4.5' ]
+476 silly lockFile f6748f53-node-worker-pool-2-4-5 node-worker-pool@2.4.5
+477 verbose lock node-worker-pool@2.4.5 /home/vagrant/.npm/f6748f53-node-worker-pool-2-4-5.lock
+478 silly addNameRange number 2 { name: 'istanbul', range: '>=0.3.2-0 <0.4.0-0', hasData: true }
+479 silly addNameRange versions [ 'istanbul',
+479 silly addNameRange   [ '0.1.0',
+479 silly addNameRange     '0.1.1',
+479 silly addNameRange     '0.1.2',
+479 silly addNameRange     '0.1.3',
+479 silly addNameRange     '0.1.4',
+479 silly addNameRange     '0.1.5',
+479 silly addNameRange     '0.1.6',
+479 silly addNameRange     '0.1.7',
+479 silly addNameRange     '0.1.8',
+479 silly addNameRange     '0.1.9',
+479 silly addNameRange     '0.1.10',
+479 silly addNameRange     '0.1.11',
+479 silly addNameRange     '0.1.12',
+479 silly addNameRange     '0.1.13',
+479 silly addNameRange     '0.1.14',
+479 silly addNameRange     '0.1.15',
+479 silly addNameRange     '0.1.16',
+479 silly addNameRange     '0.1.17',
+479 silly addNameRange     '0.1.18',
+479 silly addNameRange     '0.1.19',
+479 silly addNameRange     '0.1.20',
+479 silly addNameRange     '0.1.21',
+479 silly addNameRange     '0.1.22',
+479 silly addNameRange     '0.1.23',
+479 silly addNameRange     '0.1.24',
+479 silly addNameRange     '0.1.25',
+479 silly addNameRange     '0.1.26',
+479 silly addNameRange     '0.1.27',
+479 silly addNameRange     '0.1.28',
+479 silly addNameRange     '0.1.29',
+479 silly addNameRange     '0.1.30',
+479 silly addNameRange     '0.1.31',
+479 silly addNameRange     '0.1.32',
+479 silly addNameRange     '0.1.33',
+479 silly addNameRange     '0.1.34',
+479 silly addNameRange     '0.1.35',
+479 silly addNameRange     '0.1.36',
+479 silly addNameRange     '0.1.37',
+479 silly addNameRange     '0.1.38',
+479 silly addNameRange     '0.1.39',
+479 silly addNameRange     '0.1.40',
+479 silly addNameRange     '0.1.41',
+479 silly addNameRange     '0.1.42',
+479 silly addNameRange     '0.1.43',
+479 silly addNameRange     '0.1.44',
+479 silly addNameRange     '0.1.45',
+479 silly addNameRange     '0.1.46',
+479 silly addNameRange     '0.2.0',
+479 silly addNameRange     '0.2.1',
+479 silly addNameRange     '0.2.2',
+479 silly addNameRange     '0.2.3',
+479 silly addNameRange     '0.2.4',
+479 silly addNameRange     '0.2.5',
+479 silly addNameRange     '0.2.6',
+479 silly addNameRange     '0.2.7',
+479 silly addNameRange     '0.2.8',
+479 silly addNameRange     '0.2.9',
+479 silly addNameRange     '0.2.10',
+479 silly addNameRange     '0.2.11',
+479 silly addNameRange     '0.2.12',
+479 silly addNameRange     '0.2.13',
+479 silly addNameRange     '0.2.14',
+479 silly addNameRange     '0.2.15',
+479 silly addNameRange     '0.2.16',
+479 silly addNameRange     '0.3.0',
+479 silly addNameRange     '0.3.1',
+479 silly addNameRange     '0.3.2',
+479 silly addNameRange     '0.3.3',
+479 silly addNameRange     '0.3.4',
+479 silly addNameRange     '0.3.5',
+479 silly addNameRange     '0.3.6',
+479 silly addNameRange     '0.3.7',
+479 silly addNameRange     '0.3.8',
+479 silly addNameRange     '0.3.9',
+479 silly addNameRange     '0.3.10',
+479 silly addNameRange     '0.3.11',
+479 silly addNameRange     '0.3.13',
+479 silly addNameRange     '0.3.14',
+479 silly addNameRange     '0.3.15',
+479 silly addNameRange     '0.3.16',
+479 silly addNameRange     '0.3.17',
+479 silly addNameRange     '0.3.18',
+479 silly addNameRange     '0.3.19',
+479 silly addNameRange     '0.3.20',
+479 silly addNameRange     '0.3.21',
+479 silly addNameRange     '0.3.22',
+479 silly addNameRange     '0.4.0',
+479 silly addNameRange     '0.4.1',
+479 silly addNameRange     '1.0.0-alpha.1',
+479 silly addNameRange     '1.0.0-alpha.2',
+479 silly addNameRange     '0.4.2',
+479 silly addNameRange     '0.4.3',
+479 silly addNameRange     '0.4.4',
+479 silly addNameRange     '1.1.0-alpha.1',
+479 silly addNameRange     '0.4.5' ] ]
+480 verbose addNamed [ 'istanbul', '0.3.22' ]
+481 verbose addNamed [ '0.3.22', '0.3.22' ]
+482 silly lockFile ce8745c5-istanbul-0-3-22 istanbul@0.3.22
+483 verbose lock istanbul@0.3.22 /home/vagrant/.npm/ce8745c5-istanbul-0-3-22.lock
+484 http 200 http://registry.npmjs.org/bluebird
+485 silly registry.get cb [ 200,
+485 silly registry.get   { date: 'Sat, 23 Feb 2019 21:31:08 GMT',
+485 silly registry.get     'content-type': 'application/json',
+485 silly registry.get     'content-length': '406282',
+485 silly registry.get     connection: 'keep-alive',
+485 silly registry.get     'set-cookie': [ '__cfduid=d14dc60d0812bf45a39f52c2494d897301550957468; expires=Sun, 23-Feb-20 21:31:08 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+485 silly registry.get     'cf-cache-status': 'HIT',
+485 silly registry.get     'cache-control': 'max-age=300',
+485 silly registry.get     'cf-ray': '4adccc2ffa212192-EWR',
+485 silly registry.get     'accept-ranges': 'bytes',
+485 silly registry.get     etag: '"9e7d4bc757eb8aa737303180c5e1c17e"',
+485 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+485 silly registry.get     'last-modified': 'Sun, 27 Jan 2019 22:21:05 GMT',
+485 silly registry.get     vary: 'accept-encoding, accept',
+485 silly registry.get     'x-amz-meta-rev': '1109-8cc07ac9f6bc87285e5cb0ffd1f78eee',
+485 silly registry.get     server: 'cloudflare' } ]
+486 verbose addRemoteTarball [ 'http://registry.npmjs.org/jasmine-only/-/jasmine-only-0.1.0.tgz',
+486 verbose addRemoteTarball   '84b9e672fdb4aef96b1ba573c0975ce555275f41' ]
+487 warn deprecated istanbul@0.3.22: This module is no longer maintained, try this instead:
+487 warn deprecated   npm i nyc
+487 warn deprecated Visit https://istanbul.js.org/integrations for other alternatives.
+488 silly addNameRange number 2 { name: 'object-assign',
+488 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+488 silly addNameRange   hasData: true }
+489 silly addNameRange versions [ 'object-assign',
+489 silly addNameRange   [ '0.1.0',
+489 silly addNameRange     '0.1.1',
+489 silly addNameRange     '0.1.2',
+489 silly addNameRange     '0.2.0',
+489 silly addNameRange     '0.2.1',
+489 silly addNameRange     '0.2.2',
+489 silly addNameRange     '0.3.0',
+489 silly addNameRange     '0.3.1',
+489 silly addNameRange     '0.4.0',
+489 silly addNameRange     '1.0.0',
+489 silly addNameRange     '2.0.0',
+489 silly addNameRange     '3.0.0',
+489 silly addNameRange     '2.1.1',
+489 silly addNameRange     '4.0.0',
+489 silly addNameRange     '4.0.1',
+489 silly addNameRange     '4.1.0',
+489 silly addNameRange     '4.1.1' ] ]
+490 verbose addNamed [ 'object-assign', '3.0.0' ]
+491 verbose addNamed [ '3.0.0', '3.0.0' ]
+492 silly lockFile eff4fa96-object-assign-3-0-0 object-assign@3.0.0
+493 verbose lock object-assign@3.0.0 /home/vagrant/.npm/eff4fa96-object-assign-3-0-0.lock
+494 silly addNameRange number 2 { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: true }
+495 silly addNameRange versions [ 'optimist',
+495 silly addNameRange   [ '0.0.1',
+495 silly addNameRange     '0.0.2',
+495 silly addNameRange     '0.0.4',
+495 silly addNameRange     '0.0.5',
+495 silly addNameRange     '0.0.6',
+495 silly addNameRange     '0.0.7',
+495 silly addNameRange     '0.1.0',
+495 silly addNameRange     '0.1.1',
+495 silly addNameRange     '0.1.2',
+495 silly addNameRange     '0.1.3',
+495 silly addNameRange     '0.1.4',
+495 silly addNameRange     '0.1.5',
+495 silly addNameRange     '0.1.6',
+495 silly addNameRange     '0.1.7',
+495 silly addNameRange     '0.1.8',
+495 silly addNameRange     '0.1.9',
+495 silly addNameRange     '0.0.3',
+495 silly addNameRange     '0.2.0',
+495 silly addNameRange     '0.2.1',
+495 silly addNameRange     '0.2.2',
+495 silly addNameRange     '0.2.3',
+495 silly addNameRange     '0.2.4',
+495 silly addNameRange     '0.2.5',
+495 silly addNameRange     '0.2.6',
+495 silly addNameRange     '0.2.7',
+495 silly addNameRange     '0.2.8',
+495 silly addNameRange     '0.3.0',
+495 silly addNameRange     '0.3.1',
+495 silly addNameRange     '0.3.3',
+495 silly addNameRange     '0.3.4',
+495 silly addNameRange     '0.3.5',
+495 silly addNameRange     '0.3.6',
+495 silly addNameRange     '0.3.7',
+495 silly addNameRange     '0.4.0',
+495 silly addNameRange     '0.5.0',
+495 silly addNameRange     '0.5.1',
+495 silly addNameRange     '0.5.2',
+495 silly addNameRange     '0.6.0',
+495 silly addNameRange     '0.6.1' ] ]
+496 verbose addNamed [ 'optimist', '0.6.1' ]
+497 verbose addNamed [ '0.6.1', '0.6.1' ]
+498 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+499 verbose lock optimist@0.6.1 /home/vagrant/.npm/0fc74eb8-optimist-0-6-1.lock
+500 silly addNameRange number 2 { name: 'jsdom', range: '>=0.10.3-0 <0.11.0-0', hasData: true }
+501 silly addNameRange versions [ 'jsdom',
+501 silly addNameRange   [ '0.0.1',
+501 silly addNameRange     '0.1.2',
+501 silly addNameRange     '0.1.4',
+501 silly addNameRange     '0.1.5',
+501 silly addNameRange     '0.1.6',
+501 silly addNameRange     '0.1.7',
+501 silly addNameRange     '0.1.8',
+501 silly addNameRange     '0.1.9',
+501 silly addNameRange     '0.1.10',
+501 silly addNameRange     '0.1.11',
+501 silly addNameRange     '0.1.12',
+501 silly addNameRange     '0.1.13',
+501 silly addNameRange     '0.1.15',
+501 silly addNameRange     '0.1.16',
+501 silly addNameRange     '0.1.17',
+501 silly addNameRange     '0.1.18',
+501 silly addNameRange     '0.1.19',
+501 silly addNameRange     '0.1.20',
+501 silly addNameRange     '0.1.21',
+501 silly addNameRange     '0.1.22',
+501 silly addNameRange     '0.1.23',
+501 silly addNameRange     '0.2.0',
+501 silly addNameRange     '0.2.1',
+501 silly addNameRange     '0.2.2',
+501 silly addNameRange     '0.2.3',
+501 silly addNameRange     '0.2.4',
+501 silly addNameRange     '0.2.5',
+501 silly addNameRange     '0.2.6',
+501 silly addNameRange     '0.2.7',
+501 silly addNameRange     '0.2.8',
+501 silly addNameRange     '0.2.9',
+501 silly addNameRange     '0.2.10',
+501 silly addNameRange     '0.2.11',
+501 silly addNameRange     '0.2.12',
+501 silly addNameRange     '0.2.13',
+501 silly addNameRange     '0.2.14',
+501 silly addNameRange     '0.2.15',
+501 silly addNameRange     '0.2.16',
+501 silly addNameRange     '0.2.17',
+501 silly addNameRange     '0.2.18',
+501 silly addNameRange     '0.2.19',
+501 silly addNameRange     '0.3.0',
+501 silly addNameRange     '0.3.1',
+501 silly addNameRange     '0.3.2',
+501 silly addNameRange     '0.3.3',
+501 silly addNameRange     '0.3.4',
+501 silly addNameRange     '0.4.0',
+501 silly addNameRange     '0.4.1',
+501 silly addNameRange     '0.4.2',
+501 silly addNameRange     '0.5.0',
+501 silly addNameRange     '0.5.1',
+501 silly addNameRange     '0.5.2',
+501 silly addNameRange     '0.5.3',
+501 silly addNameRange     '0.5.4',
+501 silly addNameRange     '0.5.5',
+501 silly addNameRange     '0.5.6',
+501 silly addNameRange     '0.5.7',
+501 silly addNameRange     '0.6.0',
+501 silly addNameRange     '0.6.1',
+501 silly addNameRange     '0.6.2',
+501 silly addNameRange     '0.6.3',
+501 silly addNameRange     '0.6.4',
+501 silly addNameRange     '0.6.5',
+501 silly addNameRange     '0.7.0',
+501 silly addNameRange     '0.8.0',
+501 silly addNameRange     '0.8.1',
+501 silly addNameRange     '0.8.2',
+501 silly addNameRange     '0.8.3',
+501 silly addNameRange     '0.8.4',
+501 silly addNameRange     '0.8.5',
+501 silly addNameRange     '0.8.6',
+501 silly addNameRange     '0.8.7',
+501 silly addNameRange     '0.8.8',
+501 silly addNameRange     '0.8.9',
+501 silly addNameRange     '0.8.10',
+501 silly addNameRange     '0.8.11',
+501 silly addNameRange     '0.9.0',
+501 silly addNameRange     '0.10.0',
+501 silly addNameRange     '0.10.1',
+501 silly addNameRange     '0.10.2',
+501 silly addNameRange     '0.10.3',
+501 silly addNameRange     '0.10.4',
+501 silly addNameRange     '0.10.5',
+501 silly addNameRange     '0.10.6',
+501 silly addNameRange     '0.11.0',
+501 silly addNameRange     '0.11.1',
+501 silly addNameRange     '1.0.0-pre.1',
+501 silly addNameRange     '1.0.0-pre.3',
+501 silly addNameRange     '1.0.0-pre.4',
+501 silly addNameRange     '1.0.0-pre.5',
+501 silly addNameRange     '1.0.0-pre.6',
+501 silly addNameRange     '1.0.0-pre.7',
+501 silly addNameRange     '1.0.0',
+501 silly addNameRange     '1.0.1',
+501 silly addNameRange     '1.0.2',
+501 silly addNameRange     '1.0.3',
+501 silly addNameRange     '1.1.0',
+501 silly addNameRange     '1.2.0',
+501 silly addNameRange     '1.2.1',
+501 silly addNameRange     '1.2.2',
+501 silly addNameRange     '1.2.3',
+501 silly addNameRange     '1.3.0',
+501 silly addNameRange     '1.3.1',
+501 silly addNameRange     '1.3.2',
+501 silly addNameRange     '1.4.0',
+501 silly addNameRange     '1.4.1',
+501 silly addNameRange     '1.5.0',
+501 silly addNameRange     '2.0.0',
+501 silly addNameRange     '3.0.0',
+501 silly addNameRange     '3.0.1',
+501 silly addNameRange     '3.0.2',
+501 silly addNameRange     '3.0.3',
+501 silly addNameRange     '3.1.0',
+501 silly addNameRange     '3.1.1',
+501 silly addNameRange     '3.1.2',
+501 silly addNameRange     '4.0.0',
+501 silly addNameRange     '4.0.1',
+501 silly addNameRange     '4.0.2',
+501 silly addNameRange     '4.0.3',
+501 silly addNameRange     '4.0.4',
+501 silly addNameRange     '4.0.5',
+501 silly addNameRange     '4.1.0',
+501 silly addNameRange     '4.2.0',
+501 silly addNameRange     '4.3.0',
+501 silly addNameRange     '4.4.0',
+501 silly addNameRange     '4.5.0',
+501 silly addNameRange     '4.5.1',
+501 silly addNameRange     '5.0.0',
+501 silly addNameRange     '5.0.1',
+501 silly addNameRange     '4.5.2',
+501 silly addNameRange     '5.1.0',
+501 silly addNameRange     '5.2.0',
+501 silly addNameRange     '5.3.0',
+501 silly addNameRange     '5.4.0',
+501 silly addNameRange     '5.4.1',
+501 silly addNameRange     '5.4.2',
+501 silly addNameRange     '5.4.3',
+501 silly addNameRange     '5.5.0',
+501 silly addNameRange     '5.6.0',
+501 silly addNameRange     '5.6.1',
+501 silly addNameRange     '6.0.0',
+501 silly addNameRange     '6.0.1',
+501 silly addNameRange     '6.1.0',
+501 silly addNameRange     '6.2.0',
+501 silly addNameRange     '6.3.0',
+501 silly addNameRange     '6.4.0',
+501 silly addNameRange     '6.5.0',
+501 silly addNameRange     '6.5.1',
+501 silly addNameRange     '7.0.0',
+501 silly addNameRange     '7.0.1',
+501 silly addNameRange     '7.0.2',
+501 silly addNameRange     '7.1.0',
+501 silly addNameRange     '7.1.1',
+501 silly addNameRange     '7.2.0',
+501 silly addNameRange     '7.2.1',
+501 silly addNameRange     '7.2.2',
+501 silly addNameRange     '8.0.0-0',
+501 silly addNameRange     '8.0.0',
+501 silly addNameRange     '8.0.1',
+501 silly addNameRange     '8.0.2',
+501 silly addNameRange     '8.0.3',
+501 silly addNameRange     '8.0.4',
+501 silly addNameRange     '8.1.0',
+501 silly addNameRange     '8.2.0',
+501 silly addNameRange     '8.3.0',
+501 silly addNameRange     '8.3.1',
+501 silly addNameRange     '8.4.0',
+501 silly addNameRange     '8.4.1',
+501 silly addNameRange     '8.5.0',
+501 silly addNameRange     '9.0.0',
+501 silly addNameRange     '9.1.0',
+501 silly addNameRange     '9.2.0',
+501 silly addNameRange     '9.2.1',
+501 silly addNameRange     '9.3.0',
+501 silly addNameRange     '9.4.0',
+501 silly addNameRange     '9.4.1',
+501 silly addNameRange     '9.4.2',
+501 silly addNameRange     '9.4.3',
+501 silly addNameRange     '9.4.4',
+501 silly addNameRange     '9.4.5',
+501 silly addNameRange     '9.5.0',
+501 silly addNameRange     '9.6.0',
+501 silly addNameRange     '9.7.0',
+501 silly addNameRange     '9.7.1',
+501 silly addNameRange     '9.8.0',
+501 silly addNameRange     '9.8.1',
+501 silly addNameRange     '9.8.2',
+501 silly addNameRange     '9.8.3',
+501 silly addNameRange     '9.9.0',
+501 silly addNameRange     '9.9.1',
+501 silly addNameRange     '9.10.0',
+501 silly addNameRange     '9.11.0',
+501 silly addNameRange     '9.12.0',
+501 silly addNameRange     '10.0.0',
+501 silly addNameRange     '10.1.0',
+501 silly addNameRange     '11.0.0',
+501 silly addNameRange     '11.1.0',
+501 silly addNameRange     '11.2.0',
+501 silly addNameRange     '11.3.0',
+501 silly addNameRange     '11.4.0',
+501 silly addNameRange     '11.5.1',
+501 silly addNameRange     '11.6.0',
+501 silly addNameRange     '11.6.1',
+501 silly addNameRange     '11.6.2',
+501 silly addNameRange     '11.7.0',
+501 silly addNameRange     '11.8.0',
+501 silly addNameRange     '11.9.0',
+501 silly addNameRange     '11.10.0',
+501 silly addNameRange     '11.11.0',
+501 silly addNameRange     '11.12.0',
+501 silly addNameRange     '12.0.0',
+501 silly addNameRange     '12.1.0',
+501 silly addNameRange     '12.2.0',
+501 silly addNameRange     '13.0.0',
+501 silly addNameRange     '13.1.0',
+501 silly addNameRange     '13.2.0' ] ]
+502 verbose addNamed [ 'jsdom', '0.10.6' ]
+503 verbose addNamed [ '0.10.6', '0.10.6' ]
+504 silly lockFile e3c26bf3-jsdom-0-10-6 jsdom@0.10.6
+505 verbose lock jsdom@0.10.6 /home/vagrant/.npm/e3c26bf3-jsdom-0-10-6.lock
+506 silly lockFile 7688c9aa-rg-harmonize-harmonize-1-4-2-tgz http://registry.npmjs.org/harmonize/-/harmonize-1.4.2.tgz
+507 verbose lock http://registry.npmjs.org/harmonize/-/harmonize-1.4.2.tgz /home/vagrant/.npm/7688c9aa-rg-harmonize-harmonize-1-4-2-tgz.lock
+508 silly addNameRange number 2 { name: 'resolve', range: '>=0.6.1-0 <0.7.0-0', hasData: true }
+509 silly addNameRange versions [ 'resolve',
+509 silly addNameRange   [ '0.0.0',
+509 silly addNameRange     '0.0.1',
+509 silly addNameRange     '0.0.2',
+509 silly addNameRange     '0.0.3',
+509 silly addNameRange     '0.0.4',
+509 silly addNameRange     '0.1.0',
+509 silly addNameRange     '0.1.2',
+509 silly addNameRange     '0.1.3',
+509 silly addNameRange     '0.2.0',
+509 silly addNameRange     '0.2.1',
+509 silly addNameRange     '0.2.2',
+509 silly addNameRange     '0.2.3',
+509 silly addNameRange     '0.2.4',
+509 silly addNameRange     '0.2.5',
+509 silly addNameRange     '0.2.6',
+509 silly addNameRange     '0.2.7',
+509 silly addNameRange     '0.2.8',
+509 silly addNameRange     '0.3.0',
+509 silly addNameRange     '0.3.1',
+509 silly addNameRange     '0.4.0',
+509 silly addNameRange     '0.4.1',
+509 silly addNameRange     '0.4.2',
+509 silly addNameRange     '0.4.3',
+509 silly addNameRange     '0.5.0',
+509 silly addNameRange     '0.5.1',
+509 silly addNameRange     '0.6.0',
+509 silly addNameRange     '0.6.1',
+509 silly addNameRange     '0.6.2',
+509 silly addNameRange     '0.6.3',
+509 silly addNameRange     '0.7.0',
+509 silly addNameRange     '0.7.1',
+509 silly addNameRange     '0.7.2',
+509 silly addNameRange     '0.7.3',
+509 silly addNameRange     '0.7.4',
+509 silly addNameRange     '1.0.0',
+509 silly addNameRange     '1.1.0',
+509 silly addNameRange     '1.1.2',
+509 silly addNameRange     '1.1.3',
+509 silly addNameRange     '1.1.4',
+509 silly addNameRange     '1.1.5',
+509 silly addNameRange     '1.1.6',
+509 silly addNameRange     '1.1.7',
+509 silly addNameRange     '1.2.0',
+509 silly addNameRange     '1.3.0',
+509 silly addNameRange     '1.3.1',
+509 silly addNameRange     '1.2.1',
+509 silly addNameRange     '1.3.2',
+509 silly addNameRange     '1.3.3',
+509 silly addNameRange     '1.4.0',
+509 silly addNameRange     '1.5.0',
+509 silly addNameRange     '1.6.0',
+509 silly addNameRange     '1.7.0',
+509 silly addNameRange     '1.7.1',
+509 silly addNameRange     '1.8.0',
+509 silly addNameRange     '1.8.1',
+509 silly addNameRange     '1.9.0',
+509 silly addNameRange     '1.10.0' ] ]
+510 verbose addNamed [ 'resolve', '0.6.3' ]
+511 verbose addNamed [ '0.6.3', '0.6.3' ]
+512 silly lockFile 7ab38748-resolve-0-6-3 resolve@0.6.3
+513 verbose lock resolve@0.6.3 /home/vagrant/.npm/7ab38748-resolve-0-6-3.lock
+514 silly lockFile e412cf76-mine-only-jasmine-only-0-1-0-tgz http://registry.npmjs.org/jasmine-only/-/jasmine-only-0.1.0.tgz
+515 silly lockFile e412cf76-mine-only-jasmine-only-0-1-0-tgz http://registry.npmjs.org/jasmine-only/-/jasmine-only-0.1.0.tgz
+516 silly addNameRange number 2 { name: 'through', range: '>=2.3.4-0 <3.0.0-0', hasData: true }
+517 silly addNameRange versions [ 'through',
+517 silly addNameRange   [ '0.0.1',
+517 silly addNameRange     '0.0.2',
+517 silly addNameRange     '0.0.3',
+517 silly addNameRange     '0.0.4',
+517 silly addNameRange     '0.1.0',
+517 silly addNameRange     '0.1.1',
+517 silly addNameRange     '0.1.2',
+517 silly addNameRange     '0.1.3',
+517 silly addNameRange     '0.1.4',
+517 silly addNameRange     '1.0.0',
+517 silly addNameRange     '1.1.0',
+517 silly addNameRange     '1.1.1',
+517 silly addNameRange     '1.1.2',
+517 silly addNameRange     '2.0.0',
+517 silly addNameRange     '2.1.0',
+517 silly addNameRange     '2.2.0',
+517 silly addNameRange     '2.2.1',
+517 silly addNameRange     '2.2.2',
+517 silly addNameRange     '2.2.4',
+517 silly addNameRange     '2.2.5',
+517 silly addNameRange     '2.2.6',
+517 silly addNameRange     '2.2.7',
+517 silly addNameRange     '2.3.1',
+517 silly addNameRange     '2.3.2',
+517 silly addNameRange     '2.3.3',
+517 silly addNameRange     '2.3.4',
+517 silly addNameRange     '2.3.6',
+517 silly addNameRange     '2.3.7',
+517 silly addNameRange     '2.3.8' ] ]
+518 verbose addNamed [ 'through', '2.3.8' ]
+519 verbose addNamed [ '2.3.8', '2.3.8' ]
+520 silly lockFile 05586770-through-2-3-8 through@2.3.8
+521 verbose lock through@2.3.8 /home/vagrant/.npm/05586770-through-2-3-8.lock
+522 silly lockFile 29ed01d7-jasmine-only-0-1-0 jasmine-only@0.1.0
+523 silly lockFile 29ed01d7-jasmine-only-0-1-0 jasmine-only@0.1.0
+524 verbose addRemoteTarball [ 'http://registry.npmjs.org/harmonize/-/harmonize-1.4.2.tgz',
+524 verbose addRemoteTarball   '1c77e8e420bef0a4d03a994c0f41c4ae177d8bbd' ]
+525 silly addNameRange number 2 { name: 'lodash.template',
+525 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+525 silly addNameRange   hasData: true }
+526 silly addNameRange versions [ 'lodash.template',
+526 silly addNameRange   [ '2.0.0',
+526 silly addNameRange     '2.1.0',
+526 silly addNameRange     '2.2.0',
+526 silly addNameRange     '2.2.1',
+526 silly addNameRange     '2.3.0',
+526 silly addNameRange     '2.4.0',
+526 silly addNameRange     '2.4.1',
+526 silly addNameRange     '3.0.0',
+526 silly addNameRange     '3.0.1',
+526 silly addNameRange     '3.1.0',
+526 silly addNameRange     '3.2.0',
+526 silly addNameRange     '3.3.0',
+526 silly addNameRange     '3.3.1',
+526 silly addNameRange     '3.3.2',
+526 silly addNameRange     '3.4.0',
+526 silly addNameRange     '3.5.0',
+526 silly addNameRange     '3.5.1',
+526 silly addNameRange     '3.6.0',
+526 silly addNameRange     '3.6.1',
+526 silly addNameRange     '3.6.2',
+526 silly addNameRange     '4.0.0',
+526 silly addNameRange     '4.0.1',
+526 silly addNameRange     '4.0.2',
+526 silly addNameRange     '4.1.0',
+526 silly addNameRange     '4.1.1',
+526 silly addNameRange     '4.2.0',
+526 silly addNameRange     '4.2.1',
+526 silly addNameRange     '4.2.2',
+526 silly addNameRange     '4.2.3',
+526 silly addNameRange     '4.2.4',
+526 silly addNameRange     '4.2.5',
+526 silly addNameRange     '4.3.0',
+526 silly addNameRange     '4.4.0' ] ]
+527 verbose addNamed [ 'lodash.template', '3.6.2' ]
+528 verbose addNamed [ '3.6.2', '3.6.2' ]
+529 silly lockFile 02abd1ff-lodash-template-3-6-2 lodash.template@3.6.2
+530 verbose lock lodash.template@3.6.2 /home/vagrant/.npm/02abd1ff-lodash-template-3-6-2.lock
+531 verbose about to build /var/www/html/node_modules/jest-cli
+532 info /var/www/html/node_modules/jest-cli unbuild
+533 info preuninstall jest-cli@0.4.19
+534 silly addNameRange number 2 { name: 'bluebird',
+534 silly addNameRange   range: '>=2.9.30-0 <2.10.0-0',
+534 silly addNameRange   hasData: true }
+535 silly addNameRange versions [ 'bluebird',
+535 silly addNameRange   [ '0.7.1-1',
+535 silly addNameRange     '0.7.1-2',
+535 silly addNameRange     '0.7.1-3',
+535 silly addNameRange     '0.7.1-4',
+535 silly addNameRange     '0.7.1-5',
+535 silly addNameRange     '0.7.2-0',
+535 silly addNameRange     '0.7.3-0',
+535 silly addNameRange     '0.7.4-0',
+535 silly addNameRange     '0.7.4-1',
+535 silly addNameRange     '0.7.5-0',
+535 silly addNameRange     '0.7.6-0',
+535 silly addNameRange     '0.7.7-0',
+535 silly addNameRange     '0.7.7-1',
+535 silly addNameRange     '0.7.8-0',
+535 silly addNameRange     '0.7.8-1',
+535 silly addNameRange     '0.7.9-0',
+535 silly addNameRange     '0.7.9-1',
+535 silly addNameRange     '0.7.10-0',
+535 silly addNameRange     '0.7.10-1',
+535 silly addNameRange     '0.7.11-0',
+535 silly addNameRange     '0.7.12-0',
+535 silly addNameRange     '0.7.12-1',
+535 silly addNameRange     '0.7.12-2',
+535 silly addNameRange     '0.8.0-0',
+535 silly addNameRange     '0.8.0-1',
+535 silly addNameRange     '0.8.0-2',
+535 silly addNameRange     '0.8.0-3',
+535 silly addNameRange     '0.8.1-0',
+535 silly addNameRange     '0.8.2-0',
+535 silly addNameRange     '0.8.2-1',
+535 silly addNameRange     '0.8.2-2',
+535 silly addNameRange     '0.8.3-0',
+535 silly addNameRange     '0.8.3-1',
+535 silly addNameRange     '0.8.3-2',
+535 silly addNameRange     '0.8.3-3',
+535 silly addNameRange     '0.8.4-0',
+535 silly addNameRange     '0.8.4-1',
+535 silly addNameRange     '0.8.5-0',
+535 silly addNameRange     '0.8.5-1',
+535 silly addNameRange     '0.9.0-0',
+535 silly addNameRange     '0.9.1-0',
+535 silly addNameRange     '0.9.1-1',
+535 silly addNameRange     '0.9.2-0',
+535 silly addNameRange     '0.9.2-1',
+535 silly addNameRange     '0.9.3-0',
+535 silly addNameRange     '0.9.4-0',
+535 silly addNameRange     '0.9.4-1',
+535 silly addNameRange     '0.9.5-0',
+535 silly addNameRange     '0.9.6-0',
+535 silly addNameRange     '0.9.7-0',
+535 silly addNameRange     '0.9.8-0',
+535 silly addNameRange     '0.9.9-0',
+535 silly addNameRange     '0.9.10-0',
+535 silly addNameRange     '0.9.10-1',
+535 silly addNameRange     '0.9.11-0',
+535 silly addNameRange     '0.9.11-1',
+535 silly addNameRange     '0.10.0-0',
+535 silly addNameRange     '0.10.0-1',
+535 silly addNameRange     '0.10.1-0',
+535 silly addNameRange     '0.10.2-0',
+535 silly addNameRange     '0.10.2-1',
+535 silly addNameRange     '0.10.3-0',
+535 silly addNameRange     '0.10.4-0',
+535 silly addNameRange     '0.10.4-1',
+535 silly addNameRange     '0.10.5-0',
+535 silly addNameRange     '0.10.6-0',
+535 silly addNameRange     '0.10.7-0',
+535 silly addNameRange     '0.10.8-0',
+535 silly addNameRange     '0.10.9-0',
+535 silly addNameRange     '0.10.9-1',
+535 silly addNameRange     '0.10.10-0',
+535 silly addNameRange     '0.10.11-0',
+535 silly addNameRange     '0.10.11-1',
+535 silly addNameRange     '0.10.11-2',
+535 silly addNameRange     '0.10.11-4',
+535 silly addNameRange     '0.10.12-0',
+535 silly addNameRange     '0.10.13-0',
+535 silly addNameRange     '0.10.13-1',
+535 silly addNameRange     '0.10.14-0',
+535 silly addNameRange     '0.11.0-0',
+535 silly addNameRange     '0.11.1-0',
+535 silly addNameRange     '0.11.2-0',
+535 silly addNameRange     '0.11.3-0',
+535 silly addNameRange     '0.11.4-0',
+535 silly addNameRange     '0.11.4-1',
+535 silly addNameRange     '0.11.5-0',
+535 silly addNameRange     '0.11.5-1',
+535 silly addNameRange     '0.11.6-0',
+535 silly addNameRange     '1.0.0',
+535 silly addNameRange     '1.0.1',
+535 silly addNameRange     '1.0.2',
+535 silly addNameRange     '1.0.3',
+535 silly addNameRange     '1.0.4',
+535 silly addNameRange     '1.0.5',
+535 silly addNameRange     '1.0.7',
+535 silly addNameRange     '1.0.8',
+535 silly addNameRange     '1.1.0',
+535 silly addNameRange     '1.1.1',
+535 silly addNameRange     '1.2.0',
+535 silly addNameRange     '1.2.1',
+535 silly addNameRange     '1.2.2',
+535 silly addNameRange     '1.2.3',
+535 silly addNameRange     '1.2.4',
+535 silly addNameRange     '2.0.2',
+535 silly addNameRange     '2.0.3',
+535 silly addNameRange     '2.0.4',
+535 silly addNameRange     '2.0.5',
+535 silly addNameRange     '2.0.6',
+535 silly addNameRange     '2.0.7',
+535 silly addNameRange     '2.1.1',
+535 silly addNameRange     '2.1.2',
+535 silly addNameRange     '2.1.3',
+535 silly addNameRange     '2.2.0',
+535 silly addNameRange     '2.2.1',
+535 silly addNameRange     '2.2.2',
+535 silly addNameRange     '2.3.0',
+535 silly addNameRange     '2.3.1',
+535 silly addNameRange     '2.3.2',
+535 silly addNameRange     '2.3.3',
+535 silly addNameRange     '2.3.4',
+535 silly addNameRange     '2.3.5',
+535 silly addNameRange     '0.11.6',
+535 silly addNameRange     '2.3.6',
+535 silly addNameRange     '2.3.9',
+535 silly addNameRange     '2.3.10',
+535 silly addNameRange     '2.3.11',
+535 silly addNameRange     '2.4.0',
+535 silly addNameRange     '2.4.1',
+535 silly addNameRange     '2.4.2',
+535 silly addNameRange     '2.4.3',
+535 silly addNameRange     '2.5.0',
+535 silly addNameRange     '2.5.1',
+535 silly addNameRange     '2.5.2',
+535 silly addNameRange     '2.5.3',
+535 silly addNameRange     '2.6.0',
+535 silly addNameRange     '2.6.1',
+535 silly addNameRange     '2.6.2',
+535 silly addNameRange     '2.6.3',
+535 silly addNameRange     '2.6.4',
+535 silly addNameRange     '2.7.0',
+535 silly addNameRange     '2.7.1',
+535 silly addNameRange     '2.8.0',
+535 silly addNameRange     '2.8.1',
+535 silly addNameRange     '2.8.2',
+535 silly addNameRange     '2.9.0',
+535 silly addNameRange     '2.9.1',
+535 silly addNameRange     '2.9.2',
+535 silly addNameRange     '2.9.3',
+535 silly addNameRange     '2.9.4',
+535 silly addNameRange     '2.9.5',
+535 silly addNameRange     '2.9.6',
+535 silly addNameRange     '2.9.7',
+535 silly addNameRange     '2.9.8',
+535 silly addNameRange     '2.9.9',
+535 silly addNameRange     '2.9.10',
+535 silly addNameRange     '2.9.11',
+535 silly addNameRange     '2.9.12',
+535 silly addNameRange     '2.9.13',
+535 silly addNameRange     '2.9.14',
+535 silly addNameRange     '2.9.15',
+535 silly addNameRange     '2.9.16',
+535 silly addNameRange     '2.9.17',
+535 silly addNameRange     '2.9.18',
+535 silly addNameRange     '2.9.19',
+535 silly addNameRange     '2.9.20',
+535 silly addNameRange     '2.9.21',
+535 silly addNameRange     '2.9.22',
+535 silly addNameRange     '2.9.23',
+535 silly addNameRange     '2.9.24',
+535 silly addNameRange     '2.9.25',
+535 silly addNameRange     '2.9.26',
+535 silly addNameRange     '2.9.27',
+535 silly addNameRange     '2.9.28',
+535 silly addNameRange     '2.9.29',
+535 silly addNameRange     '2.9.30',
+535 silly addNameRange     '2.9.31',
+535 silly addNameRange     '2.9.32',
+535 silly addNameRange     '2.9.33',
+535 silly addNameRange     '2.9.34',
+535 silly addNameRange     '2.10.0',
+535 silly addNameRange     '2.10.1',
+535 silly addNameRange     '2.10.2',
+535 silly addNameRange     '3.0.0',
+535 silly addNameRange     '3.0.1',
+535 silly addNameRange     '3.0.2',
+535 silly addNameRange     '3.0.3',
+535 silly addNameRange     '3.0.4',
+535 silly addNameRange     '3.0.5',
+535 silly addNameRange     '3.0.6',
+535 silly addNameRange     '3.1.0',
+535 silly addNameRange     '3.1.1',
+535 silly addNameRange     '3.1.2',
+535 silly addNameRange     '3.1.3',
+535 silly addNameRange     '3.1.4',
+535 silly addNameRange     '3.1.5',
+535 silly addNameRange     '3.2.0',
+535 silly addNameRange     '3.2.1',
+535 silly addNameRange     '3.2.2',
+535 silly addNameRange     '3.3.0',
+535 silly addNameRange     '3.3.1',
+535 silly addNameRange     '3.3.2',
+535 silly addNameRange     '3.3.3',
+535 silly addNameRange     '3.3.4',
+535 silly addNameRange     '3.3.5',
+535 silly addNameRange     '3.4.0',
+535 silly addNameRange     '3.4.1',
+535 silly addNameRange     '3.4.2',
+535 silly addNameRange     '3.4.3',
+535 silly addNameRange     '3.4.4',
+535 silly addNameRange     '2.11.0',
+535 silly addNameRange     '3.4.5',
+535 silly addNameRange     '3.4.6',
+535 silly addNameRange     '3.4.7',
+535 silly addNameRange     '3.5.0',
+535 silly addNameRange     '3.5.1',
+535 silly addNameRange     '3.5.2',
+535 silly addNameRange     '3.5.3' ] ]
+536 verbose addNamed [ 'bluebird', '2.9.34' ]
+537 verbose addNamed [ '2.9.34', '2.9.34' ]
+538 silly lockFile 0bcebb1b-bluebird-2-9-34 bluebird@2.9.34
+539 verbose lock bluebird@2.9.34 /home/vagrant/.npm/0bcebb1b-bluebird-2-9-34.lock
+540 silly lockFile 7688c9aa-rg-harmonize-harmonize-1-4-2-tgz http://registry.npmjs.org/harmonize/-/harmonize-1.4.2.tgz
+541 silly lockFile 7688c9aa-rg-harmonize-harmonize-1-4-2-tgz http://registry.npmjs.org/harmonize/-/harmonize-1.4.2.tgz
+542 info uninstall jest-cli@0.4.19
+543 silly lockFile f078ca0d-harmonize-1-4-2 harmonize@1.4.2
+544 silly lockFile f078ca0d-harmonize-1-4-2 harmonize@1.4.2
+545 verbose true,/var/www/html/node_modules,/var/www/html/node_modules unbuild jest-cli@0.4.19
+546 verbose /var/www/html/node_modules/.bin,[object Object] binRoot
+547 silly lockFile f6748f53-node-worker-pool-2-4-5 node-worker-pool@2.4.5
+548 silly lockFile f6748f53-node-worker-pool-2-4-5 node-worker-pool@2.4.5
+549 silly lockFile ce8745c5-istanbul-0-3-22 istanbul@0.3.22
+550 silly lockFile ce8745c5-istanbul-0-3-22 istanbul@0.3.22
+551 silly lockFile ac526aad-node-worker-pool-2-4-2 node-worker-pool@~2.4.2
+552 silly lockFile ac526aad-node-worker-pool-2-4-2 node-worker-pool@~2.4.2
+553 info postuninstall jest-cli@0.4.19
+554 silly lockFile 4772a768-istanbul-0-3-2 istanbul@^0.3.2
+555 silly lockFile 4772a768-istanbul-0-3-2 istanbul@^0.3.2
+556 silly lockFile eff4fa96-object-assign-3-0-0 object-assign@3.0.0
+557 silly lockFile eff4fa96-object-assign-3-0-0 object-assign@3.0.0
+558 silly lockFile e3c26bf3-jsdom-0-10-6 jsdom@0.10.6
+559 silly lockFile e3c26bf3-jsdom-0-10-6 jsdom@0.10.6
+560 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+561 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+562 silly lockFile 2db6c36a-object-assign-3-0-0 object-assign@^3.0.0
+563 silly lockFile 2db6c36a-object-assign-3-0-0 object-assign@^3.0.0
+564 silly lockFile ea616439-jsdom-0-10-3 jsdom@~0.10.3
+565 silly lockFile ea616439-jsdom-0-10-3 jsdom@~0.10.3
+566 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+567 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+568 silly lockFile 7ab38748-resolve-0-6-3 resolve@0.6.3
+569 silly lockFile 7ab38748-resolve-0-6-3 resolve@0.6.3
+570 silly lockFile 35159d56-resolve-0-6-1 resolve@~0.6.1
+571 silly lockFile 35159d56-resolve-0-6-1 resolve@~0.6.1
+572 silly lockFile 05586770-through-2-3-8 through@2.3.8
+573 silly lockFile 05586770-through-2-3-8 through@2.3.8
+574 silly lockFile 02abd1ff-lodash-template-3-6-2 lodash.template@3.6.2
+575 silly lockFile 02abd1ff-lodash-template-3-6-2 lodash.template@3.6.2
+576 silly lockFile 4a17867e-through-2-3-4 through@^2.3.4
+577 silly lockFile 4a17867e-through-2-3-4 through@^2.3.4
+578 silly lockFile b01467bd-lodash-template-3-0-0 lodash.template@^3.0.0
+579 silly lockFile b01467bd-lodash-template-3-0-0 lodash.template@^3.0.0
+580 silly lockFile 0bcebb1b-bluebird-2-9-34 bluebird@2.9.34
+581 silly lockFile 0bcebb1b-bluebird-2-9-34 bluebird@2.9.34
+582 silly lockFile 06c085d1-bluebird-2-9-30 bluebird@~2.9.30
+583 silly lockFile 06c085d1-bluebird-2-9-30 bluebird@~2.9.30
+584 error Error: EACCES, mkdir '/home/vagrant/tmp/npm-22437-NLoLDCF0'
+584 error  { [Error: EACCES, mkdir '/home/vagrant/tmp/npm-22437-NLoLDCF0']
+584 error   errno: 3,
+584 error   code: 'EACCES',
+584 error   path: '/home/vagrant/tmp/npm-22437-NLoLDCF0' }
+585 error Please try running this command again as root/Administrator.
+586 error System Linux 3.13.0-63-generic
+587 error command "/usr/bin/nodejs" "/usr/bin/npm" "install"
+588 error cwd /var/www/html
+589 error node -v v0.10.25
+590 error npm -v 1.3.10
+591 error path /home/vagrant/tmp/npm-22437-NLoLDCF0
+592 error code EACCES
+593 error errno 3
+594 error stack Error: EACCES, mkdir '/home/vagrant/tmp/npm-22437-NLoLDCF0'
+595 verbose exit [ 3, true ]
