@@ -7,7 +7,7 @@ import collections
 
 rootdir = '../../html/public/dcic_docs/'
 out_csv = r"csv/"
-path = "http://128.8.164.178"
+path = "https://transcribe.ischool.umd.edu"
 target_city = "Springfield"
 
 def get_image_size(fname):
@@ -71,7 +71,7 @@ for subdir, dirs, files in os.walk(rootdir):
             continue
 
         width, height = get_image_size(os.path.join(subdir, file))
-        lines.append([i, target_city, path + ":3000/dcic_docs/" + os.path.join(directory, file), path + ":3000/dcic_docs/" + directory + "/thumb/" + file, str(width), str(height)])            
+        lines.append([i, target_city, path + "/dcic_docs/" + os.path.join(directory, file), path + "/dcic_docs/" + directory + "/thumb/" + file, str(width), str(height)])            
         i += 1
 
     # print(out_csv + "group_" + target_city + ".csv")
@@ -83,7 +83,7 @@ for subdir, dirs, files in os.walk(rootdir):
             w.writerow(line)
 
     city = target_city
-    group_lines.append([city, city + " Redlining Documents", city + " Redlining Documents from " + current_dir, path + ":3000/dcic_docs/" + os.path.join(directory, file), path + ":3000", 2])            
+    group_lines.append([city, city + " Redlining Documents", city + " Redlining Documents from " + current_dir, path + "/dcic_docs/" + os.path.join(directory, file), path, 2])            
 
 
         # if city == 'Warren':

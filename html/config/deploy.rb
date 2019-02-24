@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "Scribe"
-set :repo_url, "https://github.com/UMD-DCIC/Scribe/"
+set :repo_url, "https://github.com/UMD-DCIC/scribe-deploy.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -10,8 +10,11 @@ set :repo_url, "https://github.com/UMD-DCIC/Scribe/"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deploy/Scribe'
 
+
 append :linked_files, "config/mongoid.yml", "config/secrets.yml"
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads", "public/dcic_docs"
+
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 

@@ -95,4 +95,4 @@ html/public/dcic_docs/*
 !html/public/dcic_docs/Mobile_AD
 
 scripts/data_clearning/.ipynb_checkpoints
-
+html/config/secrets.yml

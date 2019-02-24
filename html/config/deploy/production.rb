@@ -8,6 +8,14 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 server '128.8.164.178', user: 'deploy', roles: %w{app db web}
 
+set :default_env, { 
+  'DEVISE_SECRET_TOKEN' => 'd2043e35c7fc2d09d2dbb0433b60796c8663713abfcba67025b2176a704fc8d674e0ed79c7b1c9990d3808432ebc2205277364537f1c1870ce6fd69e8998bf63',
+  'SECRET_KEY_BASE_TOKEN' => 'd2043e35c7fc2d09d2dbb0433b60796c8663713abfcba67025b2176a704fc8d674e0ed79c7b1c9990d3808432ebc2205277364537f1c1870ce6fd69e8998bf63',
+  'SCRIBE_BOT_TOKEN' => '5acd09095472610fd1000000:Eh1JksCK8zs1_6RNU6CD',
+  'FACEBOOK_ID' => '1689853631267050',
+  'FACEBOOK_SECRET' => 'b9133c1bf4cbe47e153954b1d0d13a5f'
+}
+
 
 # role-based syntax
 # ==================

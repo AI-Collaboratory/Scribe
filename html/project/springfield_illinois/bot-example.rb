@@ -118,7 +118,7 @@ end
 #
 
 options = Hash[ ARGV.join(' ').scan(/--?([^=\s]+)(?:=(\S+))?/) ]
-options["scribe-endpoint"] = "http://"+ url + ":3000/classifications" if ! options["scribe-endpoint"]
+options["scribe-endpoint"] = "https://"+ url + "/classifications" if ! options["scribe-endpoint"]
 
 args = ARGV.select { |a| ! a.match /^-/ }
 
