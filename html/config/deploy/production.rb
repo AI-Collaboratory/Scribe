@@ -6,7 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-server '128.8.164.178', user: 'deploy', roles: %w{app db web}
+server '35.237.227.222', user: 'deploy', roles: %w{app db web}
 
 set :default_env, { 
   'DEVISE_SECRET_TOKEN' => 'd2043e35c7fc2d09d2dbb0433b60796c8663713abfcba67025b2176a704fc8d674e0ed79c7b1c9990d3808432ebc2205277364537f1c1870ce6fd69e8998bf63',
